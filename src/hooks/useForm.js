@@ -56,8 +56,10 @@ export default function useForm(initialValues, validate, onSubmitSuccess, onSubm
 
         if (response.ok) {
           const data = await response.json();
-          // FormSubmit AJAX returns success: "true" as a string
-          if (data.success === 'true' || data.success === true) {
+          const isSuccess = data.success === 'true' || data.success === true;
+          const isActivation = data.message && (data.message.toLowerCase().includes('activate') || data.message.toLowerCase().includes('active'));
+
+          if (isSuccess || isActivation) {
             setSubmitStatus('success');
             setValues(initialValues);
             if (onSubmitSuccess) onSubmitSuccess();
