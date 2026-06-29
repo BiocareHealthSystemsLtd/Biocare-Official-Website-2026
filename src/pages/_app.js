@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import Script from 'next/script';
 
 export default function App({ Component, pageProps }) {
-  const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-7LYX9L08EG';
+  const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-PK1Q93GZP8';
 
   return (
     <>
