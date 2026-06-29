@@ -37,18 +37,34 @@ export default function useForm(initialValues, validate, onSubmitSuccess, onSubm
       setIsSubmitting(true);
       setSubmitStatus(null);
       try {
-        const response = await fetch('/api/contact', {
+        const response = await fetch('https://formsubmit.co/ajax/biocarehealthsystems@gmail.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
+            'Accept': 'application/json'
           },
-          body: JSON.stringify(values),
+          body: JSON.stringify({
+            _subject: `[Biocare Website Inquiry] - ${values.category} from ${values.name}`,
+            Name: values.name,
+            Email: values.email,
+            Phone: values.phone,
+            "Company / Facility": values.company || 'N/A',
+            "Product Interest": values.category,
+            Message: values.message
+          }),
         });
 
         if (response.ok) {
-          setSubmitStatus('success');
-          setValues(initialValues);
-          if (onSubmitSuccess) onSubmitSuccess();
+          const data = await response.json();
+          // FormSubmit AJAX returns success: "true" as a string
+          if (data.success === 'true' || data.success === true) {
+            setSubmitStatus('success');
+            setValues(initialValues);
+            if (onSubmitSuccess) onSubmitSuccess();
+          } else {
+            setSubmitStatus('error');
+            if (onSubmitError) onSubmitError();
+          }
         } else {
           setSubmitStatus('error');
           if (onSubmitError) onSubmitError();
