@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Joseph Maina",
+    "role": "Medical Superintendent",
+    "facility": "St. Mary's Family Hospital, Nairobi",
+    "text": "Biocare Health Systems provided us with the Dymind Hematology Analyzer and hydraulic delivery beds. Their installation team was extremely fast, and the training they provided to our laboratory technicians was top-tier. Highly recommended medical supplier in Kenya.",
+    "avatar": "/images/avatar-1.webp",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Sarah Chemutai",
+    "role": "Lab Director",
+    "facility": "Oakridge Diagnostic Labs, Eldoret",
+    "text": "Finding reliable reagents and analyzers is always a challenge. Biocare has been consistent with supplying high-quality Dymind DH36 reagents and maintaining our equipment. Our down-time has dropped to zero.",
+    "avatar": "/images/avatar-2.webp",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Eng. Patrick Omwamba",
+    "role": "Biomedical Engineer",
+    "facility": "Victoria Heights Clinic, Kisumu",
+    "text": "The build quality of the hydraulic obstetric beds and the complete dental unit from Biocare is outstanding. The equipment is robust, easy to clean, and matches international standards. Their technical support team responds within hours.",
+    "avatar": "/images/avatar-3.webp",
+    "rating": 5
+  }
+]

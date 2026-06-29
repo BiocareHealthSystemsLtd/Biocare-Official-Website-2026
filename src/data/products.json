@@ -1,0 +1,252 @@
+[
+  {
+    "id": "dymind-dh36",
+    "name": "Dymind Auto Hematology Analyzer DH36",
+    "category": "hematology",
+    "image": "/images/dymind-dh36.png",
+    "thumbnail": "/images/dymind-dh36.png",
+    "description": "3-part auto hematology analyzer delivering fast and reliable CBC results with only 9uL sample volume.",
+    "longDescription": "The Dymind DH36 is an exceptional 3-part auto hematology analyzer tailored for small to medium laboratories and clinics. It features highly accurate cellular classification, user-friendly touchscreen operation, and high throughput. With robust quality controls and low maintenance, it is Kenya's choice for daily hematology diagnostics.",
+    "specs": [
+      "Throughput: 60 tests per hour",
+      "Parameters: 21 reportable parameters + 3 histograms",
+      "Sample Volume: 9.0 µL (Whole Blood), 20 µL (Pre-diluted)",
+      "Display: 10.4-inch color touchscreen",
+      "Storage: Up to 50,000 results with histograms"
+    ],
+    "featured": true,
+    "onHotDeal": true,
+    "dealDiscount": "15% OFF Reagents Bundle",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "dymind-dh800",
+      "olympus-cx23"
+    ]
+  },
+  {
+    "id": "dymind-dh800",
+    "name": "Dymind AI Auto Hematology Analyzer DH-800",
+    "category": "hematology",
+    "image": "/images/dymind-dh800.png",
+    "thumbnail": "/images/dymind-dh800.png",
+    "description": "Advanced 5-part AI-driven hematology analyzer designed for high-volume hospital labs requiring complex analysis.",
+    "longDescription": "The Dymind DH-800 is a premium 5-part autoloader hematology analyzer integrating artificial intelligence and advanced flow cytometry. It provides complete white blood cell differentiation and flags abnormal cell shapes with supreme clinical accuracy, offering automated loading for uninterrupted lab workflows.",
+    "specs": [
+      "Throughput: Up to 90 tests per hour",
+      "Parameters: 29 reportable parameters + 3 3D scattergrams",
+      "Autoloader: 50 tubes capacity",
+      "Methodology: Laser semiconductor scatter combined with flow cytometry",
+      "AI Classification: Assisted detection of abnormal cells"
+    ],
+    "featured": true,
+    "onHotDeal": false,
+    "dealDiscount": "",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "dymind-dh36",
+      "olympus-cx23"
+    ]
+  },
+  {
+    "id": "huq-xray-printer",
+    "name": "HU.Q Dry Image X-Ray Film Printer",
+    "category": "imaging",
+    "image": "/images/huq_xray_printer.webp",
+    "thumbnail": "/images/huq_xray_printer.webp",
+    "description": "Medical dry thermographic film printer compatible with CT, MRI, and CR/DR digital radiography systems.",
+    "longDescription": "The HU.Q Dry Image printer utilizes state-of-the-art dry thermographic imaging technology. It prints high-density, sharp diagnostic-quality X-ray films without chemical processors. It features dual trays for multiple film sizes and operates at exceptionally low noise and maintenance costs.",
+    "specs": [
+      "Technology: Direct thermal dry printing",
+      "Film Sizes: 14x17 inch, 11x14 inch, 10x12 inch, 8x10 inch",
+      "Throughput: Up to 70 sheets per hour (14x17)",
+      "Resolution: 320 dpi (pixels per inch)",
+      "Connection: Standard DICOM 3.0 interface"
+    ],
+    "featured": true,
+    "onHotDeal": true,
+    "dealDiscount": "Free Starter Film Pack",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "portable-xray-beatle",
+      "perfox-3000a"
+    ]
+  },
+  {
+    "id": "hydraulic-delivery-bed",
+    "name": "Hydraulic Obstetric Delivery Bed",
+    "category": "furniture",
+    "image": "/images/hydraulic_bed.webp",
+    "thumbnail": "/images/hydraulic_bed.webp",
+    "description": "Heavy-duty hydraulic obstetric bed with multi-position settings, legs supports, and premium stainless steel framework.",
+    "longDescription": "Our Hydraulic Obstetric Delivery Bed is engineered for ultimate safety, ergonomics, and reliability in maternity wards. Adjusted via smooth hydraulic foot pedals and gas spring assists, it converts seamlessly between a standard bed, a comfortable chair, and a delivery table. It comes equipped with padded leg supports, handles, and a pull-out waste basin.",
+    "specs": [
+      "Height Adjustment: 650mm to 900mm (Hydraulic foot pedal)",
+      "Back Section: Adjusted via gas spring (0° to 75°)",
+      "Trendelenburg: ≥15° / Reverse Trendelenburg: ≥15°",
+      "Material: Anti-rust powder-coated steel & surgical-grade stainless steel",
+      "Accessories: Padded leg supports, knee crutches, stainless basin, hand grips"
+    ],
+    "featured": true,
+    "onHotDeal": false,
+    "dealDiscount": "",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "section-delivery-bed",
+      "labcold-150l-fridge"
+    ]
+  },
+  {
+    "id": "olympus-cx23",
+    "name": "Olympus Clinical Microscope CX23",
+    "category": "laboratory",
+    "image": "/images/olympus_cx23.webp",
+    "thumbnail": "/images/olympus_cx23.webp",
+    "description": "Ergonomic clinical microscope with high-durability LED illumination and outstanding plan achromatic objectives.",
+    "longDescription": "The Olympus CX23 microscope is globally recognized for educational and clinical laboratory applications. It features high-quality Plan Achromat objectives providing crisp, flat-field images over the entire field of view. Its lightweight, compact frame is easy to transport and built to survive busy lab schedules.",
+    "specs": [
+      "Optical System: Infinity-corrected optical system",
+      "Objectives: Plan Achromat 4X, 10X, 40X, 100X (Oil)",
+      "Eyepieces: 10X with field number 20",
+      "Illumination: Long-life LED light source (approx. 20,000 hours)",
+      "Focus: Coaxial coarse and fine focus adjustments"
+    ],
+    "featured": false,
+    "onHotDeal": true,
+    "dealDiscount": "10% OFF Bulk Lab Orders",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "dymind-dh36",
+      "labcold-150l-fridge"
+    ]
+  },
+  {
+    "id": "portable-xray-beatle",
+    "name": "Portable X-Ray Beatle Series",
+    "category": "imaging",
+    "image": "/images/portable_xray.webp",
+    "thumbnail": "/images/portable_xray.webp",
+    "description": "Compact, lightweight high-frequency mobile X-ray generator suitable for bedside radiography and remote outreach clinics.",
+    "longDescription": "The Beatle Series portable X-ray unit is designed for mobile diagnostics in ICUs, nursing homes, and emergency response teams. Offering powerful high-frequency output, it delivers exceptionally sharp digital images with low radiation doses. Easily mounted on collapsible mobile stands.",
+    "specs": [
+      "Output Power: 5.0 kW",
+      "Tube Voltage: 40 kV - 110 kV",
+      "Tube Current: 10 mA - 100 mA",
+      "Weight: Under 20 kg (Generator unit)",
+      "Power Supply: Single-phase 220V standard mains"
+    ],
+    "featured": true,
+    "onHotDeal": false,
+    "dealDiscount": "",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "huq-xray-printer",
+      "perfox-3000a"
+    ]
+  },
+  {
+    "id": "complete-dental-unit",
+    "name": "Biocare Premium Dental Unit & Chair",
+    "category": "dental",
+    "image": "/images/complete_dental.webp",
+    "thumbnail": "/images/complete_dental.webp",
+    "description": "Ergonomic electric dental chair with intelligent controls, LED sensor operating light, and doctor control panel.",
+    "longDescription": "Our complete Premium Dental Unit integrates advanced pneumatic dental control units with a luxurious, silent electromechanical patient chair. Features include a multi-functional foot control, rotational glass spittoon, high/low suction tubes, automatic thermostat water supply, and adjustable LED dental light with sensor control.",
+    "specs": [
+      "Chair System: 24V silent motor electromechanical drive",
+      "Water Unit: Rotating ceramic/glass spittoon with flush controls",
+      "Dental Light: Shadowless LED operating light with sensor dimming",
+      "Delivery System: Hanging type instrument tray with 3-way syringe",
+      "Doctor/Assistant Stools: Dynamic lumbar support leather stools included"
+    ],
+    "featured": true,
+    "onHotDeal": true,
+    "dealDiscount": "Free Compressor + Scaler Bundle",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "hydraulic-delivery-bed",
+      "perfox-3000a"
+    ]
+  },
+  {
+    "id": "perfox-3000a",
+    "name": "PerfoX 3000A Digital Radiography System",
+    "category": "imaging",
+    "image": "/images/perfox_3000a.webp",
+    "thumbnail": "/images/perfox_3000a.webp",
+    "description": "Floor-to-ceiling digital radiography system with high frequency generator and high-resolution flat panel detector.",
+    "longDescription": "The PerfoX 3000A is a heavy-duty floor-mounted digital radiography system designed for clinics and hospitals with high patient traffic. Equipped with an ergonomic floating tabletop, high thermal capacity X-ray tube, and premium flat-panel digital detector, it generates crisp chest, abdominal, and skeletal diagnostic scans.",
+    "specs": [
+      "Generator Power: 32 kW / 50 kW high frequency",
+      "Detector: 17x17 inch wireless Cesium Iodide (CsI) Flat Panel",
+      "Tabletop: 4-way floating bed with electromagnetic brakes",
+      "Imaging Workstation: DICOM PACS image processing system",
+      "Tube Movement: Floor-to-ceiling column rotation"
+    ],
+    "featured": false,
+    "onHotDeal": false,
+    "dealDiscount": "",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "huq-xray-printer",
+      "portable-xray-beatle"
+    ]
+  },
+  {
+    "id": "section-delivery-bed",
+    "name": "3-Section Mechanical Delivery Bed",
+    "category": "furniture",
+    "image": "/images/3section_bed.webp",
+    "thumbnail": "/images/3section_bed.webp",
+    "description": "3-section manual adjustment obstetric and labor bed with leg holders and removable side rails.",
+    "longDescription": "The 3-Section mechanical delivery bed offers standard versatility for rural clinics and maternal health centers. Easily adjusted using crank and manual gears, this bed is split into three modular panels (backrest, seat, and leg section) that slide under to convert into an obstetric chair.",
+    "specs": [
+      "Mechanism: Manual dual mechanical cranks",
+      "Material: Epoxy powder-coated carbon steel structure",
+      "Mattress: Waterproof, high-density foam cover (8cm thickness)",
+      "Leg Holders: Adjustable padded footrests & knee crutches",
+      "Mobility: Four castor wheels with double pedal brakes"
+    ],
+    "featured": false,
+    "onHotDeal": false,
+    "dealDiscount": "",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "hydraulic-delivery-bed",
+      "labcold-150l-fridge"
+    ]
+  },
+  {
+    "id": "labcold-150l-fridge",
+    "name": "Labcold 150L Laboratory Vaccine Refrigerator",
+    "category": "laboratory",
+    "image": "/images/labcold_fridge.webp",
+    "thumbnail": "/images/labcold_fridge.webp",
+    "description": "Medical-grade vaccine refrigerator with precise digital controller, high/low alarms, and fan-forced cooling.",
+    "longDescription": "The Labcold 150L vaccine refrigerator is a medical-grade cabinet engineered to keep reagents, blood samples, and vaccines between +2°C and +8°C. Built with security locks, digital records, and active fan-forced cooling, it complies with WHO cold chain standards for healthcare facilities.",
+    "specs": [
+      "Capacity: 150 Liters",
+      "Temperature Range: +2°C to +8°C",
+      "Controller: External digital temp controller and min/max recorder",
+      "Alarms: Audio/visual high/low temperature & door open alarms",
+      "Compliance: WHO and ISO 9001 certified"
+    ],
+    "featured": false,
+    "onHotDeal": true,
+    "dealDiscount": "5% OFF for Public Clinics",
+    "price": "Contact for Quote",
+    "googleDriveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder",
+    "relatedProducts": [
+      "olympus-cx23",
+      "dymind-dh36"
+    ]
+  }
+]

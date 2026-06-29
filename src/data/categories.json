@@ -1,0 +1,82 @@
+[
+  {
+    "id": "hematology",
+    "name": "Hematology Equipment",
+    "slug": "hematology",
+    "description": "Advanced automated blood cell counters, reagents, and diagnostic tools for medical clinics and hospitals.",
+    "icon": "HematologyIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "biochemistry",
+    "name": "Biochemistry Equipment",
+    "slug": "biochemistry",
+    "description": "High-precision chemistry analyzers, reagents, and clinical chemistry systems for laboratory diagnostic testing.",
+    "icon": "BiochemistryIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "imaging",
+    "name": "Imaging & Radiology",
+    "slug": "imaging",
+    "description": "Portable and stationary X-Ray systems, ultrasound scanners, and dry film printers for modern diagnostic imaging.",
+    "icon": "ImagingIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "furniture",
+    "name": "Hospital Furniture",
+    "slug": "furniture",
+    "description": "Ergonomic hydraulic delivery beds, electric ward beds, examination couches, and medical cabinets for patient comfort.",
+    "icon": "FurnitureIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "dental",
+    "name": "Dental Equipment",
+    "slug": "dental",
+    "description": "Complete dental chairs, units, scalpels, and specialized dental diagnostics and tools for oral healthcare.",
+    "icon": "DentalIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "laboratory",
+    "name": "Laboratory Equipment",
+    "slug": "laboratory",
+    "description": "Clinical microscopes, centrifuges, incubators, autoclaves, and diagnostic refrigeration systems.",
+    "icon": "LaboratoryIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "surgical",
+    "name": "Surgical Tools",
+    "slug": "surgical",
+    "description": "Sterile operation theatre equipment, surgical kits, autoclaves, and premium instruments.",
+    "icon": "SurgicalIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "emergency",
+    "name": "Emergency Equipment",
+    "slug": "emergency",
+    "description": "Defibrillators, mobile stretchers, oxygen concentrators, and portable resuscitators for rapid response.",
+    "icon": "EmergencyIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "icu",
+    "name": "ICU Equipment",
+    "slug": "icu",
+    "description": "Patient monitors, mechanical ventilators, infusion pumps, and critical care units for intensive support.",
+    "icon": "IcuIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  },
+  {
+    "id": "consumables",
+    "name": "Lab Consumables",
+    "slug": "consumables",
+    "description": "Reagents, test kits, blood tubes, pipettes, syringes, and daily disposables for clinical labs.",
+    "icon": "ConsumablesIcon",
+    "driveLink": "https://drive.google.com/drive/folders/1abc123_biocare_catalog_placeholder"
+  }
+]

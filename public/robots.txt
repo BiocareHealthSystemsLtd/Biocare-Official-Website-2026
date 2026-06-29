@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow Next.js internal paths and API routes
+Disallow: /_next/
+Disallow: /static/
+Disallow: /api/
+
+Sitemap: https://biocarehealthsystems.co.ke/sitemap.xml
