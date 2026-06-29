@@ -62,14 +62,18 @@ export default function useForm(initialValues, validate, onSubmitSuccess, onSubm
             setValues(initialValues);
             if (onSubmitSuccess) onSubmitSuccess();
           } else {
+            console.error('FormSubmit response success was false:', data);
             setSubmitStatus('error');
             if (onSubmitError) onSubmitError();
           }
         } else {
+          const errText = await response.text();
+          console.error('FormSubmit HTTP error:', response.status, errText);
           setSubmitStatus('error');
           if (onSubmitError) onSubmitError();
         }
       } catch (err) {
+        console.error('Form submit network or CORS error:', err);
         setSubmitStatus('error');
         if (onSubmitError) onSubmitError();
       } finally {
