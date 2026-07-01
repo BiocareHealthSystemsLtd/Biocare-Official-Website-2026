@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import Script from 'next/script';
+import { Analytics } from '@vercel/analytics/next';
 
 export default function App({ Component, pageProps }) {
   const gaId = process.env.NEXT_PUBLIC_GA_ID || 'G-PK1Q93GZP8';
@@ -27,6 +28,7 @@ export default function App({ Component, pageProps }) {
       />
       
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
