@@ -12,6 +12,14 @@ export default function Products() {
   const router = useRouter();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
+  const [visibleCount, setVisibleCount] = useState(12);
+  const [selectedProductId, setSelectedProductId] = useState(null);
+
+  // Reset pagination and selection when category or search changes
+  useEffect(() => {
+    setVisibleCount(12);
+    setSelectedProductId(null);
+  }, [selectedCategory, searchQuery]);
 
   // Sychronize states with URL parameters
   useEffect(() => {
@@ -61,6 +69,10 @@ export default function Products() {
       product.specs.some((spec) => spec.toLowerCase().includes(searchQuery.toLowerCase()));
     return matchesCategory && matchesSearch;
   });
+
+  const displayedProducts = selectedProductId
+    ? filteredProducts.filter((p) => p.id === selectedProductId)
+    : filteredProducts.slice(0, visibleCount);
 
   const breadcrumbs = [
     { name: 'Products & Equipment', path: '/products' }
@@ -170,17 +182,48 @@ export default function Products() {
               {/* Counter banner */}
               <div className="flex justify-between items-center text-xs text-gray-500 bg-white border border-gray-100 py-3 px-5 rounded-2xl">
                 <span>
-                  Showing <strong>{filteredProducts.length}</strong> items {selectedCategory !== 'all' ? `in ${selectedCategory}` : ''}
+                  Showing <strong>{displayedProducts.length}</strong> of <strong>{filteredProducts.length}</strong> items {selectedCategory !== 'all' ? `in ${selectedCategory}` : ''}
                 </span>
                 <span>Nairobi Delivery Options Available</span>
               </div>
 
               {/* Product cards listing */}
               {filteredProducts.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredProducts.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                  ))}
+                <div className="space-y-8">
+                  {selectedProductId ? (
+                    <div className="max-w-4xl mx-auto">
+                      {displayedProducts.map((product) => (
+                        <ProductCard
+                          key={product.id}
+                          product={product}
+                          isSelected={true}
+                          onClear={() => setSelectedProductId(null)}
+                        />
+                      ))}
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {displayedProducts.map((product) => (
+                        <ProductCard
+                          key={product.id}
+                          product={product}
+                          isSelected={false}
+                          onSelect={() => setSelectedProductId(product.id)}
+                        />
+                      ))}
+                    </div>
+                  )}
+                  
+                  {!selectedProductId && visibleCount < filteredProducts.length && (
+                    <div className="text-center py-6 border-t border-gray-100">
+                      <button
+                        onClick={() => setVisibleCount((prev) => prev + 12)}
+                        className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-2.5 px-8 rounded-lg text-xs transition-colors shadow-sm inline-block hover:-translate-y-0.5 duration-200 transform"
+                      >
+                        Load More Products
+                      </button>
+                    </div>
+                  )}
                 </div>
               ) : (
                 <div className="bg-white border border-gray-200 rounded-3xl p-12 text-center space-y-4">
