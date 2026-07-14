@@ -475,8 +475,7 @@
     "price": "Contact for Quote",
     "googleDriveLink": "",
     "relatedProducts": [
-      "agd-2020-semi-automated-chemistry-analyzer",
-      "blood-gas-analyzer-edan-i15"
+      "agd-2020-semi-automated-chemistry-analyzer"
     ]
   },
   {
@@ -1878,8 +1877,7 @@
     "price": "Contact for Quote",
     "googleDriveLink": "",
     "relatedProducts": [
-      "i-cubio-ichem-535-semi-automated-chemistry-analyzer",
-      "blood-gas-analyzer-edan-i15"
+      "i-cubio-ichem-535-semi-automated-chemistry-analyzer"
     ]
   },
   {
@@ -5218,29 +5216,6 @@
     ]
   },
   {
-    "id": "blood-gas-analyzer-edan-i15",
-    "name": "BLOOD GAS ANALYZER - EDAN i15",
-    "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
-    "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
-    "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
-    "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
-      "Stability: Extended shelf-life",
-      "Application: Fully automated & semi-automated systems"
-    ],
-    "featured": false,
-    "onHotDeal": false,
-    "dealDiscount": "",
-    "price": "Contact for Quote",
-    "googleDriveLink": "",
-    "relatedProducts": [
-      "i-cubio-ichem-535-semi-automated-chemistry-analyzer",
-      "agd-2020-semi-automated-chemistry-analyzer"
-    ]
-  },
-  {
     "id": "blood-group-machine",
     "name": "BLOOD GROUP MACHINE",
     "category": "consumables",
@@ -6434,29 +6409,6 @@
     "relatedProducts": [
       "anti-a-blood-grouping-serum",
       "autoclave-50l"
-    ]
-  },
-  {
-    "id": "bioelab-as-160-chemistry-analyzer",
-    "name": "Bioelab AS 160 chemistry analyzer",
-    "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
-    "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
-    "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
-    "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
-      "Stability: Extended shelf-life",
-      "Application: Fully automated & semi-automated systems"
-    ],
-    "featured": false,
-    "onHotDeal": false,
-    "dealDiscount": "",
-    "price": "Contact for Quote",
-    "googleDriveLink": "",
-    "relatedProducts": [
-      "i-cubio-ichem-535-semi-automated-chemistry-analyzer",
-      "agd-2020-semi-automated-chemistry-analyzer"
     ]
   },
   {
@@ -28126,29 +28078,6 @@
     ]
   },
   {
-    "id": "pkl-fully-auto-chemistry-analyzer",
-    "name": "PKL Fully auto chemistry analyzer",
-    "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
-    "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
-    "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
-    "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
-      "Stability: Extended shelf-life",
-      "Application: Fully automated & semi-automated systems"
-    ],
-    "featured": false,
-    "onHotDeal": false,
-    "dealDiscount": "",
-    "price": "Contact for Quote",
-    "googleDriveLink": "",
-    "relatedProducts": [
-      "i-cubio-ichem-535-semi-automated-chemistry-analyzer",
-      "agd-2020-semi-automated-chemistry-analyzer"
-    ]
-  },
-  {
     "id": "pkl-mixer-sensor",
     "name": "PKL Mixer Sensor",
     "category": "consumables",
@@ -31182,52 +31111,6 @@
     "relatedProducts": [
       "bipap-yamind",
       "boaray-5000d-ventilator-with-compressor"
-    ]
-  },
-  {
-    "id": "sha-100-anbio-dry-chemistry-analyzer",
-    "name": "SHA-100 Anbio Dry Chemistry Analyzer",
-    "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
-    "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
-    "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
-    "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
-      "Stability: Extended shelf-life",
-      "Application: Fully automated & semi-automated systems"
-    ],
-    "featured": false,
-    "onHotDeal": false,
-    "dealDiscount": "",
-    "price": "Contact for Quote",
-    "googleDriveLink": "",
-    "relatedProducts": [
-      "i-cubio-ichem-535-semi-automated-chemistry-analyzer",
-      "agd-2020-semi-automated-chemistry-analyzer"
-    ]
-  },
-  {
-    "id": "sha-200-anbio-dry-chemistry-analyzer",
-    "name": "SHA-200 Anbio Dry Chemistry Analyzer",
-    "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
-    "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
-    "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
-    "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
-      "Stability: Extended shelf-life",
-      "Application: Fully automated & semi-automated systems"
-    ],
-    "featured": false,
-    "onHotDeal": false,
-    "dealDiscount": "",
-    "price": "Contact for Quote",
-    "googleDriveLink": "",
-    "relatedProducts": [
-      "i-cubio-ichem-535-semi-automated-chemistry-analyzer",
-      "agd-2020-semi-automated-chemistry-analyzer"
     ]
   },
   {
