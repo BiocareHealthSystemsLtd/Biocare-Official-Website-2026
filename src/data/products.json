@@ -1147,29 +1147,6 @@
     ]
   },
   {
-    "id": "3-part-hematology-analyzer-dh36-dymind",
-    "name": "3 Part Hematology Analyzer DH36 (Dymind)",
-    "category": "hematology",
-    "image": "/images/3-part-hematology-analyzer-dh36-dymind.png",
-    "thumbnail": "/images/3-part-hematology-analyzer-dh36-dymind.png",
-    "description": "Advanced clinical hematology solution for cellular blood analysis.",
-    "longDescription": "Designed for clinical laboratories, this hematology analyzer or consumable ensures accurate cell counts and reliable results for patient diagnosis.",
-    "specs": [
-      "Precision: High reproducibility",
-      "Method: Standard impedance / flow cytometry",
-      "Sample volume: Low sample intake requirement"
-    ],
-    "featured": false,
-    "onHotDeal": false,
-    "dealDiscount": "",
-    "price": "Contact for Quote",
-    "googleDriveLink": "",
-    "relatedProducts": [
-      "dymind-dh36",
-      "dymind-dh800"
-    ]
-  },
-  {
     "id": "3-ply-mask",
     "name": "3 ply mask",
     "category": "consumables",
@@ -1466,29 +1443,6 @@
     "relatedProducts": [
       "anti-a-blood-grouping-serum",
       "autoclave-50l"
-    ]
-  },
-  {
-    "id": "6-part-hematology-analyzer-dh800-dymind",
-    "name": "6 Part Hematology Analyzer DH800 (Dymind)",
-    "category": "hematology",
-    "image": "/images/6-part-hematology-analyzer-dh800-dymind.png",
-    "thumbnail": "/images/6-part-hematology-analyzer-dh800-dymind.png",
-    "description": "Advanced clinical hematology solution for cellular blood analysis.",
-    "longDescription": "Designed for clinical laboratories, this hematology analyzer or consumable ensures accurate cell counts and reliable results for patient diagnosis.",
-    "specs": [
-      "Precision: High reproducibility",
-      "Method: Standard impedance / flow cytometry",
-      "Sample volume: Low sample intake requirement"
-    ],
-    "featured": false,
-    "onHotDeal": false,
-    "dealDiscount": "",
-    "price": "Contact for Quote",
-    "googleDriveLink": "",
-    "relatedProducts": [
-      "dymind-dh36",
-      "dymind-dh800"
     ]
   },
   {
