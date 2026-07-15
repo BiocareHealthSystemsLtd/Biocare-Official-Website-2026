@@ -10,7 +10,7 @@
     "specs": [
       "Throughput: 60 tests per hour",
       "Parameters: 21 reportable parameters + 3 histograms",
-      "Sample Volume: 9.0 µL (Whole Blood), 20 µL (Pre-diluted)",
+      "Sample Volume: 9.0 \u00b5L (Whole Blood), 20 \u00b5L (Pre-diluted)",
       "Display: 10.4-inch color touchscreen",
       "Storage: Up to 50,000 results with histograms"
     ],
@@ -84,8 +84,8 @@
     "longDescription": "Our Hydraulic Obstetric Delivery Bed is engineered for ultimate safety, ergonomics, and reliability in maternity wards. Adjusted via smooth hydraulic foot pedals and gas spring assists, it converts seamlessly between a standard bed, a comfortable chair, and a delivery table. It comes equipped with padded leg supports, handles, and a pull-out waste basin.",
     "specs": [
       "Height Adjustment: 650mm to 900mm (Hydraulic foot pedal)",
-      "Back Section: Adjusted via gas spring (0° to 75°)",
-      "Trendelenburg: ≥15° / Reverse Trendelenburg: ≥15°",
+      "Back Section: Adjusted via gas spring (0\u00b0 to 75\u00b0)",
+      "Trendelenburg: \u226515\u00b0 / Reverse Trendelenburg: \u226515\u00b0",
       "Material: Anti-rust powder-coated steel & surgical-grade stainless steel",
       "Accessories: Padded leg supports, knee crutches, stainless basin, hand grips"
     ],
@@ -231,10 +231,10 @@
     "image": "/images/labcold_fridge.webp",
     "thumbnail": "/images/labcold_fridge.webp",
     "description": "Medical-grade vaccine refrigerator with precise digital controller, high/low alarms, and fan-forced cooling.",
-    "longDescription": "The Labcold 150L vaccine refrigerator is a medical-grade cabinet engineered to keep reagents, blood samples, and vaccines between +2°C and +8°C. Built with security locks, digital records, and active fan-forced cooling, it complies with WHO cold chain standards for healthcare facilities.",
+    "longDescription": "The Labcold 150L vaccine refrigerator is a medical-grade cabinet engineered to keep reagents, blood samples, and vaccines between +2\u00b0C and +8\u00b0C. Built with security locks, digital records, and active fan-forced cooling, it complies with WHO cold chain standards for healthcare facilities.",
     "specs": [
       "Capacity: 150 Liters",
-      "Temperature Range: +2°C to +8°C",
+      "Temperature Range: +2\u00b0C to +8\u00b0C",
       "Controller: External digital temp controller and min/max recorder",
       "Alarms: Audio/visual high/low temperature & door open alarms",
       "Compliance: WHO and ISO 9001 certified"
@@ -351,7 +351,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -460,12 +460,12 @@
     "id": "i-cubio-ichem-535-semi-automated-chemistry-analyzer",
     "name": "I-Cubio iChem 535 Semi Automated chemistry analyzer",
     "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
+    "image": "/images/i-cubio-ichem-535-semi-automated-chemistry-analyzer.png",
+    "thumbnail": "/images/i-cubio-ichem-535-semi-automated-chemistry-analyzer.png",
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -1063,7 +1063,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -1362,7 +1362,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -1684,7 +1684,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -1707,7 +1707,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -1862,12 +1862,12 @@
     "id": "agd-2020-semi-automated-chemistry-analyzer",
     "name": "AGD 2020 Semi automated chemistry analyzer",
     "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
+    "image": "/images/agd-2020-semi-automated-chemistry-analyzer.png",
+    "thumbnail": "/images/agd-2020-semi-automated-chemistry-analyzer.png",
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -2051,7 +2051,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2143,7 +2143,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2189,7 +2189,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2235,7 +2235,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2281,7 +2281,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2304,7 +2304,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2534,7 +2534,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2787,7 +2787,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -3362,7 +3362,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -3385,7 +3385,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -3868,7 +3868,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -4259,7 +4259,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -5041,7 +5041,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -6068,7 +6068,7 @@
   },
   {
     "id": "beta-human-chorionic-gonadotropin-hcg-cybereagen-kit",
-    "name": "Beta- Human Chorionic Gonadotropin (β-HCG) Cybereagen Kit",
+    "name": "Beta- Human Chorionic Gonadotropin (\u03b2-HCG) Cybereagen Kit",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -6076,7 +6076,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -6651,7 +6651,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7226,7 +7226,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7548,7 +7548,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7594,7 +7594,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7663,7 +7663,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7732,7 +7732,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7778,7 +7778,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -8583,7 +8583,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -8698,7 +8698,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -8721,7 +8721,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -8882,7 +8882,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9043,7 +9043,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9595,7 +9595,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9618,7 +9618,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9664,7 +9664,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9756,7 +9756,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9802,7 +9802,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9986,7 +9986,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10331,7 +10331,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10837,7 +10837,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10860,7 +10860,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10883,7 +10883,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10929,7 +10929,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11199,12 +11199,12 @@
     "id": "cybereagen-chemiluminescence-immunoassay-analyzer-machine",
     "name": "Cybereagen Chemiluminescence Immunoassay Analyzer machine",
     "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
+    "image": "/images/cybereagen-chemiluminescence-immunoassay-analyzer-machine.jpg",
+    "thumbnail": "/images/cybereagen-chemiluminescence-immunoassay-analyzer-machine.jpg",
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -11251,7 +11251,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11389,7 +11389,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11504,7 +11504,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11849,7 +11849,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11872,7 +11872,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -12263,7 +12263,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -13114,7 +13114,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -13873,7 +13873,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -13896,7 +13896,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -14724,7 +14724,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -15230,7 +15230,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -15345,7 +15345,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -15805,7 +15805,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -16817,7 +16817,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -16955,7 +16955,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -16978,7 +16978,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -17231,7 +17231,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -17254,7 +17254,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -18266,7 +18266,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -18427,7 +18427,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -18496,7 +18496,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -18795,7 +18795,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19094,7 +19094,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19117,7 +19117,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19209,7 +19209,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19370,7 +19370,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19393,7 +19393,7 @@
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19577,7 +19577,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -20152,7 +20152,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21601,7 +21601,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21624,7 +21624,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21808,7 +21808,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21831,7 +21831,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21992,7 +21992,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -23671,7 +23671,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24131,7 +24131,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24154,7 +24154,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24200,7 +24200,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24246,7 +24246,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24407,7 +24407,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -25212,7 +25212,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -25948,7 +25948,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28156,7 +28156,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28179,7 +28179,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28202,7 +28202,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28363,7 +28363,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28409,7 +28409,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28570,7 +28570,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28639,7 +28639,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28731,7 +28731,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -29260,7 +29260,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -29582,7 +29582,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -29712,7 +29712,7 @@
   },
   {
     "id": "potassium-electrode-k-electrode",
-    "name": "Potassium Electrode (K⁺ Electrode)",
+    "name": "Potassium Electrode (K\u207a Electrode)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -30042,7 +30042,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -30157,7 +30157,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -30502,7 +30502,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -30548,7 +30548,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -30893,7 +30893,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31002,12 +31002,12 @@
     "id": "sd1-seamaty-fully-automated-dry-chemistry-analyzer",
     "name": "SD1 Seamaty Fully Automated Dry chemistry analyzer",
     "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
+    "image": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
+    "thumbnail": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -31307,7 +31307,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31468,7 +31468,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31491,7 +31491,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31692,12 +31692,12 @@
     "id": "seamaty-blood-gas-analyzer-sg1",
     "name": "Seamaty Blood Gas Analyzer (SG1)",
     "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
+    "image": "/images/seamaty-blood-gas-analyzer-sg1.jpg",
+    "thumbnail": "/images/seamaty-blood-gas-analyzer-sg1.jpg",
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -31767,7 +31767,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31859,7 +31859,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -32112,7 +32112,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -32871,7 +32871,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33285,7 +33285,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33469,7 +33469,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33492,7 +33492,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33538,7 +33538,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33561,7 +33561,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33607,7 +33607,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33768,7 +33768,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33952,7 +33952,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33975,7 +33975,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34251,7 +34251,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34274,7 +34274,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34297,7 +34297,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34320,7 +34320,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34343,7 +34343,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34918,7 +34918,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35010,7 +35010,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35056,7 +35056,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35263,7 +35263,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35539,7 +35539,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35815,7 +35815,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35838,7 +35838,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35930,7 +35930,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -36505,7 +36505,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -37327,12 +37327,12 @@
     "id": "zybio-exc200-fully-automated-chemistry-analyzer",
     "name": "Zybio EXC200 Fully Automated Chemistry Analyzer",
     "category": "biochemistry",
-    "image": "",
-    "thumbnail": "",
+    "image": "/images/zybio-exc200-fully-automated-chemistry-analyzer.png",
+    "thumbnail": "/images/zybio-exc200-fully-automated-chemistry-analyzer.png",
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -37724,7 +37724,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -37739,7 +37739,7 @@
   },
   {
     "id": "-amylase-sdi",
-    "name": "α- Amylase (SDI)",
+    "name": "\u03b1- Amylase (SDI)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37762,7 +37762,7 @@
   },
   {
     "id": "-amylase-kit-zybio",
-    "name": "α-Amylase Kit (Zybio)",
+    "name": "\u03b1-Amylase Kit (Zybio)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37770,7 +37770,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -37785,7 +37785,7 @@
   },
   {
     "id": "-hcg-anbio",
-    "name": "β-HCG Anbio",
+    "name": "\u03b2-HCG Anbio",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37808,7 +37808,7 @@
   },
   {
     "id": "-hcg-anbio-control",
-    "name": "β-HCG Anbio Control",
+    "name": "\u03b2-HCG Anbio Control",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37831,7 +37831,7 @@
   },
   {
     "id": "-gt-sdi",
-    "name": "λ- GT (SDI)",
+    "name": "\u03bb- GT (SDI)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37854,7 +37854,7 @@
   },
   {
     "id": "-gt-kit-zybio",
-    "name": "λ-GT Kit (Zybio)",
+    "name": "\u03bb-GT Kit (Zybio)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37862,7 +37862,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
