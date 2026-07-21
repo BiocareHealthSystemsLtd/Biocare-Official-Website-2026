@@ -91,15 +91,6 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
                 <WhatsAppIcon className="w-4 h-4" />
                 <span>Get Quotation</span>
               </Link>
-              
-              <Link
-                href={product.googleDriveLink || siteConfig.googleDriveCatalog}
-                target="_blank"
-                className="w-full sm:w-auto bg-transparent border border-gray-300 hover:bg-slate-50 text-gray-700 text-center font-bold py-3 px-6 rounded-lg text-xs uppercase tracking-wider transition-colors flex items-center justify-center"
-                aria-label={`Download PDF brochure for ${product.name}`}
-              >
-                Download Brochure
-              </Link>
             </div>
           </div>
         </div>
@@ -173,26 +164,17 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
 
       {/* Action Buttons */}
       <div 
-        className="p-5 pt-0 mt-auto grid grid-cols-2 gap-2" 
+        className="p-5 pt-0 mt-auto flex flex-col" 
         onClick={(e) => e.stopPropagation()}
       >
         <Link
           href={whatsappUrl}
           target="_blank"
-          className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#20ba56] hover:to-[#0e6b60] text-white font-bold py-2 px-3 rounded-lg text-[10px] uppercase tracking-wider transition-all duration-300 flex items-center justify-center space-x-1.5 shadow-md shadow-emerald-500/10 hover:shadow-emerald-500/25 hover:-translate-y-0.5"
+          className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#20ba56] hover:to-[#0e6b60] text-white font-bold py-2 px-3 rounded-lg text-[10px] uppercase tracking-wider transition-all duration-300 flex items-center justify-center space-x-1.5 shadow-md shadow-emerald-500/10 hover:shadow-emerald-500/25 hover:-translate-y-0.5 w-full"
           aria-label={`Get quote on WhatsApp for ${product.name}`}
         >
           <WhatsAppIcon className="w-3.5 h-3.5" />
           <span>Get Quote</span>
-        </Link>
-        
-        <Link
-          href={product.googleDriveLink || siteConfig.googleDriveCatalog}
-          target="_blank"
-          className="bg-transparent border border-gray-300 hover:bg-slate-50 text-gray-700 text-center font-bold py-2 rounded text-[10px] uppercase tracking-wider transition-colors flex items-center justify-center"
-          aria-label={`Download PDF brochure for ${product.name}`}
-        >
-          Brochure
         </Link>
       </div>
     </div>
