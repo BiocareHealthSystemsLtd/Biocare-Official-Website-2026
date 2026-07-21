@@ -10,7 +10,7 @@
     "specs": [
       "Throughput: 60 tests per hour",
       "Parameters: 21 reportable parameters + 3 histograms",
-      "Sample Volume: 9.0 µL (Whole Blood), 20 µL (Pre-diluted)",
+      "Sample Volume: 9.0 \u00b5L (Whole Blood), 20 \u00b5L (Pre-diluted)",
       "Display: 10.4-inch color touchscreen",
       "Storage: Up to 50,000 results with histograms"
     ],
@@ -84,8 +84,8 @@
     "longDescription": "Our Hydraulic Obstetric Delivery Bed is engineered for ultimate safety, ergonomics, and reliability in maternity wards. Adjusted via smooth hydraulic foot pedals and gas spring assists, it converts seamlessly between a standard bed, a comfortable chair, and a delivery table. It comes equipped with padded leg supports, handles, and a pull-out waste basin.",
     "specs": [
       "Height Adjustment: 650mm to 900mm (Hydraulic foot pedal)",
-      "Back Section: Adjusted via gas spring (0° to 75°)",
-      "Trendelenburg: ≥15° / Reverse Trendelenburg: ≥15°",
+      "Back Section: Adjusted via gas spring (0\u00b0 to 75\u00b0)",
+      "Trendelenburg: \u226515\u00b0 / Reverse Trendelenburg: \u226515\u00b0",
       "Material: Anti-rust powder-coated steel & surgical-grade stainless steel",
       "Accessories: Padded leg supports, knee crutches, stainless basin, hand grips"
     ],
@@ -231,10 +231,10 @@
     "image": "/images/labcold_fridge.webp",
     "thumbnail": "/images/labcold_fridge.webp",
     "description": "Medical-grade vaccine refrigerator with precise digital controller, high/low alarms, and fan-forced cooling.",
-    "longDescription": "The Labcold 150L vaccine refrigerator is a medical-grade cabinet engineered to keep reagents, blood samples, and vaccines between +2°C and +8°C. Built with security locks, digital records, and active fan-forced cooling, it complies with WHO cold chain standards for healthcare facilities.",
+    "longDescription": "The Labcold 150L vaccine refrigerator is a medical-grade cabinet engineered to keep reagents, blood samples, and vaccines between +2\u00b0C and +8\u00b0C. Built with security locks, digital records, and active fan-forced cooling, it complies with WHO cold chain standards for healthcare facilities.",
     "specs": [
       "Capacity: 150 Liters",
-      "Temperature Range: +2°C to +8°C",
+      "Temperature Range: +2\u00b0C to +8\u00b0C",
       "Controller: External digital temp controller and min/max recorder",
       "Alarms: Audio/visual high/low temperature & door open alarms",
       "Compliance: WHO and ISO 9001 certified"
@@ -351,7 +351,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -465,7 +465,7 @@
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -1063,7 +1063,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -1362,7 +1362,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -1684,7 +1684,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -1707,7 +1707,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -1867,7 +1867,7 @@
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -2051,7 +2051,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2143,7 +2143,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2189,7 +2189,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2235,7 +2235,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2281,7 +2281,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2304,7 +2304,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2534,7 +2534,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -2787,7 +2787,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -3362,7 +3362,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -3385,7 +3385,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -3868,7 +3868,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -3908,7 +3908,7 @@
     "id": "anaesthetic-trolley",
     "name": "Anaesthetic trolley",
     "category": "furniture",
-    "image": "/images/furniture/anaesthetic-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -4046,7 +4046,7 @@
     "id": "anesthetic-trolley",
     "name": "Anesthetic trolley",
     "category": "furniture",
-    "image": "/images/furniture/anesthetic-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -4259,7 +4259,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -5041,7 +5041,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -5633,7 +5633,7 @@
     "id": "baby-bassinet",
     "name": "Baby Bassinet",
     "category": "furniture",
-    "image": "/images/furniture/baby-bassinet.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -5656,7 +5656,7 @@
     "id": "baby-cot",
     "name": "Baby cot",
     "category": "furniture",
-    "image": "/images/furniture/baby-cot.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -5886,7 +5886,7 @@
     "id": "bed-covers",
     "name": "Bed covers",
     "category": "furniture",
-    "image": "/images/furniture/bed-covers.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -5909,7 +5909,7 @@
     "id": "bed-pan-metallic",
     "name": "Bed pan metallic",
     "category": "furniture",
-    "image": "/images/furniture/bed-pan-metallic.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -5932,7 +5932,7 @@
     "id": "bed-sheet",
     "name": "Bed sheet",
     "category": "furniture",
-    "image": "/images/furniture/bed-sheet.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -5955,7 +5955,7 @@
     "id": "bedpan",
     "name": "Bedpan",
     "category": "furniture",
-    "image": "/images/furniture/bedpan.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -5978,7 +5978,7 @@
     "id": "bedside-lockers-abs",
     "name": "Bedside lockers (ABS)",
     "category": "furniture",
-    "image": "/images/furniture/bedside-lockers-abs.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -6001,7 +6001,7 @@
     "id": "bedside-lockers-metallic",
     "name": "Bedside lockers (Metallic)",
     "category": "furniture",
-    "image": "/images/furniture/bedside-lockers-metallic.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -6068,7 +6068,7 @@
   },
   {
     "id": "beta-human-chorionic-gonadotropin-hcg-cybereagen-kit",
-    "name": "Beta- Human Chorionic Gonadotropin (β-HCG) Cybereagen Kit",
+    "name": "Beta- Human Chorionic Gonadotropin (\u03b2-HCG) Cybereagen Kit",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -6076,7 +6076,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -6651,7 +6651,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7226,7 +7226,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7548,7 +7548,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7594,7 +7594,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7663,7 +7663,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7732,7 +7732,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -7778,7 +7778,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -8583,7 +8583,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -8698,7 +8698,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -8721,7 +8721,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -8882,7 +8882,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9043,7 +9043,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9595,7 +9595,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9618,7 +9618,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9664,7 +9664,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9756,7 +9756,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9802,7 +9802,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -9986,7 +9986,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10331,7 +10331,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10762,7 +10762,7 @@
     "id": "crashcartemergency-trolley",
     "name": "Crashcart/Emergency trolley",
     "category": "furniture",
-    "image": "/images/furniture/crashcartemergency-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -10837,7 +10837,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10860,7 +10860,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10883,7 +10883,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -10929,7 +10929,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11204,7 +11204,7 @@
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -11251,7 +11251,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11389,7 +11389,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11504,7 +11504,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11797,7 +11797,7 @@
     "id": "delivery-bed",
     "name": "Delivery Bed",
     "category": "furniture",
-    "image": "/images/furniture/delivery-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -11849,7 +11849,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -11872,7 +11872,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -12263,7 +12263,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -13114,7 +13114,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -13361,7 +13361,7 @@
     "id": "doctors-stool",
     "name": "Doctor's stool",
     "category": "furniture",
-    "image": "/images/furniture/doctors-stool.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -13384,7 +13384,7 @@
     "id": "double-crank-mattress-with-mackintosh",
     "name": "Double Crank mattress with mackintosh",
     "category": "furniture",
-    "image": "/images/furniture/double-crank-mattress-with-mackintosh.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -13407,7 +13407,7 @@
     "id": "double-crank-bed",
     "name": "Double crank bed",
     "category": "furniture",
-    "image": "/images/furniture/double-crank-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -13430,7 +13430,7 @@
     "id": "double-crank-bed-with-matress",
     "name": "Double crank bed with Matress",
     "category": "furniture",
-    "image": "/images/furniture/double-crank-bed-with-matress.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -13522,7 +13522,7 @@
     "id": "dressing-trolley",
     "name": "Dressing trolley",
     "category": "furniture",
-    "image": "/images/furniture/dressing-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -13873,7 +13873,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -13896,7 +13896,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -14120,7 +14120,7 @@
     "id": "el-120-display-screen",
     "name": "EL-120 Display screen",
     "category": "furniture",
-    "image": "/images/furniture/el-120-display-screen.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -14724,7 +14724,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -14764,7 +14764,7 @@
     "id": "electric-double-crank-bed",
     "name": "Electric Double Crank Bed",
     "category": "furniture",
-    "image": "/images/furniture/electric-double-crank-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -14787,7 +14787,7 @@
     "id": "electric-three-function-bed",
     "name": "Electric Three Function Bed",
     "category": "furniture",
-    "image": "/images/furniture/electric-three-function-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -15017,7 +15017,7 @@
     "id": "embedding-tissue-casettes-p250",
     "name": "Embedding tissue casettes p/250",
     "category": "furniture",
-    "image": "/images/furniture/embedding-tissue-casettes-p250.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -15155,7 +15155,7 @@
     "id": "ergonomic-lab-stool",
     "name": "Ergonomic Lab stool",
     "category": "furniture",
-    "image": "/images/furniture/ergonomic-lab-stool.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -15230,7 +15230,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -15345,7 +15345,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -15569,7 +15569,7 @@
     "id": "examination-couch",
     "name": "Examination couch",
     "category": "furniture",
-    "image": "/images/furniture/examination-couch.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -15805,7 +15805,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -16650,7 +16650,7 @@
     "id": "five-function-bed",
     "name": "Five Function Bed",
     "category": "furniture",
-    "image": "/images/furniture/five-function-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -16817,7 +16817,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -16857,7 +16857,7 @@
     "id": "food-trolley",
     "name": "Food trolley",
     "category": "furniture",
-    "image": "/images/furniture/food-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -16955,7 +16955,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -16978,7 +16978,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -17231,7 +17231,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -17254,7 +17254,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -17593,7 +17593,7 @@
     "id": "gas-trolley",
     "name": "GAS TROLLEY",
     "category": "furniture",
-    "image": "/images/furniture/gas-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -17869,7 +17869,7 @@
     "id": "gynacology-examination-bed",
     "name": "GYNACOLOGY EXAMINATION BED",
     "category": "furniture",
-    "image": "/images/furniture/gynacology-examination-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -18266,7 +18266,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -18427,7 +18427,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -18496,7 +18496,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -18697,7 +18697,7 @@
     "id": "gynaecology-bed",
     "name": "Gynaecology bed",
     "category": "furniture",
-    "image": "/images/furniture/gynaecology-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -18795,7 +18795,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19094,7 +19094,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19117,7 +19117,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19209,7 +19209,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19370,7 +19370,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19387,13 +19387,13 @@
     "id": "hiv-kit-p100-trinscreen",
     "name": "HIV Kit p/100- Trinscreen",
     "category": "furniture",
-    "image": "/images/furniture/hiv-kit-p100-trinscreen.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Clinical rapid diagnostic test kit / reagent bundle.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -19577,7 +19577,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -20152,7 +20152,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -20629,7 +20629,7 @@
     "id": "icu-bed-with-mattress",
     "name": "ICU bed with mattress",
     "category": "furniture",
-    "image": "/images/furniture/icu-bed-with-mattress.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -21020,7 +21020,7 @@
     "id": "imported-single-crank-bedabs",
     "name": "Imported Single crank bed(ABS)",
     "category": "furniture",
-    "image": "/images/furniture/imported-single-crank-bedabs.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -21043,7 +21043,7 @@
     "id": "imported-single-crank-bedabs-with-mattress",
     "name": "Imported Single crank bed(ABS) with Mattress",
     "category": "furniture",
-    "image": "/images/furniture/imported-single-crank-bedabs-with-mattress.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -21273,7 +21273,7 @@
     "id": "instrument-trolley",
     "name": "Instrument trolley",
     "category": "furniture",
-    "image": "/images/furniture/instrument-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -21296,7 +21296,7 @@
     "id": "instrument-trolley-local",
     "name": "Instrument trolley Local",
     "category": "furniture",
-    "image": "/images/furniture/instrument-trolley-local.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -21601,7 +21601,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21624,7 +21624,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21808,7 +21808,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21831,7 +21831,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -21992,7 +21992,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -23113,7 +23113,7 @@
     "id": "linen-trolley",
     "name": "Linen trolley",
     "category": "furniture",
-    "image": "/images/furniture/linen-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -23504,7 +23504,7 @@
     "id": "locally-made-single-crank-bed",
     "name": "Locally made Single crank bed",
     "category": "furniture",
-    "image": "/images/furniture/locally-made-single-crank-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -23527,7 +23527,7 @@
     "id": "locally-made-single-crank-bed-with-matress",
     "name": "Locally made Single crank bed with Matress",
     "category": "furniture",
-    "image": "/images/furniture/locally-made-single-crank-bed-with-matress.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -23671,7 +23671,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -23780,7 +23780,7 @@
     "id": "massage-bed",
     "name": "MASSAGE BED",
     "category": "furniture",
-    "image": "/images/furniture/massage-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -23872,7 +23872,7 @@
     "id": "mayo-trolley",
     "name": "MAYO TROLLEY",
     "category": "furniture",
-    "image": "/images/furniture/mayo-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -24131,7 +24131,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24154,7 +24154,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24200,7 +24200,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24246,7 +24246,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24407,7 +24407,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -24792,7 +24792,7 @@
     "id": "manual-double-crank-bed",
     "name": "Manual Double Crank Bed",
     "category": "furniture",
-    "image": "/images/furniture/manual-double-crank-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -24815,7 +24815,7 @@
     "id": "manual-three-function-bed",
     "name": "Manual Three Function Bed",
     "category": "furniture",
-    "image": "/images/furniture/manual-three-function-bed.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -24884,7 +24884,7 @@
     "id": "maternity-stool",
     "name": "Maternity stool",
     "category": "furniture",
-    "image": "/images/furniture/maternity-stool.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -25091,7 +25091,7 @@
     "id": "medicine-trolley",
     "name": "Medicine trolley",
     "category": "furniture",
-    "image": "/images/furniture/medicine-trolley.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -25212,7 +25212,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -25948,7 +25948,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -27322,7 +27322,7 @@
     "id": "overbed-table",
     "name": "Overbed table",
     "category": "furniture",
-    "image": "/images/furniture/overbed-table.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic clinical ward bed with multi-position settings.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -27460,7 +27460,7 @@
     "id": "oxygen-trolley-big",
     "name": "Oxygen Trolley- Big",
     "category": "furniture",
-    "image": "/images/furniture/oxygen-trolley-big.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -27483,7 +27483,7 @@
     "id": "oxygen-trolley-small",
     "name": "Oxygen Trolley- Small",
     "category": "furniture",
-    "image": "/images/furniture/oxygen-trolley-small.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -27759,7 +27759,7 @@
     "id": "patient-monitor-trolley-wall-mounted",
     "name": "PATIENT MONITOR TROLLEY WALL MOUNTED",
     "category": "furniture",
-    "image": "/images/furniture/patient-monitor-trolley-wall-mounted.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -28156,7 +28156,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28179,7 +28179,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28202,7 +28202,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28363,7 +28363,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28409,7 +28409,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28570,7 +28570,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28639,7 +28639,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -28731,7 +28731,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -29047,7 +29047,7 @@
     "id": "patient-trolleystretcher",
     "name": "Patient trolley/Stretcher",
     "category": "furniture",
-    "image": "/images/furniture/patient-trolleystretcher.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -29260,7 +29260,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -29582,7 +29582,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -29712,7 +29712,7 @@
   },
   {
     "id": "potassium-electrode-k-electrode",
-    "name": "Potassium Electrode (K⁺ Electrode)",
+    "name": "Potassium Electrode (K\u207a Electrode)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -30042,7 +30042,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -30157,7 +30157,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -30502,7 +30502,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -30548,7 +30548,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -30818,7 +30818,7 @@
     "id": "ripple-mattress",
     "name": "Ripple mattress",
     "category": "furniture",
-    "image": "/images/furniture/ripple-mattress.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -30893,7 +30893,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31007,7 +31007,7 @@
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -31307,7 +31307,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31468,7 +31468,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31491,7 +31491,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31697,7 +31697,7 @@
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -31767,7 +31767,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -31859,7 +31859,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -32014,7 +32014,7 @@
     "id": "single-crank-mattress-with-mackintosh",
     "name": "Single crank Mattress with mackintosh",
     "category": "furniture",
-    "image": "/images/furniture/single-crank-mattress-with-mackintosh.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -32112,7 +32112,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -32871,7 +32871,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -32888,7 +32888,7 @@
     "id": "step-stool",
     "name": "Step stool",
     "category": "furniture",
-    "image": "/images/furniture/step-stool.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -32980,7 +32980,7 @@
     "id": "stool-containers",
     "name": "Stool containers",
     "category": "furniture",
-    "image": "/images/furniture/stool-containers.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -33285,7 +33285,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33469,7 +33469,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33492,7 +33492,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33538,7 +33538,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33561,7 +33561,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33607,7 +33607,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33768,7 +33768,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33952,7 +33952,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -33975,7 +33975,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34251,7 +34251,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34274,7 +34274,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34297,7 +34297,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34320,7 +34320,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34343,7 +34343,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -34613,7 +34613,7 @@
     "id": "theatre-stool",
     "name": "Theatre stool",
     "category": "furniture",
-    "image": "/images/furniture/theatre-stool.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -34705,7 +34705,7 @@
     "id": "three-crank-mattress-with-mackintosh",
     "name": "Three crank mattress with mackintosh",
     "category": "furniture",
-    "image": "/images/furniture/three-crank-mattress-with-mackintosh.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -34918,7 +34918,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35010,7 +35010,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35056,7 +35056,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35263,7 +35263,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35539,7 +35539,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35815,7 +35815,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35838,7 +35838,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -35930,7 +35930,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -36505,7 +36505,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -36752,7 +36752,7 @@
     "id": "ward-screen-four-fold",
     "name": "Ward screen- four fold",
     "category": "furniture",
-    "image": "/images/furniture/ward-screen-four-fold.jpg",
+    "image": "",
     "thumbnail": "",
     "description": "Ergonomic hospital furniture designed for patient comfort and clinic durability.",
     "longDescription": "Heavy-duty hospital furniture made from powder-coated steel or medical-grade stainless steel. Engineered for safety, ergonomics, and longevity.",
@@ -37332,7 +37332,7 @@
     "description": "High-precision biochemistry reagent, control, or analyzer for diagnostic assays.",
     "longDescription": "Engineered for accuracy in clinical chemistry testing, this item enables efficient analysis of metabolic markers and clinical substrates.",
     "specs": [
-      "Storage: Store at 2-8°C (where applicable)",
+      "Storage: Store at 2-8\u00b0C (where applicable)",
       "Stability: Extended shelf-life",
       "Application: Fully automated & semi-automated systems"
     ],
@@ -37724,7 +37724,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -37739,7 +37739,7 @@
   },
   {
     "id": "-amylase-sdi",
-    "name": "α- Amylase (SDI)",
+    "name": "\u03b1- Amylase (SDI)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37762,7 +37762,7 @@
   },
   {
     "id": "-amylase-kit-zybio",
-    "name": "α-Amylase Kit (Zybio)",
+    "name": "\u03b1-Amylase Kit (Zybio)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37770,7 +37770,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
@@ -37785,7 +37785,7 @@
   },
   {
     "id": "-hcg-anbio",
-    "name": "β-HCG Anbio",
+    "name": "\u03b2-HCG Anbio",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37808,7 +37808,7 @@
   },
   {
     "id": "-hcg-anbio-control",
-    "name": "β-HCG Anbio Control",
+    "name": "\u03b2-HCG Anbio Control",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37831,7 +37831,7 @@
   },
   {
     "id": "-gt-sdi",
-    "name": "λ- GT (SDI)",
+    "name": "\u03bb- GT (SDI)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37854,7 +37854,7 @@
   },
   {
     "id": "-gt-kit-zybio",
-    "name": "λ-GT Kit (Zybio)",
+    "name": "\u03bb-GT Kit (Zybio)",
     "category": "consumables",
     "image": "",
     "thumbnail": "",
@@ -37862,7 +37862,7 @@
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
       "Format: Lateral flow cassette / liquid reagent",
-      "Storage: Store at 2-8°C",
+      "Storage: Store at 2-8\u00b0C",
       "Pack Size: Standard clinic pack count"
     ],
     "featured": false,
