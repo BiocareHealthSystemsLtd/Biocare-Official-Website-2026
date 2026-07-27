@@ -1,32 +1,39 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import useCarousel from '../hooks/useCarousel';
+import { useState } from 'react';
 import productsData from '../data/products.json';
-import { ChevronLeftIcon, ChevronRightIcon, CheckIcon } from './Icons';
+import { ChevronLeftIcon, ChevronRightIcon, CheckIcon, WhatsAppIcon } from './Icons';
 
 export default function FeaturedProductsCarousel() {
-  const featuredProducts = productsData.filter((p) => p.featured);
-  const { activeIndex, nextSlide, prevSlide, goToSlide } = useCarousel(
-    featuredProducts.length,
-    5000
-  );
+  const featuredProducts = productsData.filter((p) => p.featured === true);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  if (featuredProducts.length === 0) return null;
+  const nextSlide = () => {
+    setActiveIndex((prev) => (prev + 1) % featuredProducts.length);
+  };
+
+  const prevSlide = () => {
+    setActiveIndex((prev) => (prev - 1 + featuredProducts.length) % featuredProducts.length);
+  };
+
+  if (!featuredProducts || featuredProducts.length === 0) return null;
 
   return (
-    <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
+    <section className="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100 overflow-hidden font-sans">
       <div className="max-w-7xl mx-auto">
+        
+        {/* Section Title */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-primary-700 tracking-tight">
-            Featured Diagnostics & Machines
+          <span className="text-xs font-semibold text-secondary-600 uppercase tracking-widest block font-sans">
+            PREMIUM DIAGNOSTIC ANALYZERS
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-primary-700 tracking-tight mt-1">
+            Featured Hospital & Laboratory Equipment
           </h2>
-          <p className="mt-2 text-gray-500 max-w-xl mx-auto text-sm">
-            Explore our state-of-the-art hematology analyzers, radiology systems, and clinical solutions.
-          </p>
         </div>
 
-        {/* Carousel viewport */}
-        <div className="relative bg-white rounded-3xl border border-gray-200/80 shadow-xl overflow-hidden p-6 sm:p-10 lg:p-12">
+        {/* Carousel Showcase Container */}
+        <div className="bg-white border border-gray-200/80 rounded-3xl p-6 sm:p-10 shadow-sm relative">
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
@@ -34,10 +41,13 @@ export default function FeaturedProductsCarousel() {
             <div className="lg:col-span-5 flex justify-center items-center relative h-64 sm:h-80 md:h-96 w-full bg-white rounded-2xl p-6 overflow-hidden border border-gray-100">
               <div className="relative w-full h-full transform hover:scale-105 transition-transform duration-500 flex justify-center items-center">
                 {featuredProducts[activeIndex].image ? (
-                  <img
+                  <Image
                     src={featuredProducts[activeIndex].image}
                     alt={featuredProducts[activeIndex].name}
+                    width={380}
+                    height={380}
                     className="w-full h-full object-contain filter drop-shadow-md"
+                    unoptimized
                   />
                 ) : (
                   <>

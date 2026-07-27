@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function BlogCard({ post }) {
   return (
@@ -7,10 +8,13 @@ export default function BlogCard({ post }) {
         {/* Blog Image Visual with hover scaling */}
         <div className="relative h-48 w-full overflow-hidden bg-slate-100 flex items-center justify-center">
           {post.image ? (
-            <img 
+            <Image 
               src={post.image} 
               alt={post.title} 
+              width={400}
+              height={200}
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              unoptimized
             />
           ) : (
             <div className="absolute inset-0 bg-gradient-to-tr from-primary-800 to-primary-600/80 z-0 flex items-center justify-center text-white p-6">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import siteConfig from '../data/siteConfig';
 
 export default function Hero() {
@@ -83,10 +84,13 @@ export default function Hero() {
               {/* Graphic representation of analyzer/cells */}
               <div className="my-auto flex flex-col items-center justify-center space-y-4 py-2">
                 <div className="relative w-48 h-48 sm:w-52 sm:h-52 flex items-center justify-center bg-white rounded-2xl p-3 shadow-inner overflow-hidden">
-                  <img 
+                  <Image 
                     src="/images/dymind-dh36.png" 
                     alt="Dymind DH36 Hematology Analyzer" 
+                    width={200}
+                    height={200}
                     className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                    unoptimized
                   />
                 </div>
                 <div className="text-center space-y-1">

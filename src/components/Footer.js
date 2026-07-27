@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import siteConfig from '../data/siteConfig';
 import categories from '../data/categories.json';
 import { PhoneIcon, EmailIcon, MapIcon, WhatsAppIcon, SendIcon } from './Icons';
@@ -46,10 +47,13 @@ export default function Footer() {
         {/* Info Column */}
         <div className="flex flex-col space-y-4">
           <div className="flex items-center">
-            <img 
+            <Image 
               src="/images/biocare-logo-wide.png" 
               alt="Biocare Health Systems Limited Logo" 
+              width={180}
+              height={48}
               className="h-12 w-auto object-contain bg-white rounded p-1"
+              unoptimized
             />
           </div>
           <p className="text-xs font-bold text-secondary-400 tracking-wide">

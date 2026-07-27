@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import siteConfig from '../data/siteConfig';
 import categories from '../data/categories.json';
@@ -85,10 +86,13 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <img 
+            <Image 
               src="/images/biocare-logo-wide.png" 
               alt="Biocare Health Systems Limited Logo" 
+              width={180}
+              height={48}
               className="h-11 md:h-12 w-auto object-contain"
+              unoptimized
             />
           </Link>
 
@@ -205,10 +209,13 @@ export default function Header() {
           <div className="relative w-80 max-w-[85vw] bg-white h-full shadow-2xl flex flex-col p-6 animate-fade-in-up">
             <div className="flex justify-between items-center mb-6">
               <Link href="/" className="flex items-center">
-                <img 
+                <Image 
                   src="/images/biocare-logo.png" 
                   alt="Biocare Health Systems Limited Logo" 
+                  width={160}
+                  height={56}
                   className="h-14 w-auto object-contain"
+                  unoptimized
                 />
               </Link>
               <button
