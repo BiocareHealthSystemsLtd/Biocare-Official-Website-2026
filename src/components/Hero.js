@@ -15,7 +15,7 @@ export default function Hero() {
           
           <div className="inline-flex items-center space-x-2 self-center lg:self-start bg-primary-50 border border-primary-100 px-3 py-1 rounded-full text-xs font-semibold text-primary-700 tracking-wide uppercase font-sans">
             <span className="w-2 h-2 rounded-full bg-secondary-500 animate-pulse"></span>
-            <span>Nairobi, Kenya's Leading Supplier</span>
+            <span>Nairobi, Kenya&apos;s Leading Supplier</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-extrabold tracking-tight leading-tight text-slate-800">

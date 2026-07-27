@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import siteConfig from '../data/siteConfig';
 import { WhatsAppIcon } from './Icons';
 
@@ -43,13 +44,13 @@ export default function WhatsAppFloating() {
               {/* Online avatar badge */}
               <div className="relative">
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center p-1 overflow-hidden shadow-inner">
-                  <img 
+                  <Image 
                     src="/images/biocare-logo-wide.png" 
                     alt="Biocare Logo" 
+                    width={40}
+                    height={40}
                     className="w-full h-auto object-contain"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                    }}
+                    unoptimized
                   />
                 </div>
                 <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-white rounded-full"></span>

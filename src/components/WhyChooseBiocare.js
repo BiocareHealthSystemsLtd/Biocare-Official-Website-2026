@@ -37,7 +37,7 @@ export default function WhyChooseBiocare() {
               Why Healthcare Facilities Trust Biocare
             </h2>
             <p className="text-gray-300 text-sm leading-relaxed max-w-lg mx-auto lg:mx-0">
-              We don't just sell boxes. We establish long-term partnerships with clinics, diagnostic laboratories, and tier-1 hospitals across Kenya by providing continuous technical support and quality medical equipment.
+              We don&apos;t just sell boxes. We establish long-term partnerships with clinics, diagnostic laboratories, and tier-1 hospitals across Kenya by providing continuous technical support and quality medical equipment.
             </p>
             <div className="pt-4 border-t border-primary-700/60 hidden lg:block">
               <span className="text-sm font-bold text-white block mb-1">Office Showroom Location:</span>

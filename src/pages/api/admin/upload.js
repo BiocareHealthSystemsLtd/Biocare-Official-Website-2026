@@ -1,5 +1,5 @@
 import cloudinary from '../../../lib/cloudinary';
-import siteConfig from '../../../data/siteConfig';
+import { isValidAdminSession } from '../../../lib/auth';
 
 // Extend Next.js body parser size limit to support base64 image strings
 export const config = {
@@ -10,13 +10,8 @@ export const config = {
   },
 };
 
-function checkAuth(req) {
-  const cookies = req.headers.cookie || '';
-  return cookies.includes(`${siteConfig.admin.sessionCookieName}=authorized`);
-}
-
 export default async function handler(req, res) {
-  if (!checkAuth(req)) {
+  if (!isValidAdminSession(req)) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 

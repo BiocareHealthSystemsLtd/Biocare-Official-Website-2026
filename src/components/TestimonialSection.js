@@ -33,7 +33,7 @@ export default function TestimonialSection() {
                 
                 {/* Text */}
                 <p className="text-gray-600 text-xs italic leading-relaxed mb-6 font-normal">
-                  "{test.text}"
+                  &quot;{test.text}&quot;
                 </p>
               </div>
 

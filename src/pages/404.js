@@ -22,7 +22,7 @@ export default function Custom404() {
               404 - Diagnose Error
             </h1>
             <p className="text-gray-500 text-xs leading-relaxed font-normal">
-              We couldn't locate the file or route you are looking for. It might have been relocated, or it might not be in our active system directory.
+              We couldn&apos;t locate the file or route you are looking for. It might have been relocated, or it might not be in our active system directory.
             </p>
           </div>
 

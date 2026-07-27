@@ -11,42 +11,22 @@ export default function Header() {
   const [searchQuery, setSearchQuery] = useState('');
   const [scrolled, setScrolled] = useState(false);
   const router = useRouter();
-  const [suggestions, setSuggestions] = useState([]);
 
-  // Handle autocomplete query filtering
-  useEffect(() => {
-    if (searchQuery.trim().length >= 2) {
-      const filtered = productsData.filter(p =>
+  // Derive autocomplete suggestions during render
+  const suggestions = searchQuery.trim().length >= 2 
+    ? productsData.filter(p =>
         p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
         p.category.toLowerCase().includes(searchQuery.toLowerCase())
-      ).slice(0, 5);
-      setSuggestions(filtered);
-    } else {
-      setSuggestions([]);
-    }
-  }, [searchQuery]);
-
-  // Clear suggestions on route navigation
-  useEffect(() => {
-    setSuggestions([]);
-  }, [router.asPath]);
+      ).slice(0, 5)
+    : [];
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 80) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 80);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  // Close mobile menu on route change
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [router.asPath]);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();

@@ -1,17 +1,11 @@
 import fs from 'fs';
 import path from 'path';
-import siteConfig from '../../../data/siteConfig';
-import { createDatabaseBackup } from '../../../lib/backup';
+import { isValidAdminSession } from '../../../lib/auth';
 
 const filePath = path.join(process.cwd(), 'src/data/categories.json');
 
-function checkAuth(req) {
-  const cookies = req.headers.cookie || '';
-  return cookies.includes(`${siteConfig.admin.sessionCookieName}=authorized`);
-}
-
 export default async function handler(req, res) {
-  if (!checkAuth(req)) {
+  if (!isValidAdminSession(req)) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 

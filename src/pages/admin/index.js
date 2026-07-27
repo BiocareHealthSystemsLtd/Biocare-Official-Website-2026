@@ -94,61 +94,6 @@ export default function AdminDashboard() {
     reader.readAsDataURL(file);
   };
 
-  // Verify auth session on load
-  useEffect(() => {
-    checkAuthSession();
-  }, []);
-
-  const checkAuthSession = async () => {
-    try {
-      const res = await fetch('/api/admin/auth');
-      if (res.ok) {
-        setIsAuthenticated(true);
-        fetchData();
-      } else {
-        setIsAuthenticated(false);
-      }
-    } catch (err) {
-      setIsAuthenticated(false);
-    } finally {
-      setAuthChecking(false);
-    }
-  };
-
-  const handleLogin = async (e) => {
-    e.preventDefault();
-    setAuthError('');
-    setIsLoggingIn(true);
-    try {
-      const res = await fetch('/api/admin/auth', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password: passwordInput }),
-      });
-      if (res.ok) {
-        setIsAuthenticated(true);
-        fetchData();
-      } else {
-        const data = await res.json();
-        setAuthError(data.error || 'Login failed');
-      }
-    } catch (err) {
-      setAuthError('Connection error occurred');
-    } finally {
-      setIsLoggingIn(false);
-    }
-  };
-
-  const handleLogout = async () => {
-    try {
-      await fetch('/api/admin/auth', { method: 'DELETE' });
-      setIsAuthenticated(false);
-      router.push('/');
-    } catch (err) {
-      alert('Failed to log out');
-    }
-  };
-
   const fetchData = async () => {
     setLoadingData(true);
     try {
@@ -167,6 +112,47 @@ export default function AdminDashboard() {
       setLoadingData(false);
     }
   };
+
+  const checkAuthSession = async () => {
+    try {
+      const res = await fetch('/api/admin/auth');
+      if (res.ok) {
+        setIsAuthenticated(true);
+        fetchData();
+      } else {
+        setIsAuthenticated(false);
+      }
+    } catch (err) {
+      setIsAuthenticated(false);
+    } finally {
+      setAuthChecking(false);
+    }
+  };
+
+  // Verify auth session on load
+  useEffect(() => {
+    let active = true;
+    fetch('/api/admin/auth')
+      .then((res) => {
+        if (!active) return;
+        if (res.ok) {
+          setIsAuthenticated(true);
+          fetchData();
+        } else {
+          setIsAuthenticated(false);
+        }
+      })
+      .catch(() => {
+        if (active) setIsAuthenticated(false);
+      })
+      .finally(() => {
+        if (active) setAuthChecking(false);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, []);
 
   // CRUD Operations: PRODUCTS
   const openProductForm = (product = null) => {

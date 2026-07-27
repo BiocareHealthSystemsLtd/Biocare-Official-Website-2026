@@ -1,4 +1,5 @@
 import siteConfig from '../../../data/siteConfig';
+import { getAdminToken, isValidAdminSession } from '../../../lib/auth';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
@@ -6,8 +7,12 @@ export default async function handler(req, res) {
     const adminPassword = process.env.ADMIN_PASSWORD || siteConfig.admin.defaultPassword;
 
     if (password === adminPassword) {
+      const token = getAdminToken();
       // Set secure session cookie
-      res.setHeader('Set-Cookie', `${siteConfig.admin.sessionCookieName}=authorized; Path=/; HttpOnly; SameSite=Strict; Max-Age=86400`);
+      res.setHeader(
+        'Set-Cookie',
+        `${siteConfig.admin.sessionCookieName}=${token}; Path=/; HttpOnly; SameSite=Strict; Max-Age=86400`
+      );
       return res.status(200).json({ success: true });
     } else {
       return res.status(401).json({ error: 'Incorrect password' });
@@ -15,11 +20,7 @@ export default async function handler(req, res) {
   }
 
   if (req.method === 'GET') {
-    // Check if session cookie is valid
-    const cookies = req.headers.cookie || '';
-    const sessionToken = `${siteConfig.admin.sessionCookieName}=authorized`;
-
-    if (cookies.includes(sessionToken)) {
+    if (isValidAdminSession(req)) {
       return res.status(200).json({ authenticated: true });
     } else {
       return res.status(401).json({ authenticated: false });
@@ -28,7 +29,10 @@ export default async function handler(req, res) {
 
   if (req.method === 'DELETE') {
     // Logout by clearing session cookie
-    res.setHeader('Set-Cookie', `${siteConfig.admin.sessionCookieName}=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0`);
+    res.setHeader(
+      'Set-Cookie',
+      `${siteConfig.admin.sessionCookieName}=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0`
+    );
     return res.status(200).json({ success: true });
   }
 

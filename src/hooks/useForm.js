@@ -37,40 +37,36 @@ export default function useForm(initialValues, validate, onSubmitSuccess, onSubm
       setIsSubmitting(true);
       setSubmitStatus(null);
       try {
-        const response = await fetch('https://formsubmit.co/ajax/biocarehealthsystems@gmail.com', {
+        const response = await fetch('/api/quote', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json'
           },
           body: JSON.stringify({
-            _subject: `[Biocare Website Inquiry] - ${values.category} from ${values.name}`,
-            Name: values.name,
-            Email: values.email,
-            Phone: values.phone,
-            "Company / Facility": values.company || 'N/A',
-            "Product Interest": values.category,
-            Message: values.message
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            company: values.company || 'N/A',
+            category: values.category,
+            message: values.message
           }),
         });
 
         if (response.ok) {
           const data = await response.json();
-          const isSuccess = data.success === 'true' || data.success === true;
-          const isActivation = data.message && (data.message.toLowerCase().includes('activate') || data.message.toLowerCase().includes('active'));
-
-          if (isSuccess || isActivation) {
+          if (data.success) {
             setSubmitStatus('success');
             setValues(initialValues);
             if (onSubmitSuccess) onSubmitSuccess();
           } else {
-            console.error('FormSubmit response success was false:', data);
+            console.error('Quote submission error:', data);
             setSubmitStatus('error');
             if (onSubmitError) onSubmitError();
           }
         } else {
           const errText = await response.text();
-          console.error('FormSubmit HTTP error:', response.status, errText);
+          console.error('Quote submission HTTP error:', response.status, errText);
           setSubmitStatus('error');
           if (onSubmitError) onSubmitError();
         }

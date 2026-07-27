@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { CheckIcon, WhatsAppIcon } from './Icons';
 import siteConfig from '../data/siteConfig';
 
@@ -26,10 +27,13 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
           {/* Left Column: Visual Showcase */}
           <div className="md:col-span-5 bg-slate-50 rounded-2xl p-6 h-64 md:h-80 w-full flex items-center justify-center border border-gray-100 overflow-hidden relative font-sans">
             {product.image && !product.image.includes('placeholder') ? (
-              <img 
+              <Image 
                 src={product.image} 
                 alt={product.name} 
+                width={320}
+                height={320}
                 className="w-full h-full object-contain filter drop-shadow-md"
+                unoptimized
               />
             ) : (
               <div className="relative w-full h-full flex items-center justify-center font-display font-bold text-primary-200">
@@ -109,10 +113,13 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
         {/* Visual Showcase Panel */}
         <div className="bg-white p-6 relative h-48 w-full flex items-center justify-center border-b border-gray-100 overflow-hidden">
           {product.image && !product.image.includes('placeholder') ? (
-            <img 
+            <Image 
               src={product.image} 
               alt={product.name} 
+              width={200}
+              height={200}
               className="w-full h-full object-contain transform hover:scale-105 transition-transform duration-300 filter drop-shadow-md"
+              unoptimized
             />
           ) : (
             <div className="relative w-full h-full flex items-center justify-center font-display font-bold text-primary-200">

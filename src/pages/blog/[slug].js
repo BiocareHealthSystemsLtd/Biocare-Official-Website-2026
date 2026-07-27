@@ -2,9 +2,8 @@ import Link from 'next/link';
 import Layout from '../../components/Layout';
 import SEO from '../../components/SEO';
 import blogPosts from '../../data/blog-posts.json';
-import { getBreadcrumbSchema } from '../../lib/seo';
-
-import siteConfig from '../../data/siteConfig';
+import { getBreadcrumbSchema, getBlogPostingSchema } from '../../lib/seo';
+import { isValidAdminSession } from '../../lib/auth';
 
 export default function BlogPost({ post }) {
   if (!post) return null;
@@ -14,12 +13,18 @@ export default function BlogPost({ post }) {
     { name: post.title, path: `/blog/${post.slug}` }
   ];
 
+  const schemas = [
+    getBreadcrumbSchema(breadcrumbs),
+    getBlogPostingSchema(post)
+  ];
+
   return (
     <Layout breadcrumbs={breadcrumbs}>
       <SEO 
         title={post.title}
         description={post.excerpt}
-        schemas={[getBreadcrumbSchema(breadcrumbs)]}
+        ogImage={post.image}
+        schemas={schemas}
       />
 
       <article className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8 font-sans">
@@ -46,7 +51,7 @@ export default function BlogPost({ post }) {
 
           <div className="flex items-center justify-center lg:justify-start space-x-3 text-xs text-gray-500 pt-2 font-normal">
             <div className="w-8 h-8 rounded-full bg-primary-100 text-primary-600 flex items-center justify-center font-bold font-display">
-              {post.author[0]}
+              {post.author ? post.author[0] : 'B'}
             </div>
             <div>
               <span className="block font-bold text-gray-700">{post.author}</span>
@@ -85,9 +90,7 @@ export async function getServerSideProps({ params, req }) {
   }
 
   if (post.status === 'draft') {
-    const cookies = req.headers.cookie || '';
-    const sessionToken = `${siteConfig.admin.sessionCookieName}=authorized`;
-    if (!cookies.includes(sessionToken)) {
+    if (!isValidAdminSession(req)) {
       return { notFound: true };
     }
   }

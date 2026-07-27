@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const brands = [
   { name: 'Prunus', image: '/images/brand-prunus.png', bgClass: 'bg-white border-gray-100', imgClass: '' },
@@ -33,10 +34,13 @@ export default function PartnerBrands() {
                 className={`flex items-center justify-center h-16 w-44 shrink-0 rounded-xl border p-4 shadow-sm hover:shadow-md hover:border-primary-300/30 transition-all duration-300 transform hover:-translate-y-0.5 overflow-hidden ${brand.bgClass}`}
               >
                 <div className={`flex items-center justify-center h-full w-full ${brand.imgClass || ''}`}>
-                  <img 
+                  <Image 
                     src={brand.image} 
                     alt={`${brand.name} logo`}
+                    width={160}
+                    height={60}
                     className="max-h-full max-w-full object-contain transition-all duration-300 hover:scale-110"
+                    unoptimized
                   />
                 </div>
               </div>

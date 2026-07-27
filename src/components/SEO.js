@@ -12,7 +12,7 @@ export default function SEO({ title, description, keywords, ogImage, ogType = 'w
     : siteConfig.seo.keywords.join(', ');
     
   const siteUrl = siteConfig.url;
-  const canonicalUrl = canonical || (typeof window !== 'undefined' ? window.location.href : siteUrl);
+  const canonicalUrl = canonical || siteUrl;
   const image = ogImage || `${siteUrl}/images/biocare-logo.svg`;
 
   return (
@@ -24,8 +24,14 @@ export default function SEO({ title, description, keywords, ogImage, ogType = 'w
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta charSet="utf-8" />
       
+      {/* Geotargeting for Kenya & Local SEO */}
+      <meta name="geo.region" content="KE-30" />
+      <meta name="geo.placename" content="Nairobi" />
+      <meta name="geo.position" content="-1.278394;36.824208" />
+      <meta name="ICBM" content="-1.278394, 36.824208" />
+      
       {/* Robots crawling */}
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph Meta Tags */}

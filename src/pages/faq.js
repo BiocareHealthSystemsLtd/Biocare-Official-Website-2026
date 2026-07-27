@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import faqsData from '../data/faqs.json';
-import { getBreadcrumbSchema } from '../lib/seo';
+import { getBreadcrumbSchema, getFAQSchema } from '../lib/seo';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -22,12 +22,17 @@ export default function FAQ() {
     { name: 'Frequently Asked Questions', path: '/faq' }
   ];
 
+  const schemas = [
+    getBreadcrumbSchema(breadcrumbs),
+    getFAQSchema(faqsData)
+  ];
+
   return (
     <Layout breadcrumbs={breadcrumbs}>
       <SEO 
         title="Frequently Asked Questions (FAQ) | Biocare Kenya"
         description="Find answers to common questions about Biocare Health Systems. Warranty guidelines, Nairobi delivery timelines, technical support SLAs, and quotations."
-        schemas={[getBreadcrumbSchema(breadcrumbs)]}
+        schemas={schemas}
       />
 
       {/* Header */}
@@ -40,7 +45,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h1>
           <p className="text-gray-500 text-sm max-w-xl mx-auto font-normal">
-            Can't find what you need? Search our FAQs below or contact our showroom directly.
+            Can&apos;t find what you need? Search our FAQs below or contact our showroom directly.
           </p>
         </div>
       </section>

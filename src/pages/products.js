@@ -10,34 +10,15 @@ import { getProductSchema, getBreadcrumbSchema } from '../lib/seo';
 
 export default function Products() {
   const router = useRouter();
-  const [selectedCategory, setSelectedCategory] = useState('all');
-  const [searchQuery, setSearchQuery] = useState('');
+  const selectedCategory = router.query.category ? router.query.category.toString() : 'all';
+  const searchQuery = router.query.search ? router.query.search.toString() : '';
+
   const [visibleCount, setVisibleCount] = useState(12);
   const [selectedProductId, setSelectedProductId] = useState(null);
 
-  // Reset pagination and selection when category or search changes
-  useEffect(() => {
+  const handleCategoryClick = (slug) => {
     setVisibleCount(12);
     setSelectedProductId(null);
-  }, [selectedCategory, searchQuery]);
-
-  // Sychronize states with URL parameters
-  useEffect(() => {
-    if (router.query.category) {
-      setSelectedCategory(router.query.category.toString());
-    } else {
-      setSelectedCategory('all');
-    }
-
-    if (router.query.search) {
-      setSearchQuery(router.query.search.toString());
-    } else {
-      setSearchQuery('');
-    }
-  }, [router.query]);
-
-  const handleCategoryClick = (slug) => {
-    setSelectedCategory(slug);
     const query = { ...router.query };
     if (slug === 'all') {
       delete query.category;
@@ -49,7 +30,8 @@ export default function Products() {
 
   const handleSearchChange = (e) => {
     const val = e.target.value;
-    setSearchQuery(val);
+    setVisibleCount(12);
+    setSelectedProductId(null);
     const query = { ...router.query };
     if (!val.trim()) {
       delete query.search;
@@ -233,7 +215,7 @@ export default function Products() {
                   <div className="space-y-1">
                     <h3 className="font-display font-bold text-gray-800 text-base">No Equipment Found</h3>
                     <p className="text-gray-500 text-xs max-w-sm mx-auto font-normal">
-                      We couldn't find matching models. Try clearing search filters or download our product catalogue.
+                      We couldn&apos;t find matching models. Try clearing search filters or download our product catalogue.
                     </p>
                   </div>
                   <button
