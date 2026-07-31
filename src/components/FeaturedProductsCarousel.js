@@ -118,7 +118,7 @@ export default function FeaturedProductsCarousel() {
 
               <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4 pt-4 border-t border-gray-100">
                 <Link
-                  href={`/products#${featuredProducts[activeIndex].id}`}
+                  href={`/products?product=${featuredProducts[activeIndex].id}`}
                   className="w-full sm:w-auto text-center bg-primary-600 hover:bg-primary-700 text-white font-bold py-2.5 px-6 rounded-lg text-xs transition-colors shadow"
                   aria-label={`Learn more about ${featuredProducts[activeIndex].name}`}
                 >
@@ -158,7 +158,7 @@ export default function FeaturedProductsCarousel() {
             {featuredProducts.map((_, idx) => (
               <button
                 key={idx}
-                onClick={() => goToSlide(idx)}
+                onClick={() => setActiveIndex(idx)}
                 className={`h-2 rounded-full transition-all duration-300 ${idx === activeIndex ? 'w-6 bg-primary-600' : 'w-2 bg-gray-300'}`}
                 aria-label={`Go to slide ${idx + 1}`}
               ></button>

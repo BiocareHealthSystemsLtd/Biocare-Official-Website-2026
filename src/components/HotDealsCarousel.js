@@ -68,7 +68,7 @@ export default function HotDealsCarousel() {
                   </div>
 
                   <h3 className="font-display font-extrabold text-gray-800 text-base mb-2 hover:text-primary-600 transition-colors">
-                    <Link href={`/products#${product.id}`}>{product.name}</Link>
+                    <Link href={`/products?product=${product.id}`}>{product.name}</Link>
                   </h3>
                   
                   <p className="text-gray-600 text-xs leading-relaxed mb-4">

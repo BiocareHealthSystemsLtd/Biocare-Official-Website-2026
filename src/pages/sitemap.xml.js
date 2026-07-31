@@ -48,6 +48,19 @@ function generateSiteMap(products, posts, categories) {
     <priority>0.8</priority>
   </url>
 
+  <!-- Product Pages -->
+  ${products
+    .map((product) => {
+      return `
+  <url>
+    <loc>${EXTERNAL_URL}/products?product=${encodeURIComponent(product.id)}</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+    })
+    .join('')}
+
   <!-- Category Landing Pages -->
   ${categories
     .map((cat) => {

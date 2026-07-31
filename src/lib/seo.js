@@ -96,7 +96,7 @@ export function getProductSchema(product) {
       'priceValidUntil': '2027-12-31',
       'availability': 'https://schema.org/InStock',
       'itemCondition': 'https://schema.org/NewCondition',
-      'url': `${siteConfig.url}/products?category=${encodeURIComponent(product.category)}#${product.id}`
+      'url': `${siteConfig.url}/products?product=${encodeURIComponent(product.id)}`
     }
   };
 }

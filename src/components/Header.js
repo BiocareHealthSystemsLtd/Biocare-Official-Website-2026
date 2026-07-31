@@ -130,10 +130,9 @@ export default function Header() {
                   {suggestions.map((p) => (
                     <Link
                       key={p.id}
-                      href={`/products#${p.id}`}
+                      href={`/products?product=${encodeURIComponent(p.id)}`}
                       onClick={() => {
                         setSearchQuery('');
-                        setSuggestions([]);
                       }}
                       className="block px-4 py-2 hover:bg-slate-50 transition-colors border-b last:border-0 border-gray-100"
                     >
@@ -247,10 +246,9 @@ export default function Header() {
                   {suggestions.map((p) => (
                     <Link
                       key={p.id}
-                      href={`/products#${p.id}`}
+                      href={`/products?product=${encodeURIComponent(p.id)}`}
                       onClick={() => {
                         setSearchQuery('');
-                        setSuggestions([]);
                         setMobileMenuOpen(false);
                       }}
                       className="block px-4 py-2 hover:bg-slate-50 transition-colors border-b last:border-0 border-gray-100"

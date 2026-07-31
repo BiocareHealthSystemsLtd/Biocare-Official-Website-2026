@@ -16,10 +16,44 @@ export default function Products() {
   const [visibleCount, setVisibleCount] = useState(12);
   const [selectedProductId, setSelectedProductId] = useState(null);
 
+  useEffect(() => {
+    if (!router.isReady) return;
+    const targetProduct = router.query.product || router.query.id;
+    if (targetProduct) {
+      setSelectedProductId(targetProduct.toString());
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (typeof window !== 'undefined' && window.location.hash) {
+      const hashId = window.location.hash.replace('#', '');
+      if (hashId && productsData.some((p) => p.id === hashId)) {
+        setSelectedProductId(hashId);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    } else {
+      setSelectedProductId(null);
+    }
+  }, [router.isReady, router.query.product, router.query.id]);
+
+  const handleSelectProduct = (productId) => {
+    setSelectedProductId(productId);
+    const query = { ...router.query, product: productId };
+    router.push({ pathname: '/products', query }, undefined, { shallow: true });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleClearProduct = () => {
+    setSelectedProductId(null);
+    const query = { ...router.query };
+    delete query.product;
+    delete query.id;
+    router.push({ pathname: '/products', query }, undefined, { shallow: true });
+  };
+
   const handleCategoryClick = (slug) => {
     setVisibleCount(12);
     setSelectedProductId(null);
     const query = { ...router.query };
+    delete query.product;
+    delete query.id;
     if (slug === 'all') {
       delete query.category;
     } else {
@@ -33,6 +67,8 @@ export default function Products() {
     setVisibleCount(12);
     setSelectedProductId(null);
     const query = { ...router.query };
+    delete query.product;
+    delete query.id;
     if (!val.trim()) {
       delete query.search;
     } else {
@@ -52,8 +88,12 @@ export default function Products() {
     return matchesCategory && matchesSearch;
   });
 
-  const displayedProducts = selectedProductId
-    ? filteredProducts.filter((p) => p.id === selectedProductId)
+  const selectedProductObj = selectedProductId
+    ? productsData.find((p) => p.id === selectedProductId)
+    : null;
+
+  const displayedProducts = selectedProductObj
+    ? [selectedProductObj]
     : filteredProducts.slice(0, visibleCount);
 
   const breadcrumbs = [
@@ -170,7 +210,7 @@ export default function Products() {
               </div>
 
               {/* Product cards listing */}
-              {filteredProducts.length > 0 ? (
+              {(filteredProducts.length > 0 || selectedProductId) ? (
                 <div className="space-y-8">
                   {selectedProductId ? (
                     <div className="max-w-4xl mx-auto">
@@ -179,7 +219,7 @@ export default function Products() {
                           key={product.id}
                           product={product}
                           isSelected={true}
-                          onClear={() => setSelectedProductId(null)}
+                          onClear={handleClearProduct}
                         />
                       ))}
                     </div>
@@ -190,7 +230,7 @@ export default function Products() {
                           key={product.id}
                           product={product}
                           isSelected={false}
-                          onSelect={() => setSelectedProductId(product.id)}
+                          onSelect={() => handleSelectProduct(product.id)}
                         />
                       ))}
                     </div>
@@ -219,11 +259,7 @@ export default function Products() {
                     </p>
                   </div>
                   <button
-                    onClick={() => {
-                      setSelectedCategory('all');
-                      setSearchQuery('');
-                      router.push('/products', undefined, { shallow: true });
-                    }}
+                    onClick={handleClearProduct}
                     className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-2.5 px-6 rounded-lg text-xs transition-colors shadow-sm inline-block"
                   >
                     Reset Filters
