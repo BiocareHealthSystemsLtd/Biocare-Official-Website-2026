@@ -1883,9 +1883,9 @@
   {
     "id": "air-conditioner-ac-portable",
     "name": "AIR CONDITIONER (AC) PORTABLE",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -5586,9 +5586,9 @@
   {
     "id": "bunsen-burner-portable",
     "name": "BUNSEN BURNER PORTABLE",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -27068,9 +27068,9 @@
   {
     "id": "office-tables",
     "name": "Office tables",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -29115,9 +29115,9 @@
   {
     "id": "peristatic-pump",
     "name": "Peristatic pump",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/infusion-pump.jpg",
+    "thumbnail": "/images/infusion-pump.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -30334,9 +30334,9 @@
   {
     "id": "pump-units-erma",
     "name": "Pump units (ERMA)",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/infusion-pump.jpg",
+    "thumbnail": "/images/infusion-pump.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -33393,9 +33393,9 @@
   {
     "id": "syringe-pump-motors",
     "name": "Syringe pump motors",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/syringe-pump.png",
+    "thumbnail": "/images/syringe-pump.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -36843,9 +36843,9 @@
   {
     "id": "waste-pumps",
     "name": "Waste pumps",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/infusion-pump.jpg",
+    "thumbnail": "/images/infusion-pump.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
