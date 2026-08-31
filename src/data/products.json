@@ -275,9 +275,9 @@
   {
     "id": "autoclave-50l",
     "name": "Autoclave 50L",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
+    "thumbnail": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -436,9 +436,9 @@
   {
     "id": "hydraulic-operating-table",
     "name": "HYDRAULIC OPERATING TABLE",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "surgical",
+    "image": "/images/hydraulic_delivery_bed.png",
+    "thumbnail": "/images/hydraulic_delivery_bed.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -1125,9 +1125,9 @@
   {
     "id": "3-part-hematology-analyzer-dh33-dymind",
     "name": "3 Part Hematology Analyzer DH33 (Dymind)",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/3-part-hematology-analyzer-dh36-dymind.png",
+    "thumbnail": "/images/3-part-hematology-analyzer-dh36-dymind.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -2619,9 +2619,9 @@
   {
     "id": "apheresis-machine",
     "name": "APHERESIS MACHINE",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/3-part-hematology-analyzer-dh36-dymind.png",
+    "thumbnail": "/images/3-part-hematology-analyzer-dh36-dymind.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -4022,9 +4022,9 @@
   {
     "id": "aneroid-bp-machine",
     "name": "Aneroid BP Machine",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -4643,9 +4643,9 @@
   {
     "id": "autoclave-100l",
     "name": "Autoclave 100L",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
+    "thumbnail": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -4666,9 +4666,9 @@
   {
     "id": "autoclave-18l",
     "name": "Autoclave 18l",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
+    "thumbnail": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -4689,9 +4689,9 @@
   {
     "id": "autoclave-24l",
     "name": "Autoclave 24L",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
+    "thumbnail": "/images/sd1-seamaty-fully-automated-dry-chemistry-analyzer.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -5195,9 +5195,9 @@
   {
     "id": "blood-collection-chair",
     "name": "BLOOD COLLECTION CHAIR",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -5218,9 +5218,9 @@
   {
     "id": "blood-group-machine",
     "name": "BLOOD GROUP MACHINE",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/3-part-hematology-analyzer-dh36-dymind.png",
+    "thumbnail": "/images/3-part-hematology-analyzer-dh36-dymind.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -5425,9 +5425,9 @@
   {
     "id": "bp-machine-batteries",
     "name": "BP MACHINE BATTERIES",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -5448,9 +5448,9 @@
   {
     "id": "bp-machine-sinocare",
     "name": "BP Machine (Sinocare)",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -5678,9 +5678,9 @@
   {
     "id": "baby-incubator",
     "name": "Baby incubator",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -6391,9 +6391,9 @@
   {
     "id": "biobase-microscope",
     "name": "Biobase Microscope",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/olympus_cx23.png",
+    "thumbnail": "/images/olympus_cx23.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -6943,9 +6943,9 @@
   {
     "id": "blood-donation-chair",
     "name": "Blood donation chair",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -8277,9 +8277,9 @@
   {
     "id": "commode-chair",
     "name": "COMMODE CHAIR",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -9289,9 +9289,9 @@
   {
     "id": "celebral-palsy-wheelchair",
     "name": "Celebral palsy wheelchair",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -10439,9 +10439,9 @@
   {
     "id": "continuous-glucose-monitoring-systemican-cgm-sinocare",
     "name": "Continuous Glucose Monitoring System(iCan CGM- Sinocare)",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -12578,9 +12578,9 @@
   {
     "id": "dialysis-chair",
     "name": "Dialysis chair",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -12762,9 +12762,9 @@
   {
     "id": "digital-bp-machine-omron-m1",
     "name": "Digital BP Machine- OMRON M1",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -12785,9 +12785,9 @@
   {
     "id": "digital-bp-machine-yuwell",
     "name": "Digital BP Machine- YUWELL",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -14832,9 +14832,9 @@
   {
     "id": "electric-breast-pump",
     "name": "Electric breast pump",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/infusion-pump.jpg",
+    "thumbnail": "/images/infusion-pump.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -14855,9 +14855,9 @@
   {
     "id": "electric-operating-table",
     "name": "Electric operating table",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "surgical",
+    "image": "/images/hydraulic_delivery_bed.png",
+    "thumbnail": "/images/hydraulic_delivery_bed.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -15867,9 +15867,9 @@
   {
     "id": "fridge-270l-tcl",
     "name": "FRIDGE 270L-TCL",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/labcold_fridge.png",
+    "thumbnail": "/images/labcold_fridge.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -16143,9 +16143,9 @@
   {
     "id": "feeding-pump",
     "name": "Feeding pump",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/infusion-pump.jpg",
+    "thumbnail": "/images/infusion-pump.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -16235,9 +16235,9 @@
   {
     "id": "fetal-doppler-jumper",
     "name": "Fetal doppler- Jumper",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -17040,9 +17040,9 @@
   {
     "id": "fridge-thermometer3-in-1",
     "name": "Fridge thermometer(3 in 1)",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/labcold_fridge.png",
+    "thumbnail": "/images/labcold_fridge.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -19639,9 +19639,9 @@
   {
     "id": "hydraulic-transfer-chair",
     "name": "HYDRAULIC TRANSFER CHAIR",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -20191,9 +20191,9 @@
   {
     "id": "histology-water-bath",
     "name": "Histology water bath",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -22537,9 +22537,9 @@
   {
     "id": "labcold-fridge-200l",
     "name": "Labcold Fridge (200L)",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/labcold_fridge.png",
+    "thumbnail": "/images/labcold_fridge.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -23963,9 +23963,9 @@
   {
     "id": "medical-fridge-ari-single-door-226l",
     "name": "MEDICAL FRIDGE - ARI (SINGLE DOOR) 226L",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/labcold_fridge.png",
+    "thumbnail": "/images/labcold_fridge.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -23986,9 +23986,9 @@
   {
     "id": "medical-fridge-double-door-1006l",
     "name": "MEDICAL FRIDGE - DOUBLE DOOR 1006L",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/labcold_fridge.png",
+    "thumbnail": "/images/labcold_fridge.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -24009,9 +24009,9 @@
   {
     "id": "medical-fridge-mri-single-door-316l",
     "name": "MEDICAL FRIDGE- MRI SINGLE DOOR 316L",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/labcold_fridge.png",
+    "thumbnail": "/images/labcold_fridge.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -24837,9 +24837,9 @@
   {
     "id": "manual-breast-pump",
     "name": "Manual breast pump",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/infusion-pump.jpg",
+    "thumbnail": "/images/infusion-pump.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -25458,9 +25458,9 @@
   {
     "id": "microscope-107",
     "name": "Microscope 107",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/olympus_cx23.png",
+    "thumbnail": "/images/olympus_cx23.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -25481,9 +25481,9 @@
   {
     "id": "microscope-bulbs-6v-20w",
     "name": "Microscope Bulbs 6V 20W",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/olympus_cx23.png",
+    "thumbnail": "/images/olympus_cx23.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -25504,9 +25504,9 @@
   {
     "id": "microscope-cx21-olympus",
     "name": "Microscope CX21- Olympus",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/olympus_cx23.png",
+    "thumbnail": "/images/olympus_cx23.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -25527,9 +25527,9 @@
   {
     "id": "microscope-halogen-bulbs",
     "name": "Microscope Halogen bulbs",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/olympus_cx23.png",
+    "thumbnail": "/images/olympus_cx23.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -25550,9 +25550,9 @@
   {
     "id": "microscope-cx23-olympus",
     "name": "Microscope cx23- Olympus",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/olympus_cx23.png",
+    "thumbnail": "/images/olympus_cx23.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -27045,9 +27045,9 @@
   {
     "id": "office-chairs",
     "name": "Office chairs",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -27988,9 +27988,9 @@
   {
     "id": "phlebotomy-chair",
     "name": "PHLEBOTOMY CHAIR",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -28080,9 +28080,9 @@
   {
     "id": "pkl-mixer-sensor",
     "name": "PKL Mixer Sensor",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -28310,9 +28310,9 @@
   {
     "id": "pkl-mixer-motors",
     "name": "PKL mixer motors",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -28333,9 +28333,9 @@
   {
     "id": "pkl-mixer-probes",
     "name": "PKL mixer probes",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -28862,9 +28862,9 @@
   {
     "id": "patient-monitor-5-parameter-with-stand",
     "name": "Patient Monitor 5 Parameter with Stand",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -28885,9 +28885,9 @@
   {
     "id": "patient-monitor-7-parameter-with-stand",
     "name": "Patient Monitor 7 Parameter with Stand",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -28908,9 +28908,9 @@
   {
     "id": "patient-monitor-stand",
     "name": "Patient Monitor Stand",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/patient-monitor-7-parameter.png",
+    "thumbnail": "/images/patient-monitor-7-parameter.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -28931,9 +28931,9 @@
   {
     "id": "patient-chairs",
     "name": "Patient chairs",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -29092,9 +29092,9 @@
   {
     "id": "peristaltic-pump-head-assembly-for-exc200-zybio",
     "name": "Peristaltic Pump Head Assembly for EXC200 ZYBIO",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "emergency",
+    "image": "/images/infusion-pump.jpg",
+    "thumbnail": "/images/infusion-pump.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -30840,9 +30840,9 @@
   {
     "id": "roller-mixer",
     "name": "Roller mixer",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -30909,9 +30909,9 @@
   {
     "id": "rotator-mixer",
     "name": "Rotator Mixer",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -36912,9 +36912,9 @@
   {
     "id": "water-bath",
     "name": "Water bath",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -36935,9 +36935,9 @@
   {
     "id": "water-distiller",
     "name": "Water distiller",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "laboratory",
+    "image": "/images/category-laboratory.png",
+    "thumbnail": "/images/category-laboratory.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -36958,9 +36958,9 @@
   {
     "id": "wheel-chair",
     "name": "Wheel chair",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "furniture",
+    "image": "/images/category-furniture.png",
+    "thumbnail": "/images/category-furniture.png",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
@@ -37050,9 +37050,9 @@
   {
     "id": "x-ray-printer",
     "name": "X-RAY PRINTER",
-    "category": "consumables",
-    "image": "",
-    "thumbnail": "",
+    "category": "imaging",
+    "image": "/images/huq-xray-printer.jpg",
+    "thumbnail": "/images/huq-xray-printer.jpg",
     "description": "Standard clinical medical consumable for daily patient care.",
     "longDescription": "Disposable medical supply manufactured under strict hygienic standards. Promotes patient hygiene, sterile sampling, and laboratory safety.",
     "specs": [
