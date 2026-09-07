@@ -13,7 +13,7 @@ export default function SEO({ title, description, keywords, ogImage, ogType = 'w
     
   const siteUrl = siteConfig.url;
   const canonicalUrl = canonical || siteUrl;
-  const image = ogImage || `${siteUrl}/images/biocare-logo.svg`;
+  const image = ogImage || `${siteUrl}/images/biocare-logo-wide.png`;
 
   return (
     <Head>

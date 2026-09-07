@@ -1,4 +1,4 @@
-import siteConfig from '../data/siteConfig';
+import siteConfig from '../data/siteConfig.js';
 
 export function getOrganizationSchema() {
   return {
@@ -35,31 +35,25 @@ export function getOrganizationSchema() {
 export function getLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'MedicalBusiness'],
-    'name': siteConfig.companyName,
-    'image': `${siteConfig.url}/images/biocare-logo-wide.png`,
-    'description': siteConfig.description,
+    '@type': 'MedicalBusiness',
+    'name': 'Biocare Health Systems Ltd',
+    'alternateName': 'Biocare Health Systems Limited',
+    'image': 'https://biocarehealthsystems.co.ke/images/biocare-logo-wide.png',
+    'url': 'https://biocarehealthsystems.co.ke/',
+    'telephone': '+254723835776',
+    'priceRange': '$$',
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': `${siteConfig.officeAddress.building}, ${siteConfig.officeAddress.street}`,
-      'addressLocality': siteConfig.officeAddress.city,
-      'addressRegion': siteConfig.officeAddress.city,
+      'streetAddress': 'Githinji Investments Building Ground Floor, Behind Makini Herbal Clinic, Chambers Road, Ngara',
+      'addressLocality': 'Nairobi',
+      'postalCode': '00400',
       'addressCountry': 'KE'
     },
     'geo': {
       '@type': 'GeoCoordinates',
-      'latitude': -1.278394,
-      'longitude': 36.824208
+      'latitude': -1.2785,
+      'longitude': 36.8242
     },
-    'hasMap': siteConfig.googleMapsEmbed,
-    'telephone': siteConfig.phones[0].link,
-    'email': siteConfig.email,
-    'priceRange': '$$$',
-    'areaServed': {
-      '@type': 'Country',
-      'name': 'Kenya'
-    },
-    'url': siteConfig.url,
     'openingHoursSpecification': [
       {
         '@type': 'OpeningHoursSpecification',
@@ -70,9 +64,30 @@ export function getLocalBusinessSchema() {
       {
         '@type': 'OpeningHoursSpecification',
         'dayOfWeek': 'Saturday',
-        'opens': '09:00',
-        'closes': '13:00'
+        'opens': '08:30',
+        'closes': '12:30'
       }
+    ],
+    'areaServed': [
+      { '@type': 'AdministrativeArea', 'name': 'Kenya' },
+      { '@type': 'City', 'name': 'Nairobi' },
+      { '@type': 'City', 'name': 'Mombasa' },
+      { '@type': 'City', 'name': 'Kisumu' },
+      { '@type': 'City', 'name': 'Nakuru' },
+      { '@type': 'City', 'name': 'Eldoret' }
+    ],
+    'brand': [
+      { '@type': 'Brand', 'name': 'Dymind' },
+      { '@type': 'Brand', 'name': 'Zybio' },
+      { '@type': 'Brand', 'name': 'Prunus' },
+      { '@type': 'Brand', 'name': 'Sinocare' },
+      { '@type': 'Brand', 'name': 'Labcold' },
+      { '@type': 'Brand', 'name': 'Minfound' }
+    ],
+    'sameAs': [
+      'https://www.facebook.com/p/Biocare-health-systems-Ltd-100057137752515/',
+      'https://www.instagram.com/biocare_health_systems',
+      'https://www.linkedin.com/company/biocare-health-systems-limited'
     ]
   };
 }

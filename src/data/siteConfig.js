@@ -19,9 +19,9 @@ const siteConfig = {
     city: "Nairobi",
     country: "Kenya"
   },
-  operatingHours: "Monday - Friday: 8:00 AM - 5:00 PM | Saturday: 9:00 AM - 1:00 PM",
+  operatingHours: "Monday - Friday: 8:00 AM - 5:00 PM | Saturday: 8:30 AM - 12:30 PM",
   socials: {
-    facebook: "https://www.facebook.com/BiocareHealthSystemsLtd",
+    facebook: "https://www.facebook.com/p/Biocare-health-systems-Ltd-100057137752515/",
     instagram: "https://www.instagram.com/biocare_health_systems",
     linkedin: "https://www.linkedin.com/company/biocare-health-systems-limited"
   },
