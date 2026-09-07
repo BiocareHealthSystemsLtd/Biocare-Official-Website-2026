@@ -6,7 +6,7 @@ export function getOrganizationSchema() {
     '@type': 'Organization',
     'name': siteConfig.companyName,
     'url': siteConfig.url,
-    'logo': `${siteConfig.url}/images/biocare-logo.svg`,
+    'logo': `${siteConfig.url}/images/biocare-logo-wide.png`,
     'description': siteConfig.description,
     'contactPoint': [
       {
@@ -37,7 +37,7 @@ export function getLocalBusinessSchema() {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'MedicalBusiness'],
     'name': siteConfig.companyName,
-    'image': `${siteConfig.url}/images/biocare-logo.svg`,
+    'image': `${siteConfig.url}/images/biocare-logo-wide.png`,
     'description': siteConfig.description,
     'address': {
       '@type': 'PostalAddress',
@@ -82,7 +82,7 @@ export function getProductSchema(product) {
     '@context': 'https://schema.org',
     '@type': 'Product',
     'name': product.name,
-    'image': product.image && product.image.startsWith('http') ? product.image : `${siteConfig.url}${product.image || '/images/biocare-logo.svg'}`,
+    'image': product.image && product.image.startsWith('http') ? product.image : `${siteConfig.url}${product.image || '/images/biocare-logo-wide.png'}`,
     'description': product.description,
     'category': product.category,
     'brand': {
@@ -135,7 +135,7 @@ export function getBlogPostingSchema(post) {
     '@type': 'BlogPosting',
     'headline': post.title,
     'description': post.excerpt,
-    'image': post.image && post.image.startsWith('http') ? post.image : `${siteConfig.url}${post.image || '/images/biocare-logo.svg'}`,
+    'image': post.image && post.image.startsWith('http') ? post.image : `${siteConfig.url}${post.image || '/images/biocare-logo-wide.png'}`,
     'datePublished': post.datePublished || post.date || '2026-01-01',
     'dateModified': post.dateModified || post.date || '2026-07-01',
     'author': {
@@ -147,7 +147,7 @@ export function getBlogPostingSchema(post) {
       'name': siteConfig.companyName,
       'logo': {
         '@type': 'ImageObject',
-        'url': `${siteConfig.url}/images/biocare-logo.svg`
+        'url': `${siteConfig.url}/images/biocare-logo-wide.png`
       }
     },
     'mainEntityOfPage': `${siteConfig.url}/blog/${post.slug}`

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Layout from '../../components/Layout';
 import SEO from '../../components/SEO';
 import blogPosts from '../../data/blog-posts.json';
-import { getBreadcrumbSchema, getBlogPostingSchema } from '../../lib/seo';
+import { getBreadcrumbSchema, getBlogPostingSchema, getFAQSchema } from '../../lib/seo';
 import { isValidAdminSession } from '../../lib/auth';
 
 export default function BlogPost({ post }) {
@@ -15,7 +15,8 @@ export default function BlogPost({ post }) {
 
   const schemas = [
     getBreadcrumbSchema(breadcrumbs),
-    getBlogPostingSchema(post)
+    getBlogPostingSchema(post),
+    ...(post.faqs && post.faqs.length > 0 ? [getFAQSchema(post.faqs)] : [])
   ];
 
   return (
