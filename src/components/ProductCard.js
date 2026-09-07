@@ -38,7 +38,7 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
           {/* Detailed Product Info */}
           <div className={hasImage ? "md:col-span-7 space-y-4" : "md:col-span-12 space-y-4"}>
             <div>
-              <span className="text-[11px] font-semibold text-primary-700 uppercase tracking-wider bg-primary-50 px-2 py-0.5 rounded border border-primary-100">
+              <span className="text-[11px] font-semibold text-primary-700 uppercase tracking-wider bg-primary-50 px-2 py-0.5 rounded border border-primary-200">
                 {product.category}
               </span>
               <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-2">
@@ -60,7 +60,7 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 bg-slate-50 p-4 rounded border border-slate-200">
                 {product.specs.map((spec, idx) => (
                   <li key={idx} className="flex items-start text-xs text-slate-700 space-x-2">
-                    <CheckIcon className="w-3.5 h-3.5 text-slate-500 shrink-0 mt-0.5" />
+                    <CheckIcon className="w-3.5 h-3.5 text-cerulean-600 shrink-0 mt-0.5" />
                     <span>{spec}</span>
                   </li>
                 ))}
@@ -71,7 +71,7 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
               <Link
                 href={whatsappUrl}
                 target="_blank"
-                className="bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2.5 px-5 rounded text-xs transition-colors flex items-center justify-center space-x-2"
+                className="bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2.5 px-5 rounded text-xs transition-colors flex items-center justify-center space-x-2 shadow-xs"
                 aria-label={`Get quote on WhatsApp for ${product.name}`}
               >
                 <WhatsAppIcon className="w-4 h-4 text-white" />
@@ -79,7 +79,7 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
               </Link>
               <Link
                 href={`/contact?category=${encodeURIComponent(product.category)}&message=${encodeURIComponent(`I would like to request an official quotation for the ${product.name}.`)}`}
-                className="bg-primary-700 hover:bg-primary-800 text-white font-medium py-2.5 px-5 rounded text-xs transition-colors text-center"
+                className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2.5 px-5 rounded text-xs transition-colors text-center shadow-xs"
               >
                 Request Formal Quotation
               </Link>
@@ -93,7 +93,7 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
   // Standard Product Card
   return (
     <div 
-      className="bg-white border border-slate-200 rounded hover:border-slate-400 transition-colors flex flex-col justify-between h-full cursor-pointer"
+      className="bg-white border border-slate-200 rounded hover:border-primary-400 transition-colors flex flex-col justify-between h-full cursor-pointer group"
       id={product.id}
       onClick={onSelect}
     >
@@ -106,7 +106,7 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
               alt={product.name} 
               width={200}
               height={200}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-200"
               unoptimized
             />
           </div>
@@ -119,10 +119,10 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
         {/* Content details */}
         <div className="p-4 space-y-3">
           <div>
-            <span className="text-[10px] font-semibold text-primary-700 uppercase tracking-wider bg-primary-50 px-2 py-0.5 rounded border border-primary-100">
+            <span className="text-[10px] font-semibold text-primary-700 uppercase tracking-wider bg-primary-50 px-2 py-0.5 rounded border border-primary-200">
               {product.category}
             </span>
-            <h3 className="font-bold text-slate-900 text-sm mt-2 leading-snug">
+            <h3 className="font-bold text-slate-900 group-hover:text-primary-800 text-sm mt-2 leading-snug transition-colors">
               {product.name}
             </h3>
           </div>
@@ -134,8 +134,8 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
           {/* Quick Specs */}
           <div className="space-y-1 pt-2 border-t border-slate-100">
             {product.specs.slice(0, 3).map((spec, idx) => (
-              <div key={idx} className="flex items-start text-[11px] text-slate-500 space-x-1.5">
-                <CheckIcon className="w-3 h-3 text-slate-400 shrink-0 mt-0.5" />
+              <div key={idx} className="flex items-start text-[11px] text-slate-600 space-x-1.5">
+                <CheckIcon className="w-3 h-3 text-cerulean-600 shrink-0 mt-0.5" />
                 <span className="truncate">{spec}</span>
               </div>
             ))}
@@ -151,7 +151,7 @@ export default function ProductCard({ product, isSelected, onSelect, onClear }) 
         <div className="flex items-center justify-between pt-2 border-t border-slate-100 text-xs">
           <button
             onClick={onSelect}
-            className="text-primary-700 hover:text-primary-800 font-medium text-xs cursor-pointer"
+            className="text-primary-700 group-hover:text-primary-800 hover:underline font-semibold text-xs cursor-pointer"
           >
             View Details →
           </button>

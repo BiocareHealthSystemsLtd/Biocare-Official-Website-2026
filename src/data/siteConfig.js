@@ -4,7 +4,7 @@ const siteConfig = {
   tagline: "Suppliers of Laboratory Diagnostics and Equipment, Hospital Equipment & Surgical",
   description: "Leading medical equipment supplier in Nairobi, Kenya. We provide high-quality laboratory analyzers, hematology diagnostics, hospital furniture, radiology imaging systems, dental units, and emergency tools with expert technical support.",
   url: "https://biocarehealthsystems.co.ke",
-  logo: "/images/biocare-logo.svg",
+  logo: "/images/biocare-logo-wide.png",
   email: "biocarehealthsystems@gmail.com",
   phones: [
     { label: "Sales & Support", value: "0723 835776", link: "+254723835776" },

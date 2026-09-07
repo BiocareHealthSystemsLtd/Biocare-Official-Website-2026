@@ -1,25 +1,51 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #faf4f8;
-  --color-primary-100: #f4e6f0;
-  --color-primary-200: #e8cddf;
-  --color-primary-500: #a93c7d;
-  --color-primary-600: #8b2964; /* Refined Biocare Deep Plum */
-  --color-primary-700: #731e51;
-  --color-primary-800: #5c1840;
-  --color-primary-900: #461230;
+  /* Exact Scanned Biocare Logo Primary Plum (#a54482) */
+  --color-primary-50: #faf3f8;
+  --color-primary-100: #f5e6f1;
+  --color-primary-200: #ebd0e4;
+  --color-primary-300: #d8a9cb;
+  --color-primary-400: #bf72a8;
+  --color-primary-500: #a54482; /* Exact Scanned Wordmark "BIOCARE" */
+  --color-primary-600: #8f356e; /* Deep Interactive Plum */
+  --color-primary-700: #78265a; /* High-contrast Accessible Plum */
+  --color-primary-800: #621c48;
+  --color-primary-900: #4c1437;
 
-  --color-secondary-50: #f1f5f9;
-  --color-secondary-100: #e2e8f0;
-  --color-secondary-500: #334155;
-  --color-secondary-600: #1e293b; /* Deep Slate / Navy */
-  --color-secondary-700: #0f172a;
-  --color-secondary-800: #020617;
+  /* Exact Scanned Logo "HEALTH SYSTEMS" Cerulean / Cyan Blue (#22aae2) */
+  --color-cerulean-50: #f0f9ff;
+  --color-cerulean-100: #e0f2fe;
+  --color-cerulean-200: #bae6fd;
+  --color-cerulean-300: #7cd4fd;
+  --color-cerulean-400: #38bdf8;
+  --color-cerulean-500: #22aae2; /* Exact Scanned Logo Cyan */
+  --color-cerulean-600: #0284c7; /* High-contrast Accessible Cerulean */
+  --color-cerulean-700: #0369a1;
+  --color-cerulean-800: #075985;
+  --color-cerulean-900: #0c4a6e;
 
-  --color-brand-blue: #1d3557;
-  --color-brand-plum: #8b2964;
-  --color-brand-green: #15803d;
+  /* Exact Scanned Logo ECG Heartbeat Crimson Red (#ed1c24) */
+  --color-pulse-50: #fef2f2;
+  --color-pulse-100: #fee2e2;
+  --color-pulse-200: #fecaca;
+  --color-pulse-500: #ed1c24; /* Exact Scanned Logo ECG Pulse */
+  --color-pulse-600: #dc2626;
+  --color-pulse-700: #b91c1c; /* High-contrast Crimson */
+
+  /* Exact Scanned Logo Microscope & Beaker Deep Navy (#2e3192 / #1b203d) */
+  --color-navy-50: #f8fafc;
+  --color-navy-100: #f1f5f9;
+  --color-navy-200: #e2e8f0;
+  --color-navy-700: #232a54;
+  --color-navy-800: #1b203d; /* Logo Microscope Indigo Navy */
+  --color-navy-900: #141830; /* Solid Authority Navy for Headers & Footers */
+  --color-navy-950: #0d1021;
+
+  --color-brand-plum: #a54482;
+  --color-brand-cyan: #22aae2;
+  --color-brand-red: #ed1c24;
+  --color-brand-navy: #1b203d;
 
   --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-display: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

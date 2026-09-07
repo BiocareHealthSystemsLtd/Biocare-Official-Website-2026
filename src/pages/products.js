@@ -153,7 +153,7 @@ export default function Products() {
                     onClick={() => handleCategoryClick('all')}
                     className={`text-left px-2.5 py-1.5 rounded transition-colors flex justify-between items-center cursor-pointer ${
                       selectedCategory === 'all' 
-                        ? 'bg-primary-50 text-primary-800 font-semibold' 
+                        ? 'bg-primary-50 text-primary-800 font-semibold border-l-2 border-primary-600' 
                         : 'text-slate-600 hover:bg-slate-50'
                     }`}
                   >
@@ -170,7 +170,7 @@ export default function Products() {
                         onClick={() => handleCategoryClick(cat.slug)}
                         className={`text-left px-2.5 py-1.5 rounded transition-colors flex justify-between items-center cursor-pointer ${
                           selectedCategory === cat.slug 
-                            ? 'bg-primary-50 text-primary-800 font-semibold' 
+                            ? 'bg-primary-50 text-primary-800 font-semibold border-l-2 border-primary-600' 
                             : 'text-slate-600 hover:bg-slate-50'
                         }`}
                       >
@@ -200,7 +200,7 @@ export default function Products() {
                     onClick={() => {
                       handleCategoryClick('all');
                     }}
-                    className="text-primary-700 hover:underline cursor-pointer"
+                    className="text-primary-700 hover:text-primary-800 font-semibold hover:underline cursor-pointer"
                   >
                     Clear Filters
                   </button>
@@ -238,7 +238,7 @@ export default function Products() {
                     <div className="text-center py-6 border-t border-slate-200">
                       <button
                         onClick={() => setVisibleCount((prev) => prev + 12)}
-                        className="bg-primary-700 hover:bg-primary-800 text-white font-medium py-2 px-6 rounded text-xs transition-colors cursor-pointer"
+                        className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-6 rounded text-xs transition-colors cursor-pointer shadow-xs"
                       >
                         Load More Products
                       </button>
@@ -253,7 +253,7 @@ export default function Products() {
                   </p>
                   <button
                     onClick={handleClearProduct}
-                    className="bg-primary-700 hover:bg-primary-800 text-white font-medium py-2 px-4 rounded text-xs transition-colors cursor-pointer"
+                    className="bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2 px-4 rounded text-xs transition-colors cursor-pointer shadow-xs"
                   >
                     Reset Filters
                   </button>

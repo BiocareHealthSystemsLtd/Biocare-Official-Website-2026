@@ -53,33 +53,36 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Utility Bar */}
-      <div className="bg-slate-900 text-slate-300 text-xs py-2 px-4 hidden md:block border-b border-slate-800">
+      {/* Top Utility Bar - Solid Microscope Navy */}
+      <div className="bg-[#141830] text-slate-300 text-xs py-2 px-4 hidden md:block border-b border-[#232a54]">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex space-x-6 items-center">
             <span className="flex items-center space-x-2">
-              <PhoneIcon className="w-3.5 h-3.5 text-slate-400" />
-              <span>Direct Sales: <a href={`tel:${siteConfig.phones[0].link}`} className="text-white hover:underline">{siteConfig.phones[0].value}</a></span>
+              <PhoneIcon className="w-3.5 h-3.5 text-cerulean-400" />
+              <span>Direct Sales: <a href={`tel:${siteConfig.phones[0].link}`} className="text-white hover:text-cerulean-300 transition-colors font-medium">{siteConfig.phones[0].value}</a></span>
             </span>
-            <span className="text-slate-600">|</span>
+            <span className="text-[#3b4372]">|</span>
             <span className="flex items-center space-x-2">
-              <EmailIcon className="w-3.5 h-3.5 text-slate-400" />
-              <a href={`mailto:${siteConfig.email}`} className="text-white hover:underline">{siteConfig.email}</a>
+              <EmailIcon className="w-3.5 h-3.5 text-cerulean-400" />
+              <a href={`mailto:${siteConfig.email}`} className="text-white hover:text-cerulean-300 transition-colors">{siteConfig.email}</a>
             </span>
           </div>
           <div className="flex space-x-4 items-center">
             <span className="text-slate-400">Nairobi Showroom: Chambers Rd, Ngara</span>
-            <span className="text-slate-600">|</span>
+            <span className="text-[#3b4372]">|</span>
             <Link 
               href={siteConfig.googleDriveCatalog} 
               target="_blank" 
-              className="text-white hover:text-slate-200 font-medium underline underline-offset-2"
+              className="text-cerulean-300 hover:text-white font-medium underline underline-offset-2 transition-colors"
             >
               Download PDF Catalog
             </Link>
           </div>
         </div>
       </div>
+
+      {/* Clinical ECG Crimson Vital Stripe (echoing logo pulse line) */}
+      <div className="h-[2px] bg-[#ed1c24] w-full hidden md:block" aria-hidden="true" />
 
       {/* Main Header Bar */}
       <header className={`w-full z-40 transition-colors duration-150 ${scrolled ? 'fixed top-0 site-nav-scrolled bg-white border-b border-slate-200' : 'relative bg-white border-b border-slate-200'}`}>
@@ -105,7 +108,7 @@ export default function Header() {
                 <Link 
                   key={idx} 
                   href={link.path}
-                  className={`py-1 transition-colors ${isActive ? 'text-primary-700 font-semibold border-b-2 border-primary-700' : 'hover:text-primary-700'}`}
+                  className={`py-1 transition-colors ${isActive ? 'text-primary-700 font-semibold border-b-2 border-primary-600' : 'hover:text-primary-600'}`}
                 >
                   {link.name}
                 </Link>
@@ -121,10 +124,10 @@ export default function Header() {
                 placeholder="Search equipment or catalog..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="bg-slate-50 focus:bg-white text-slate-900 rounded-md pl-3.5 pr-9 py-2 text-xs border border-slate-300 focus:border-slate-500 focus:outline-none w-48 lg:w-56 transition-colors"
+                className="bg-slate-50 focus:bg-white text-slate-900 rounded-md pl-3.5 pr-9 py-2 text-xs border border-slate-300 focus:border-primary-500 focus:outline-none w-48 lg:w-56 transition-colors"
                 aria-label="Search equipment"
               />
-              <button type="submit" className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700" aria-label="Submit search">
+              <button type="submit" className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-primary-600 transition-colors" aria-label="Submit search">
                 <SearchIcon className="w-4 h-4" />
               </button>
 
@@ -136,10 +139,10 @@ export default function Header() {
                       key={p.id}
                       href={`/products?product=${encodeURIComponent(p.id)}`}
                       onClick={() => setSearchQuery('')}
-                      className="block px-3.5 py-2 hover:bg-slate-50 transition-colors border-b last:border-0 border-slate-100"
+                      className="block px-3.5 py-2 hover:bg-primary-50/50 transition-colors border-b last:border-0 border-slate-100"
                     >
                       <span className="font-semibold text-slate-800 block truncate">{p.name}</span>
-                      <span className="text-[11px] text-slate-500 capitalize block mt-0.5">{p.category}</span>
+                      <span className="text-[11px] text-primary-700 capitalize block mt-0.5">{p.category}</span>
                     </Link>
                   ))}
                 </div>
@@ -183,12 +186,13 @@ export default function Header() {
             <div className="flex space-x-5 items-center">
               <span className="text-slate-500 font-medium">Quick Categories:</span>
               {featuredShortcuts.map((shortcut, idx) => (
-                <Link key={idx} href={shortcut.path} className="hover:text-primary-700 transition-colors">
+                <Link key={idx} href={shortcut.path} className="hover:text-cerulean-600 font-medium transition-colors">
                   {shortcut.name}
                 </Link>
               ))}
             </div>
-            <div className="text-slate-500">
+            <div className="text-slate-600 flex items-center">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#ed1c24] mr-2"></span>
               Biomedical Engineering & Supplies Across Kenya
             </div>
           </div>

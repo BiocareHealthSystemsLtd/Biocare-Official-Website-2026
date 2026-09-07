@@ -27,10 +27,10 @@ export default function CategoryGrid() {
             <Link 
               key={category.id}
               href={`/products?category=${category.slug}`}
-              className="p-4 rounded border border-slate-200 hover:border-slate-400 hover:bg-slate-50 transition-colors flex flex-col justify-between"
+              className="p-4 rounded border border-slate-200 hover:border-primary-400 hover:bg-primary-50/40 transition-colors flex flex-col justify-between group"
             >
               <div>
-                <span className="text-xs font-bold text-slate-900 block mb-1">
+                <span className="text-xs font-bold text-slate-900 group-hover:text-primary-800 block mb-1 transition-colors">
                   {category.name}
                 </span>
                 <p className="text-xs text-slate-500 leading-relaxed">
@@ -39,8 +39,8 @@ export default function CategoryGrid() {
               </div>
 
               <div className="pt-3 mt-3 border-t border-slate-100 flex justify-between items-center text-xs">
-                <span className="text-primary-700 font-medium">Browse Category</span>
-                <span className="text-slate-400">→</span>
+                <span className="text-primary-700 font-semibold group-hover:text-primary-800">Browse Category</span>
+                <span className="text-slate-400 group-hover:text-primary-600 transition-colors">→</span>
               </div>
             </Link>
           ))}
@@ -50,7 +50,7 @@ export default function CategoryGrid() {
           <span>Need a specific spare part, chemical, or consumable not listed in the categories?</span>
           <Link 
             href="/contact" 
-            className="text-primary-700 hover:text-primary-800 font-medium underline"
+            className="text-primary-700 hover:text-primary-800 font-semibold underline underline-offset-2 transition-colors"
           >
             Inquire directly with our Nairobi procurement desk →
           </Link>

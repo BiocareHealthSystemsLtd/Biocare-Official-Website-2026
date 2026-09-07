@@ -240,7 +240,7 @@ export default function DiagnosticWizard() {
                 </button>
                 <button
                   onClick={() => setStep(3)}
-                  className="px-5 py-2 bg-primary-700 hover:bg-primary-800 text-white rounded text-xs font-medium"
+                  className="px-5 py-2 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded text-xs transition-colors shadow-xs"
                 >
                   Generate Equipment Checklist →
                 </button>
@@ -275,7 +275,7 @@ export default function DiagnosticWizard() {
                     {selectedFacility.recommendedEquipment.map((eq, i) => (
                       <div key={i} className="py-2 flex justify-between items-center text-xs">
                         <span className="text-slate-800 font-medium">{eq.name}</span>
-                        <span className="text-[11px] text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200">
+                        <span className="text-[11px] text-cerulean-700 bg-cerulean-50 px-2 py-0.5 rounded border border-cerulean-200 font-medium">
                           {eq.category}
                         </span>
                       </div>
@@ -298,7 +298,7 @@ export default function DiagnosticWizard() {
                   <div className="space-y-2 pt-2 border-t border-slate-200">
                     <button
                       onClick={handleRequestQuote}
-                      className="w-full bg-primary-700 hover:bg-primary-800 text-white font-medium py-2.5 rounded text-xs transition-colors"
+                      className="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold py-2.5 rounded text-xs transition-colors shadow-xs"
                     >
                       Request Formal Quote for This Suite
                     </button>

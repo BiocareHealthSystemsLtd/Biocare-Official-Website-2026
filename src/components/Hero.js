@@ -11,7 +11,8 @@ export default function Hero() {
         {/* Text Column */}
         <div className="lg:col-span-7 flex flex-col space-y-5 text-left">
           
-          <div className="inline-flex items-center space-x-2 self-start bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded border border-slate-200">
+          <div className="inline-flex items-center space-x-2 self-start bg-primary-50 text-primary-900 text-xs font-medium px-3 py-1.5 rounded border border-primary-200">
+            <span className="w-2 h-2 rounded-full bg-[#ed1c24] shrink-0" />
             <span>Nairobi Showroom: Chambers Road, Ngara</span>
           </div>
 
@@ -23,17 +24,17 @@ export default function Hero() {
             Biocare Health Systems Limited equips public and private healthcare facilities across Kenya with certified diagnostic analyzers, imaging systems, operating theatre units, and durable ward furniture. All equipment is backed by manufacturer warranties, on-site installation, and preventive maintenance by qualified biomedical engineers.
           </p>
 
-          {/* Operational Facts */}
+          {/* Operational Facts - Solid Brand Color Top Borders */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs text-slate-700">
-            <div className="bg-slate-50 border border-slate-200 p-3 rounded">
+            <div className="bg-slate-50 border border-slate-200 border-t-2 border-t-[#22aae2] p-3 rounded">
               <span className="font-semibold text-slate-900 block mb-0.5">Authorized Brands</span>
               <span className="text-slate-500">Dymind, Prunus, Browiner, Labcold and Zybio</span>
             </div>
-            <div className="bg-slate-50 border border-slate-200 p-3 rounded">
+            <div className="bg-slate-50 border border-slate-200 border-t-2 border-t-[#a54482] p-3 rounded">
               <span className="font-semibold text-slate-900 block mb-0.5">Biomedical Engineers</span>
               <span className="text-slate-500">Installation, staff training and routine calibration</span>
             </div>
-            <div className="bg-slate-50 border border-slate-200 p-3 rounded">
+            <div className="bg-slate-50 border border-slate-200 border-t-2 border-t-[#ed1c24] p-3 rounded">
               <span className="font-semibold text-slate-900 block mb-0.5">Nationwide Delivery</span>
               <span className="text-slate-500">Secure transport across all 47 counties in Kenya</span>
             </div>
@@ -43,7 +44,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-3 pt-4">
             <Link
               href="/contact"
-              className="text-center bg-primary-700 hover:bg-primary-800 text-white font-medium py-3 px-6 rounded text-sm transition-colors"
+              className="text-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded text-sm transition-colors shadow-xs"
             >
               Request Equipment Quotation
             </Link>
@@ -56,9 +57,9 @@ export default function Hero() {
             </Link>
             <a
               href={`tel:${siteConfig.phones[0].link}`}
-              className="inline-flex items-center justify-center space-x-2 text-slate-700 hover:text-slate-900 py-3 px-4 text-xs font-medium"
+              className="inline-flex items-center justify-center space-x-2 text-slate-700 hover:text-primary-700 py-3 px-4 text-xs font-medium transition-colors"
             >
-              <PhoneIcon className="w-4 h-4 text-slate-500" />
+              <PhoneIcon className="w-4 h-4 text-[#ed1c24]" />
               <span>Call Sales: {siteConfig.phones[0].value}</span>
             </a>
           </div>
@@ -70,10 +71,10 @@ export default function Hero() {
           <div className="bg-slate-50 border border-slate-200 rounded-lg p-5">
             <div className="flex justify-between items-center border-b border-slate-200 pb-3 mb-4">
               <div>
-                <span className="text-[11px] font-semibold text-slate-500 uppercase tracking-wider block">Featured Diagnostic Analyzer</span>
+                <span className="text-[11px] font-semibold text-primary-700 uppercase tracking-wider block">Featured Diagnostic Analyzer</span>
                 <h2 className="text-base font-bold text-slate-900">Dymind DH36 Auto Hematology Analyzer</h2>
               </div>
-              <span className="text-[11px] bg-white border border-slate-200 px-2 py-0.5 rounded text-slate-600 font-medium">In Stock</span>
+              <span className="text-[11px] bg-cerulean-50 border border-cerulean-200 text-cerulean-700 px-2 py-0.5 rounded font-semibold">In Stock</span>
             </div>
 
             {/* Product Image */}
@@ -92,19 +93,19 @@ export default function Hero() {
             {/* Technical Specifications List */}
             <div className="space-y-2 text-xs text-slate-600">
               <div className="flex items-start space-x-2">
-                <CheckIcon className="w-3.5 h-3.5 text-slate-500 shrink-0 mt-0.5" />
+                <CheckIcon className="w-3.5 h-3.5 text-cerulean-600 shrink-0 mt-0.5" />
                 <span><strong>Throughput:</strong> 60 tests per hour with 3-part WBC differentiation</span>
               </div>
               <div className="flex items-start space-x-2">
-                <CheckIcon className="w-3.5 h-3.5 text-slate-500 shrink-0 mt-0.5" />
+                <CheckIcon className="w-3.5 h-3.5 text-cerulean-600 shrink-0 mt-0.5" />
                 <span><strong>Parameters:</strong> 21 reportable parameters and 3 histograms</span>
               </div>
               <div className="flex items-start space-x-2">
-                <CheckIcon className="w-3.5 h-3.5 text-slate-500 shrink-0 mt-0.5" />
+                <CheckIcon className="w-3.5 h-3.5 text-cerulean-600 shrink-0 mt-0.5" />
                 <span><strong>Sample Volume:</strong> 9 µL whole blood requirement, ideal for pediatric care</span>
               </div>
               <div className="flex items-start space-x-2">
-                <CheckIcon className="w-3.5 h-3.5 text-slate-500 shrink-0 mt-0.5" />
+                <CheckIcon className="w-3.5 h-3.5 text-cerulean-600 shrink-0 mt-0.5" />
                 <span><strong>Local Support:</strong> Continuous reagent inventory and engineer servicing in Nairobi</span>
               </div>
             </div>
@@ -113,7 +114,7 @@ export default function Hero() {
               <span className="text-slate-500">Includes 12-Month Warranty</span>
               <Link 
                 href="/products?product=dymind-dh36" 
-                className="text-primary-700 hover:text-primary-800 font-medium"
+                className="text-primary-700 hover:text-primary-800 font-semibold transition-colors"
               >
                 View Full Specifications →
               </Link>

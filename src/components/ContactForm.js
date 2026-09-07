@@ -239,7 +239,7 @@ export default function ContactForm({ interestCategory = '', initialMessage = ''
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-primary-700 hover:bg-primary-800 disabled:bg-slate-400 text-white font-medium py-3 rounded text-xs transition-colors"
+            className="w-full bg-primary-600 hover:bg-primary-700 disabled:bg-slate-400 text-white font-semibold py-3 rounded text-xs transition-colors shadow-xs cursor-pointer"
           >
             {isSubmitting ? 'Submitting Quotation Request...' : 'Submit Formal Quotation Request'}
           </button>

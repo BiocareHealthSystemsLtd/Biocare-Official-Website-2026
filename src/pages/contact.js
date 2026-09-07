@@ -43,9 +43,9 @@ export default function Contact() {
         
         {/* Info Area */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="bg-slate-900 text-white p-6 sm:p-7 rounded space-y-5">
+          <div className="bg-[#141830] text-white p-6 sm:p-7 rounded space-y-5 border border-[#232a54]">
             <div>
-              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">
+              <span className="text-xs font-semibold text-cerulean-400 uppercase tracking-wider block">
                 Official Head Office
               </span>
               <h2 className="text-lg sm:text-xl font-bold text-white mt-1">
@@ -55,7 +55,7 @@ export default function Contact() {
 
             <div className="space-y-4 text-xs">
               <div className="flex items-start space-x-3">
-                <MapIcon className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
+                <MapIcon className="w-4 h-4 text-cerulean-400 shrink-0 mt-0.5" />
                 <div>
                   <span className="font-semibold block text-slate-200">Showroom & Workshop Address:</span>
                   <span className="text-slate-400 leading-relaxed block mt-0.5">
@@ -67,23 +67,23 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start space-x-3">
-                <PhoneIcon className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
+                <PhoneIcon className="w-4 h-4 text-cerulean-400 shrink-0 mt-0.5" />
                 <div>
                   <span className="font-semibold block text-slate-200">Telephone Lines:</span>
-                  <a href={`tel:${siteConfig.phones[0].link}`} className="text-white hover:underline block mt-0.5 font-medium">
+                  <a href={`tel:${siteConfig.phones[0].link}`} className="text-white hover:text-cerulean-300 transition-colors block mt-0.5 font-medium">
                     {siteConfig.phones[0].value} (Sales & Quotations)
                   </a>
-                  <a href={`tel:${siteConfig.phones[1].link}`} className="text-white hover:underline block font-medium">
+                  <a href={`tel:${siteConfig.phones[1].link}`} className="text-white hover:text-cerulean-300 transition-colors block font-medium">
                     {siteConfig.phones[1].value} (Admin & Technical Support)
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
-                <EmailIcon className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
+                <EmailIcon className="w-4 h-4 text-cerulean-400 shrink-0 mt-0.5" />
                 <div>
                   <span className="font-semibold block text-slate-200">Email Correspondence:</span>
-                  <a href={`mailto:${siteConfig.email}`} className="text-white hover:underline block mt-0.5">
+                  <a href={`mailto:${siteConfig.email}`} className="text-white hover:text-cerulean-300 transition-colors block mt-0.5">
                     {siteConfig.email}
                   </a>
                 </div>
