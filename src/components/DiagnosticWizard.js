@@ -4,63 +4,60 @@ import {
   LaboratoryIcon, 
   FurnitureIcon, 
   DentalIcon, 
-  IcuIcon, 
-  SurgicalIcon,
-  ImagingIcon,
-  HematologyIcon,
-  BiochemistryIcon
+  IcuIcon,
+  CheckIcon
 } from './Icons';
 
 const facilityTypes = [
   {
     id: 'clinic',
-    name: 'General Clinic / Medical Center',
+    name: 'General Clinic / Outpatient Centre',
     icon: FurnitureIcon,
-    description: 'Perfect for standard clinics, outpatient facilities, and family health practices.',
+    description: 'Standard outpatient clinics, primary healthcare practices, and family health centres.',
     defaultCategories: ['furniture', 'laboratory', 'emergency'],
     recommendedEquipment: [
-      { name: 'Hydraulic Delivery Bed / Examination Couch', category: 'furniture' },
-      { name: 'Dymind DH36 Hematology Analyzer', category: 'hematology' },
-      { name: 'Clinical Microscope (Olympus CX23)', category: 'laboratory' },
-      { name: 'Basic Centrifuge & Autoclave', category: 'laboratory' }
+      { name: 'Hydraulic Examination Couch & Screen', category: 'Hospital Furniture' },
+      { name: 'Dymind DH36 Auto Hematology Analyzer', category: 'Hematology' },
+      { name: 'Clinical Microscope (Olympus CX23)', category: 'Laboratory' },
+      { name: 'Benchtop Autoclave (24L) & Centrifuge', category: 'Laboratory' }
     ]
   },
   {
     id: 'hospital',
-    name: 'Comprehensive Hospital / Maternity',
+    name: 'Comprehensive Hospital / Maternity Ward',
     icon: IcuIcon,
-    description: 'Designed for inpatient facilities, ICU wards, maternity clinics, and surgical centers.',
+    description: 'Inpatient hospitals, maternity homes, ICU departments, and surgical wings.',
     defaultCategories: ['furniture', 'icu', 'imaging', 'surgical'],
     recommendedEquipment: [
-      { name: 'ICU Multi-parameter Patient Monitor', category: 'icu' },
-      { name: 'Radiology Ultrasound Scanner & Dry Film Printer', category: 'imaging' },
-      { name: 'Electro-Hydraulic Operating Table', category: 'furniture' },
-      { name: 'Surgical Instrument Autoclaves & OT Light', category: 'surgical' }
+      { name: 'ICU Multi-Parameter Patient Monitor', category: 'ICU Equipment' },
+      { name: 'Browiner Digital Radiology Scanner & Imager', category: 'Imaging' },
+      { name: 'Electro-Hydraulic Operating Table with Split Legs', category: 'Hospital Furniture' },
+      { name: 'Surgical Autoclave & Ceiling Theatre Light', category: 'Surgical' }
     ]
   },
   {
     id: 'lab',
-    name: 'Diagnostic Laboratory',
+    name: 'Clinical Pathology Diagnostic Laboratory',
     icon: LaboratoryIcon,
-    description: 'Tailored for specialized clinical pathology labs and diagnostic centers.',
+    description: 'Diagnostic pathology centres, reference labs, and testing facilities.',
     defaultCategories: ['hematology', 'biochemistry', 'laboratory', 'consumables'],
     recommendedEquipment: [
-      { name: 'Dymind DH800 / DH36 Auto Hematology Analyzer', category: 'hematology' },
-      { name: 'Semi-Auto / Full-Auto Biochemistry Analyzer', category: 'biochemistry' },
-      { name: 'Lab Centrifuge, Incubator & Refrigerator', category: 'laboratory' },
-      { name: 'High-Grade Reagents & Consumables Pack', category: 'consumables' }
+      { name: 'Dymind DH36 / DH76 Automated Hematology Analyzer', category: 'Hematology' },
+      { name: 'Semi-Automated / Automated Chemistry Analyzer', category: 'Biochemistry' },
+      { name: 'Laboratory Centrifuge, Water Bath & Medical Fridge', category: 'Laboratory' },
+      { name: 'CBC Reagents, Diluents & Controls Starter Pack', category: 'Consumables' }
     ]
   },
   {
     id: 'dental',
-    name: 'Specialized Dental Clinic',
+    name: 'Dental Clinic / Oral Surgery Practice',
     icon: DentalIcon,
-    description: 'For oral surgery centers, family dental practices, and cosmetic dentistry.',
+    description: 'Private dental surgeries, orthodontic clinics, and hospital dental departments.',
     defaultCategories: ['dental', 'laboratory', 'furniture'],
     recommendedEquipment: [
-      { name: 'Premium Dental Chair Unit with Full Accessories', category: 'dental' },
-      { name: 'Portable Dental X-Ray & Sensor', category: 'dental' },
-      { name: 'Dental Instrument Autoclave & Sterilizer', category: 'laboratory' }
+      { name: 'Integrated Dental Chair Unit with Compressor', category: 'Dental' },
+      { name: 'Portable Dental X-Ray & Digital Sensor', category: 'Dental' },
+      { name: 'Dental Instrument Class B Autoclave', category: 'Laboratory' }
     ]
   }
 ];
@@ -103,13 +100,12 @@ export default function DiagnosticWizard() {
 
     const targetCategory = categoryMapping[selectedFacility.id] || 'Hospital Furniture';
     
-    // Construct prefilled email/message
     const focusString = selectedFocus.map(f => f.charAt(0).toUpperCase() + f.slice(1)).join(', ');
     const equipmentString = selectedFacility.recommendedEquipment
-      .map(e => `- ${e.name}`)
+      .map(e => `- ${e.name} (${e.category})`)
       .join('\n');
 
-    const message = `Hello Biocare Team,\n\nWe are looking to set up/upgrade a "${selectedFacility.name}" and would like a custom quote for the following equipment suite:\n\nFocus Areas: ${focusString}\n\nRecommended Bundle:\n${equipmentString}\n\nPlease share availability, delivery terms, and formal pricing.`;
+    const message = `Inquiry regarding equipment setup for a ${selectedFacility.name}:\n\nDepartments: ${focusString}\n\nEquipment Checklist:\n${equipmentString}\n\nPlease provide formal quotation, delivery timelines to our location, and warranty details.`;
 
     router.push({
       pathname: '/contact',
@@ -121,65 +117,70 @@ export default function DiagnosticWizard() {
   };
 
   return (
-    <section className="bg-gradient-to-br from-primary-900 via-primary-950 to-slate-950 text-white py-16 px-4 sm:px-6 lg:px-8 border-t border-b border-primary-800">
+    <section className="bg-slate-50 py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center space-y-4 mb-12">
-          <span className="text-xs font-semibold text-secondary-400 uppercase tracking-widest block font-sans">
-            INTERACTIVE SETUP GUIDE
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-display font-extrabold text-white tracking-tight">
-            Select Your Facility & Configure Your Quote
-          </h2>
-          <p className="text-gray-300 text-sm max-w-xl mx-auto leading-relaxed font-normal">
-            Answer a few quick questions to receive a tailored equipment recommendation list curated by our clinical engineers.
+        
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-slate-200">
+          <div>
+            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">
+              Planning & Sizing Guide
+            </span>
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+              Facility Equipment Planning Tool
+            </h2>
+          </div>
+          <p className="text-xs text-slate-600 max-w-md mt-2 md:mt-0 leading-relaxed">
+            Select your clinical facility type to review recommended equipment suites and generate a structured quotation request.
           </p>
         </div>
 
-        {/* Wizard Panel */}
-        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
+        {/* Wizard Card Container */}
+        <div className="bg-white border border-slate-200 rounded-lg p-6 md:p-8">
+          
           {/* Step Indicators */}
-          <div className="flex justify-between items-center mb-8 border-b border-white/10 pb-6">
-            <div className="flex items-center space-x-3">
-              <span className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs ${step >= 1 ? 'bg-secondary-600 text-white' : 'bg-white/10 text-gray-400'}`}>
+          <div className="flex items-center justify-between border-b border-slate-200 pb-4 mb-6 text-xs font-medium">
+            <div className={`flex items-center space-x-2 ${step >= 1 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step >= 1 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
                 1
               </span>
-              <span className="text-xs font-semibold hidden sm:inline">Facility Type</span>
+              <span>Facility Type</span>
             </div>
-            <div className="w-12 h-[1px] bg-white/10 shrink-0"></div>
-            <div className="flex items-center space-x-3">
-              <span className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs ${step >= 2 ? 'bg-secondary-600 text-white' : 'bg-white/10 text-gray-400'}`}>
+            <span className="text-slate-300">→</span>
+            <div className={`flex items-center space-x-2 ${step >= 2 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step >= 2 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
                 2
               </span>
-              <span className="text-xs font-semibold hidden sm:inline">Focus Areas</span>
+              <span>Departments</span>
             </div>
-            <div className="w-12 h-[1px] bg-white/10 shrink-0"></div>
-            <div className="flex items-center space-x-3">
-              <span className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-xs ${step >= 3 ? 'bg-secondary-600 text-white' : 'bg-white/10 text-gray-400'}`}>
+            <span className="text-slate-300">→</span>
+            <div className={`flex items-center space-x-2 ${step >= 3 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step >= 3 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
                 3
               </span>
-              <span className="text-xs font-semibold hidden sm:inline">Tailored Package</span>
+              <span>Equipment Checklist</span>
             </div>
           </div>
 
-          {/* Wizard Content */}
+          {/* Step 1 */}
           {step === 1 && (
-            <div className="space-y-6">
-              <h3 className="text-lg font-bold text-secondary-400 mb-4 font-display">What type of medical facility are you configuring?</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-4">
+              <h3 className="text-sm font-bold text-slate-900">Step 1: What type of healthcare facility are you equipping?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {facilityTypes.map((facility) => {
                   const Icon = facility.icon;
                   return (
                     <button
                       key={facility.id}
                       onClick={() => handleSelectFacility(facility)}
-                      className="text-left bg-white/5 hover:bg-white/10 border border-white/10 hover:border-secondary-500/50 rounded-2xl p-5 transition-all duration-300 group flex items-start space-x-4"
+                      className="text-left bg-slate-50 hover:bg-slate-100 border border-slate-200 hover:border-slate-300 rounded p-4 transition-colors flex items-start space-x-3.5 cursor-pointer"
                     >
-                      <div className="bg-secondary-900/50 text-secondary-400 p-3 rounded-xl group-hover:bg-secondary-600 group-hover:text-white transition-all duration-300">
-                        <Icon className="w-6 h-6" />
+                      <div className="p-2 rounded bg-white border border-slate-200 shrink-0 text-slate-700">
+                        <Icon className="w-5 h-5" />
                       </div>
-                      <div className="space-y-1">
-                        <h4 className="font-bold text-sm text-white group-hover:text-secondary-400 transition-colors font-display">{facility.name}</h4>
-                        <p className="text-gray-400 text-xs leading-relaxed font-normal">{facility.description}</p>
+                      <div>
+                        <h4 className="font-bold text-sm text-slate-900">{facility.name}</h4>
+                        <p className="text-slate-500 text-xs mt-1 leading-relaxed">{facility.description}</p>
                       </div>
                     </button>
                   );
@@ -188,74 +189,93 @@ export default function DiagnosticWizard() {
             </div>
           )}
 
+          {/* Step 2 */}
           {step === 2 && selectedFacility && (
-            <div className="space-y-6">
+            <div className="space-y-5">
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-bold text-secondary-400 font-display">Select key focus areas for {selectedFacility.name}:</h3>
-                <button onClick={handleReset} className="text-xs text-gray-400 hover:text-white underline">
-                  Back to Step 1
+                <h3 className="text-sm font-bold text-slate-900">
+                  Step 2: Key departments for {selectedFacility.name}:
+                </h3>
+                <button onClick={handleReset} className="text-xs text-primary-700 hover:underline">
+                  Change Facility
                 </button>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                {['furniture', 'laboratory', 'icu', 'imaging', 'surgical', 'dental', 'hematology', 'biochemistry', 'consumables'].map((cat) => {
-                  const isSelected = selectedFocus.includes(cat);
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                {[
+                  { id: 'furniture', label: 'Hospital Furniture' },
+                  { id: 'laboratory', label: 'Laboratory Diagnostics' },
+                  { id: 'hematology', label: 'Hematology Analyzers' },
+                  { id: 'biochemistry', label: 'Biochemistry Analyzers' },
+                  { id: 'imaging', label: 'X-Ray & Radiology' },
+                  { id: 'icu', label: 'ICU & Patient Monitors' },
+                  { id: 'surgical', label: 'Operating Theatre' },
+                  { id: 'dental', label: 'Dental Units' },
+                  { id: 'consumables', label: 'Reagents & Consumables' }
+                ].map((cat) => {
+                  const isSelected = selectedFocus.includes(cat.id);
                   return (
                     <button
-                      key={cat}
-                      onClick={() => toggleFocus(cat)}
-                      className={`py-3 px-4 rounded-xl border text-xs font-semibold capitalize transition-all ${
+                      key={cat.id}
+                      onClick={() => toggleFocus(cat.id)}
+                      className={`p-2.5 rounded border text-xs font-medium text-left transition-colors flex items-center justify-between cursor-pointer ${
                         isSelected 
-                          ? 'bg-secondary-600 border-secondary-500 text-white shadow-md' 
-                          : 'bg-white/5 border-white/10 text-gray-300 hover:bg-white/10'
+                          ? 'bg-primary-50 border-primary-300 text-primary-900 font-semibold' 
+                          : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100'
                       }`}
                     >
-                      {cat === 'icu' ? 'ICU Equipment' : cat.replace('-', ' ')}
+                      <span>{cat.label}</span>
+                      {isSelected && <CheckIcon className="w-3.5 h-3.5 text-primary-700" />}
                     </button>
                   );
                 })}
               </div>
 
-              <div className="pt-6 border-t border-white/10 flex justify-between">
+              <div className="pt-4 border-t border-slate-200 flex justify-between">
                 <button
                   onClick={() => setStep(1)}
-                  className="px-6 py-2 border border-white/20 hover:bg-white/10 rounded-xl text-xs font-bold transition-all"
+                  className="px-4 py-2 border border-slate-300 hover:bg-slate-50 rounded text-xs font-medium text-slate-700"
                 >
                   Back
                 </button>
                 <button
                   onClick={() => setStep(3)}
-                  className="px-6 py-2 bg-secondary-600 hover:bg-secondary-700 rounded-xl text-xs font-bold transition-all shadow-md"
+                  className="px-5 py-2 bg-primary-700 hover:bg-primary-800 text-white rounded text-xs font-medium"
                 >
-                  Configure Bundle
+                  Generate Equipment Checklist →
                 </button>
               </div>
             </div>
           )}
 
+          {/* Step 3 */}
           {step === 3 && selectedFacility && (
             <div className="space-y-6">
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-center pb-2 border-b border-slate-200">
                 <div>
-                  <h3 className="text-lg font-bold text-secondary-400 font-display">Recommended Suite for {selectedFacility.name}</h3>
-                  <p className="text-xs text-gray-400 font-normal">Review your clinical suite configuration list below</p>
+                  <h3 className="text-sm font-bold text-slate-900">
+                    Recommended Suite for {selectedFacility.name}
+                  </h3>
+                  <p className="text-xs text-slate-500 mt-0.5">
+                    Review your preliminary equipment list before forwarding to our quotation specialists.
+                  </p>
                 </div>
-                <button onClick={handleReset} className="text-xs text-gray-400 hover:text-white underline">
+                <button onClick={handleReset} className="text-xs text-primary-700 hover:underline">
                   Start Over
                 </button>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                {/* Equipment List */}
-                <div className="lg:col-span-7 bg-white/5 rounded-2xl p-5 border border-white/10 space-y-4">
-                  <span className="text-[10px] uppercase font-bold tracking-wider text-secondary-400 block border-b border-white/10 pb-2">
-                    Recommended Equipment Checklist
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                {/* Equipment checklist */}
+                <div className="md:col-span-7 bg-slate-50 rounded border border-slate-200 p-4 space-y-2">
+                  <span className="text-xs font-semibold text-slate-700 block mb-2">
+                    Core Equipment Checklist:
                   </span>
-                  <div className="divide-y divide-white/5">
+                  <div className="divide-y divide-slate-200">
                     {selectedFacility.recommendedEquipment.map((eq, i) => (
-                      <div key={i} className="py-2.5 flex justify-between items-center text-xs">
-                        <span className="text-gray-200 font-medium">{eq.name}</span>
-                        <span className="text-[10px] text-secondary-400 capitalize px-2 py-0.5 bg-secondary-900/50 rounded border border-secondary-800/30">
+                      <div key={i} className="py-2 flex justify-between items-center text-xs">
+                        <span className="text-slate-800 font-medium">{eq.name}</span>
+                        <span className="text-[11px] text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200">
                           {eq.category}
                         </span>
                       </div>
@@ -263,42 +283,28 @@ export default function DiagnosticWizard() {
                   </div>
                 </div>
 
-                {/* Bundle Benefits & CTA */}
-                <div className="lg:col-span-5 bg-gradient-to-br from-secondary-900/30 to-primary-950/40 rounded-2xl p-5 border border-white/10 flex flex-col justify-between">
-                  <div className="space-y-4 mb-6">
-                    <span className="text-[10px] uppercase font-bold tracking-wider text-secondary-400 block border-b border-white/10 pb-2">
-                      Included Package Benefits
-                    </span>
-                    <ul className="space-y-2 text-xs text-gray-300">
-                      <li className="flex items-center space-x-2">
-                        <span className="w-1.5 h-1.5 bg-secondary-500 rounded-full shrink-0"></span>
-                        <span>Full 1-Year Comprehensive Warranty</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <span className="w-1.5 h-1.5 bg-secondary-500 rounded-full shrink-0"></span>
-                        <span>Free Delivery within Nairobi</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <span className="w-1.5 h-1.5 bg-secondary-500 rounded-full shrink-0"></span>
-                        <span>On-site Installation & Staff Training</span>
-                      </li>
-                      <li className="flex items-center space-x-2">
-                        <span className="w-1.5 h-1.5 bg-secondary-500 rounded-full shrink-0"></span>
-                        <span>24/7 Biomedical Engineer Standby</span>
-                      </li>
+                {/* Scope & Quotation Trigger */}
+                <div className="md:col-span-5 bg-slate-100 rounded border border-slate-200 p-4 flex flex-col justify-between space-y-4">
+                  <div className="space-y-2 text-xs text-slate-600">
+                    <span className="font-bold text-slate-900 block">Included Services:</span>
+                    <ul className="space-y-1">
+                      <li>• Formal proforma invoice for financing or county tender</li>
+                      <li>• Verified warranty (12 - 24 months per item)</li>
+                      <li>• On-site delivery and physical installation</li>
+                      <li>• Biomedical engineer calibration and training</li>
                     </ul>
                   </div>
 
-                  <div className="space-y-3">
+                  <div className="space-y-2 pt-2 border-t border-slate-200">
                     <button
                       onClick={handleRequestQuote}
-                      className="w-full bg-secondary-600 hover:bg-secondary-700 text-white font-bold py-3 rounded-xl text-xs transition-colors shadow-lg flex items-center justify-center space-x-2"
+                      className="w-full bg-primary-700 hover:bg-primary-800 text-white font-medium py-2.5 rounded text-xs transition-colors"
                     >
-                      <span>Request Custom Bundle Quote</span>
+                      Request Formal Quote for This Suite
                     </button>
                     <button
                       onClick={() => setStep(2)}
-                      className="w-full bg-white/5 hover:bg-white/10 text-gray-300 font-bold py-2 rounded-xl text-xs transition-all border border-white/10"
+                      className="w-full bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 py-1.5 rounded text-xs"
                     >
                       Back to Step 2
                     </button>
@@ -307,7 +313,9 @@ export default function DiagnosticWizard() {
               </div>
             </div>
           )}
+
         </div>
+
       </div>
     </section>
   );

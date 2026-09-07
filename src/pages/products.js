@@ -14,34 +14,25 @@ export default function Products() {
   const searchQuery = router.query.search ? router.query.search.toString() : '';
 
   const [visibleCount, setVisibleCount] = useState(12);
-  const [selectedProductId, setSelectedProductId] = useState(null);
+  const selectedProductId = router.query.product
+    ? router.query.product.toString()
+    : router.query.id
+    ? router.query.id.toString()
+    : null;
 
   useEffect(() => {
-    if (!router.isReady) return;
-    const targetProduct = router.query.product || router.query.id;
-    if (targetProduct) {
-      setSelectedProductId(targetProduct.toString());
+    if (selectedProductId) {
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else if (typeof window !== 'undefined' && window.location.hash) {
-      const hashId = window.location.hash.replace('#', '');
-      if (hashId && productsData.some((p) => p.id === hashId)) {
-        setSelectedProductId(hashId);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    } else {
-      setSelectedProductId(null);
     }
-  }, [router.isReady, router.query.product, router.query.id]);
+  }, [selectedProductId]);
 
   const handleSelectProduct = (productId) => {
-    setSelectedProductId(productId);
     const query = { ...router.query, product: productId };
     router.push({ pathname: '/products', query }, undefined, { shallow: true });
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleClearProduct = () => {
-    setSelectedProductId(null);
     const query = { ...router.query };
     delete query.product;
     delete query.id;
@@ -50,7 +41,6 @@ export default function Products() {
 
   const handleCategoryClick = (slug) => {
     setVisibleCount(12);
-    setSelectedProductId(null);
     const query = { ...router.query };
     delete query.product;
     delete query.id;
@@ -65,7 +55,6 @@ export default function Products() {
   const handleSearchChange = (e) => {
     const val = e.target.value;
     setVisibleCount(12);
-    setSelectedProductId(null);
     const query = { ...router.query };
     delete query.product;
     delete query.id;
@@ -77,7 +66,6 @@ export default function Products() {
     router.push({ pathname: '/products', query }, undefined, { shallow: true });
   };
 
-  // Filter products
   const filteredProducts = productsData.filter((product) => {
     const matchesCategory =
       selectedCategory === 'all' || product.category.toLowerCase() === selectedCategory.toLowerCase();
@@ -100,7 +88,6 @@ export default function Products() {
     { name: 'Products & Equipment', path: '/products' }
   ];
 
-  // Compile schema details for indexing
   const productSchemas = filteredProducts.map((p) => getProductSchema(p));
   const breadcrumbSchema = getBreadcrumbSchema(breadcrumbs);
   const allSchemas = [breadcrumbSchema, ...productSchemas.slice(0, 10)];
@@ -108,69 +95,70 @@ export default function Products() {
   return (
     <Layout breadcrumbs={breadcrumbs}>
       <SEO 
-        title="Medical Equipment & Supplies Catalog"
-        description="Browse our complete medical catalog in Kenya. Laboratory hematology analyzers, hospital furniture, radiology scanners, dental units, and consumables."
+        title="Medical Equipment & Supplies Catalog | Biocare Kenya"
+        description="Browse certified medical equipment in Kenya. Laboratory hematology analyzers, hospital furniture, radiology scanners, dental units, and consumables with Nairobi biomedical support."
         schemas={allSchemas}
       />
 
-      <div className="bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-slate-50 py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto space-y-8">
           
           {/* Header Banner */}
-          <div className="bg-gradient-to-r from-primary-700 to-primary-800 text-white rounded-3xl p-8 md:p-12 shadow-md relative overflow-hidden flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="space-y-3 max-w-xl text-center md:text-left">
-              <span className="text-[10px] font-bold text-secondary-500 uppercase tracking-widest block font-sans">
-                BIOCARE MEDICAL CATALOG
+          <div className="bg-slate-900 text-white rounded-lg p-6 sm:p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+            <div className="space-y-2 max-w-2xl">
+              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">
+                Equipment & Machinery Catalog
               </span>
-              <h1 className="text-2xl sm:text-3xl font-display font-extrabold tracking-tight">
-                High-Quality Clinical Diagnostics
+              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight">
+                Hospital, Laboratory & Surgical Equipment
               </h1>
-              <p className="text-gray-300 text-xs leading-relaxed font-normal">
-                Filter our medical catalog. If you are looking for specific items, reagents, or spare parts not shown below, download our full product catalogue.
+              <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                Filter our medical equipment range below. If you require specific technical datasheets, tender documentation, or items not listed, download our comprehensive catalog or contact our sales engineers.
               </p>
             </div>
             
             <a
               href={siteConfig.googleDriveCatalog}
               target="_blank"
-              className="bg-secondary-600 hover:bg-secondary-700 text-white font-bold py-3 px-6 rounded-lg text-xs transition-colors shrink-0 shadow-sm"
-              aria-label="Download Catalogue"
+              rel="noreferrer"
+              className="bg-white hover:bg-slate-100 text-slate-900 font-medium py-2.5 px-5 rounded text-xs transition-colors shrink-0"
             >
-              Download Catalogue
+              Download PDF Catalog
             </a>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             
             {/* Sidebar Filters */}
-            <aside className="lg:col-span-3 space-y-6">
+            <aside className="lg:col-span-3 space-y-5">
               
               {/* Search Box */}
-              <div className="bg-white border border-gray-200/80 rounded-2xl p-4 shadow-sm space-y-3">
-                <span className="text-xs font-bold text-gray-800 block uppercase tracking-wider">Search Products</span>
+              <div className="bg-white border border-slate-200 rounded p-4 space-y-2">
+                <span className="text-xs font-bold text-slate-800 block">Search Equipment</span>
                 <input
                   type="text"
-                  placeholder="Filter name, specification..."
+                  placeholder="Filter name or spec (e.g. DH36, Bed)..."
                   value={searchQuery}
                   onChange={handleSearchChange}
-                  className="w-full bg-slate-50 border border-gray-200 rounded-lg px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-1 focus:ring-primary-600"
+                  className="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2 text-xs focus:bg-white focus:outline-none focus:border-slate-500"
                   aria-label="Filter products"
                 />
               </div>
 
-              {/* Categories Pills */}
-              <div className="bg-white border border-gray-200/80 rounded-2xl p-4 shadow-sm space-y-3">
-                <span className="text-xs font-bold text-gray-800 block uppercase tracking-wider">Categories</span>
-                <nav className="flex flex-col space-y-1.5" aria-label="Product categories navigation">
+              {/* Categories Navigation */}
+              <div className="bg-white border border-slate-200 rounded p-4 space-y-2">
+                <span className="text-xs font-bold text-slate-800 block mb-1">Categories</span>
+                <nav className="flex flex-col space-y-1 text-xs" aria-label="Product categories navigation">
                   <button
                     onClick={() => handleCategoryClick('all')}
-                    className={`text-left px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors ${
+                    className={`text-left px-2.5 py-1.5 rounded transition-colors flex justify-between items-center cursor-pointer ${
                       selectedCategory === 'all' 
-                        ? 'bg-primary-50 text-primary-700' 
-                        : 'text-gray-600 hover:bg-slate-50'
+                        ? 'bg-primary-50 text-primary-800 font-semibold' 
+                        : 'text-slate-600 hover:bg-slate-50'
                     }`}
                   >
-                    All Products ({productsData.length})
+                    <span>All Products</span>
+                    <span className="text-[11px] text-slate-400">({productsData.length})</span>
                   </button>
                   {categoriesData.map((cat) => {
                     const count = productsData.filter(
@@ -180,14 +168,14 @@ export default function Products() {
                       <button
                         key={cat.id}
                         onClick={() => handleCategoryClick(cat.slug)}
-                        className={`text-left px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors flex justify-between items-center ${
+                        className={`text-left px-2.5 py-1.5 rounded transition-colors flex justify-between items-center cursor-pointer ${
                           selectedCategory === cat.slug 
-                            ? 'bg-primary-50 text-primary-700' 
-                            : 'text-gray-600 hover:bg-slate-50'
+                            ? 'bg-primary-50 text-primary-800 font-semibold' 
+                            : 'text-slate-600 hover:bg-slate-50'
                         }`}
                       >
-                        <span>{cat.name}</span>
-                        <span className="text-[10px] bg-slate-100 text-gray-500 py-0.5 px-1.5 rounded-full font-normal">
+                        <span className="truncate pr-2">{cat.name}</span>
+                        <span className="text-[11px] text-slate-400 shrink-0">
                           {count}
                         </span>
                       </button>
@@ -199,21 +187,31 @@ export default function Products() {
             </aside>
 
             {/* Product Grid Area */}
-            <main className="lg:col-span-9 space-y-6">
+            <main className="lg:col-span-9 space-y-5">
               
               {/* Counter banner */}
-              <div className="flex justify-between items-center text-xs text-gray-500 bg-white border border-gray-100 py-3 px-5 rounded-2xl">
+              <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center text-xs text-slate-600 bg-white border border-slate-200 py-3 px-4 rounded gap-2">
                 <span>
-                  Showing <strong>{displayedProducts.length}</strong> of <strong>{filteredProducts.length}</strong> items {selectedCategory !== 'all' ? `in ${selectedCategory}` : ''}
+                  Showing <strong>{displayedProducts.length}</strong> of <strong>{filteredProducts.length}</strong> products
+                  {selectedCategory !== 'all' ? ` in ${selectedCategory}` : ''}
                 </span>
-                <span>Nairobi Delivery Options Available</span>
+                {(selectedCategory !== 'all' || searchQuery) && (
+                  <button
+                    onClick={() => {
+                      handleCategoryClick('all');
+                    }}
+                    className="text-primary-700 hover:underline cursor-pointer"
+                  >
+                    Clear Filters
+                  </button>
+                )}
               </div>
 
               {/* Product cards listing */}
               {(filteredProducts.length > 0 || selectedProductId) ? (
-                <div className="space-y-8">
+                <div className="space-y-6">
                   {selectedProductId ? (
-                    <div className="max-w-4xl mx-auto">
+                    <div>
                       {displayedProducts.map((product) => (
                         <ProductCard
                           key={product.id}
@@ -224,7 +222,7 @@ export default function Products() {
                       ))}
                     </div>
                   ) : (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                       {displayedProducts.map((product) => (
                         <ProductCard
                           key={product.id}
@@ -237,10 +235,10 @@ export default function Products() {
                   )}
                   
                   {!selectedProductId && visibleCount < filteredProducts.length && (
-                    <div className="text-center py-6 border-t border-gray-100">
+                    <div className="text-center py-6 border-t border-slate-200">
                       <button
                         onClick={() => setVisibleCount((prev) => prev + 12)}
-                        className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-2.5 px-8 rounded-lg text-xs transition-colors shadow-sm inline-block hover:-translate-y-0.5 duration-200 transform"
+                        className="bg-primary-700 hover:bg-primary-800 text-white font-medium py-2 px-6 rounded text-xs transition-colors cursor-pointer"
                       >
                         Load More Products
                       </button>
@@ -248,19 +246,14 @@ export default function Products() {
                   )}
                 </div>
               ) : (
-                <div className="bg-white border border-gray-200 rounded-3xl p-12 text-center space-y-4">
-                  <svg className="w-16 h-16 text-gray-300 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                  </svg>
-                  <div className="space-y-1">
-                    <h3 className="font-display font-bold text-gray-800 text-base">No Products Found</h3>
-                    <p className="text-gray-500 text-xs max-w-sm mx-auto font-normal">
-                      We couldn&apos;t find matching models. Try clearing search filters or download our product catalogue.
-                    </p>
-                  </div>
+                <div className="bg-white border border-slate-200 rounded p-12 text-center space-y-3">
+                  <h3 className="font-bold text-slate-800 text-sm">No Matching Products Found</h3>
+                  <p className="text-slate-500 text-xs max-w-sm mx-auto">
+                    We could not locate products matching your search criteria. Try clearing search filters or download our PDF catalog.
+                  </p>
                   <button
                     onClick={handleClearProduct}
-                    className="bg-primary-600 hover:bg-primary-700 text-white font-bold py-2.5 px-6 rounded-lg text-xs transition-colors shadow-sm inline-block"
+                    className="bg-primary-700 hover:bg-primary-800 text-white font-medium py-2 px-4 rounded text-xs transition-colors cursor-pointer"
                   >
                     Reset Filters
                   </button>

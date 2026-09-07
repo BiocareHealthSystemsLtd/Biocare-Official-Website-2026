@@ -1,61 +1,82 @@
 import React from 'react';
 import Image from 'next/image';
 
-const brands = [
-  { name: 'Prunus', image: '/images/brand-prunus.png', bgClass: 'bg-white border-gray-100', imgClass: '' },
-  { name: 'Anbio', image: '/images/brand-anbio.png', bgClass: 'bg-slate-900 border-slate-800 shadow-slate-900/10', imgClass: '' },
-  { name: 'Labcold', image: '/images/brand-labcold.png', bgClass: 'bg-white border-gray-100', imgClass: '' },
-  { name: 'Minfound', image: '/images/brand-minfound.png', bgClass: 'bg-white border-gray-100', imgClass: '' },
-  { name: 'Zybio', image: '/images/brand-zybio.png', bgClass: 'bg-white border-gray-100', imgClass: 'scale-[3.5]' }
+const partnerBrands = [
+  { 
+    name: 'Prunus', 
+    image: '/images/brand-prunus.png', 
+    category: 'ICU Ventilators & Anaesthesia Workstations',
+    bgClass: 'bg-white' 
+  },
+  { 
+    name: 'Anbio', 
+    image: '/images/brand-anbio.png', 
+    category: 'Point-of-Care FIA & Dry Chemistry',
+    bgClass: 'bg-slate-900' 
+  },
+  { 
+    name: 'Labcold', 
+    image: '/images/brand-labcold.png', 
+    category: 'Medical Refrigeration & Blood Bank Cold Chain',
+    bgClass: 'bg-white' 
+  },
+  { 
+    name: 'Minfound', 
+    image: '/images/brand-minfound.png', 
+    category: 'Diagnostic CT Scanners & Digital Radiology',
+    bgClass: 'bg-white' 
+  },
+  { 
+    name: 'Zybio', 
+    image: '/images/brand-zybio.png', 
+    category: 'Clinical Chemistry Analyzers & Reagents',
+    bgClass: 'bg-white' 
+  }
 ];
 
 export default function PartnerBrands() {
-  // Duplicate the list to make it scroll seamlessly
-  const marqueeBrands = [...brands, ...brands, ...brands, ...brands];
-
   return (
-    <section className="bg-slate-50/50 py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-100 overflow-hidden">
+    <section className="bg-slate-50 py-10 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-8">
-          <span className="text-[10px] font-bold text-primary-600 uppercase tracking-widest block font-sans">
-            OFFICIAL DISTRIBUTOR
-          </span>
-          <h2 className="text-xl sm:text-2xl font-display font-extrabold text-slate-800 tracking-tight mt-1">
-            Global Brands We Represent & Distribute
-          </h2>
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-slate-200">
+          <div>
+            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">
+              Equipment Distribution
+            </span>
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+              Authorized Manufacturer Partnerships
+            </h2>
+          </div>
+          <p className="text-xs text-slate-600 max-w-md mt-2 md:mt-0 leading-relaxed">
+            Biocare supplies and services hardware directly from certified medical manufacturers with full factory warranty and technical backing.
+          </p>
         </div>
 
-        {/* Scrolling ticker track */}
-        <div className="relative w-full flex items-center overflow-hidden py-4 mask-gradient">
-          <div className="flex space-x-12 items-center animate-marquee whitespace-nowrap min-w-full">
-            {marqueeBrands.map((brand, idx) => (
-              <div 
-                key={idx} 
-                className={`flex items-center justify-center h-16 w-44 shrink-0 rounded-xl border p-4 shadow-sm hover:shadow-md hover:border-primary-300/30 transition-all duration-300 transform hover:-translate-y-0.5 overflow-hidden ${brand.bgClass}`}
-              >
-                <div className={`flex items-center justify-center h-full w-full ${brand.imgClass || ''}`}>
-                  <Image 
-                    src={brand.image} 
-                    alt={`${brand.name} logo`}
-                    width={160}
-                    height={60}
-                    className="max-h-full max-w-full object-contain transition-all duration-300 hover:scale-110"
-                    unoptimized
-                  />
-                </div>
+        {/* Structured Brand Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {partnerBrands.map((brand, idx) => (
+            <div 
+              key={idx} 
+              className="bg-white border border-slate-200 rounded p-4 flex flex-col justify-between"
+            >
+              <div className={`h-14 w-full flex items-center justify-center rounded p-2 mb-3 ${brand.bgClass}`}>
+                <Image 
+                  src={brand.image} 
+                  alt={`${brand.name} logo`}
+                  width={140}
+                  height={44}
+                  className="max-h-full max-w-full object-contain"
+                  unoptimized
+                />
               </div>
-            ))}
-          </div>
+              <div className="pt-2 border-t border-slate-100">
+                <span className="font-semibold text-slate-900 text-xs block">{brand.name}</span>
+                <span className="text-[11px] text-slate-500 block leading-tight mt-0.5">{brand.category}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-
-      {/* CSS mask for fade-out effects at edges */}
-      <style jsx>{`
-        .mask-gradient {
-          mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-          -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-        }
-      `}</style>
     </section>
   );
 }

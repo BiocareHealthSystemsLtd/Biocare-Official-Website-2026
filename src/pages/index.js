@@ -17,55 +17,56 @@ import { getOrganizationSchema, getLocalBusinessSchema } from '../lib/seo';
 import { PhoneIcon, EmailIcon, MapIcon } from '../components/Icons';
 
 export default function Home() {
-  const latestPosts = blogPosts.filter(post => post.status === 'published').slice(0, 3); // Display latest 3 published articles
+  const latestPosts = blogPosts.filter(post => post.status === 'published').slice(0, 3);
   const schemas = [getOrganizationSchema(), getLocalBusinessSchema()];
 
   return (
     <Layout>
-      {/* Search Engine Optimization meta details & schemas */}
       <SEO 
         title="Medical Equipment Suppliers Kenya | Hospital & Lab Equipment"
-        description="Leading medical equipment supplier in Kenya. Dymind laboratory diagnostics, hospital furniture, radiology systems & dental chairs. Sales & biomedical engineering."
+        description="Biocare Health Systems Limited is an authorized supplier of medical equipment, laboratory diagnostics, hospital furniture, and surgical tools in Nairobi, Kenya. Nationwide delivery and biomedical support."
         schemas={schemas}
       />
 
-      {/* Hero Banner Section */}
+      {/* Hero Section */}
       <Hero />
 
-      {/* Partner Brand Logos Infinite Marquee */}
+      {/* Authorized Manufacturer Partners */}
       <PartnerBrands />
 
-      {/* Featured Products Carousel */}
+      {/* Featured Medical Equipment */}
       <FeaturedProductsCarousel />
 
-      {/* Promotional Hot Deals */}
+      {/* Facility Setup Packages */}
       <HotDealsCarousel />
 
-      {/* Main Categories Navigation Grid */}
+      {/* Category Directory */}
       <CategoryGrid />
 
-      {/* Value proposition & Trust badges */}
+      {/* Biomedical Engineering & Operational Standards */}
       <WhyChooseBiocare />
 
-      {/* Customer Testimonial Feedback slider */}
+      {/* Healthcare Facilities Served & Procurement Workflow */}
       <TestimonialSection />
 
-      {/* Dynamic SEO Blog Articles Section */}
-      <section className="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
+      {/* Clinical Equipment & Technical Guides */}
+      <section className="bg-slate-50 py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <span className="text-xs font-semibold text-secondary-600 uppercase tracking-widest block font-sans">
-              EDUCATION & INSIGHTS
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-primary-700 tracking-tight mt-1">
-              Latest Medical Technology Blog
-            </h2>
-            <p className="mt-2 text-gray-500 max-w-xl mx-auto text-sm">
-              Discover tips on laboratory optimization, hospital furniture selections, and digital x-ray standards.
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-slate-200">
+            <div>
+              <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">
+                Technical Articles
+              </span>
+              <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+                Clinical Equipment Guides & Updates
+              </h2>
+            </div>
+            <p className="text-xs text-slate-600 max-w-md mt-2 md:mt-0 leading-relaxed">
+              Technical articles on laboratory hematology selection, continuous glucose monitors, hospital bed maintenance, and diagnostic setups in Kenya.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {latestPosts.map((post, idx) => (
               <BlogCard key={idx} post={post} />
             ))}
@@ -73,52 +74,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Selection Diagnostic Wizard */}
+      {/* Facility Equipment Planning Tool */}
       <DiagnosticWizard />
 
-      {/* Map Section */}
+      {/* Nairobi Showroom & Location */}
       <LocationMap />
 
-      {/* Dual CTA Contact & Form Section */}
-      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8" id="quote-section">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      {/* Quotation Request Section */}
+      <section className="bg-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8" id="quote-section">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
           {/* Details column */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-5">
             <div>
-              <span className="text-xs font-semibold text-secondary-600 uppercase tracking-widest block font-sans">
-                TALK TO A SPECIALIST
+              <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">
+                Direct Procurement Desk
               </span>
-              <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-primary-700 tracking-tight mt-1">
-                Get a Formal Quotation Today
+              <h2 className="text-2xl font-bold text-slate-900 mt-1">
+                Request an Official Price Quotation
               </h2>
             </div>
             
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Have specific catalog queries or bulk equipment supply requests? Our sales leads will compile options matching your budget.
+            <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              Submit your equipment specifications or hospital tender inquiries. Our sales engineers in Nairobi compile formal proforma invoices including warranty terms, delivery timelines, and optional maintenance service level agreements.
             </p>
 
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3 p-4 bg-slate-50 border rounded-2xl">
-                <PhoneIcon className="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-bold text-gray-800 text-xs block">Call Direct:</span>
-                  <a href={`tel:${siteConfig.phones[0].link}`} className="text-primary-600 hover:underline text-xs block font-semibold mt-0.5">
-                    {siteConfig.phones[0].value} (Sales Line)
-                  </a>
-                  <a href={`tel:${siteConfig.phones[1].link}`} className="text-primary-600 hover:underline text-xs block font-semibold">
-                    {siteConfig.phones[1].value} (Admin Line)
-                  </a>
+            <div className="space-y-3 pt-2 text-xs text-slate-700">
+              <div className="p-4 bg-slate-50 border border-slate-200 rounded">
+                <div className="flex items-start space-x-2.5">
+                  <PhoneIcon className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-slate-900 block mb-0.5">Telephone Inquiries:</span>
+                    <a href={`tel:${siteConfig.phones[0].link}`} className="text-primary-700 hover:underline block font-medium">
+                      {siteConfig.phones[0].value} (Sales Desk)
+                    </a>
+                    <a href={`tel:${siteConfig.phones[1].link}`} className="text-primary-700 hover:underline block font-medium">
+                      {siteConfig.phones[1].value} (Office Administration)
+                    </a>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-3 p-4 bg-slate-50 border rounded-2xl">
-                <EmailIcon className="w-5 h-5 text-primary-600 shrink-0 mt-0.5" />
-                <div>
-                  <span className="font-bold text-gray-800 text-xs block">Email Enquiries:</span>
-                  <a href={`mailto:${siteConfig.email}`} className="text-primary-600 hover:underline text-xs block font-semibold mt-0.5">
-                    {siteConfig.email}
-                  </a>
+              <div className="p-4 bg-slate-50 border border-slate-200 rounded">
+                <div className="flex items-start space-x-2.5">
+                  <EmailIcon className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-slate-900 block mb-0.5">Email Communications:</span>
+                    <a href={`mailto:${siteConfig.email}`} className="text-primary-700 hover:underline block font-medium">
+                      {siteConfig.email}
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-4 bg-slate-50 border border-slate-200 rounded">
+                <div className="flex items-start space-x-2.5">
+                  <MapIcon className="w-4 h-4 text-slate-500 shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-bold text-slate-900 block mb-0.5">Showroom & Workshop:</span>
+                    <span className="text-slate-600 leading-relaxed block">
+                      {siteConfig.officeAddress.building}, {siteConfig.officeAddress.street}, {siteConfig.officeAddress.landmark}, Nairobi
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>

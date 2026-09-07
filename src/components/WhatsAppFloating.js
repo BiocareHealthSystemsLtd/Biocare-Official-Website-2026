@@ -1,31 +1,16 @@
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { useState } from 'react';
 import siteConfig from '../data/siteConfig';
-import { WhatsAppIcon } from './Icons';
+import { WhatsAppIcon, CloseIcon, PhoneIcon } from './Icons';
 
 export default function WhatsAppFloating() {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
-  const [showNotification, setShowNotification] = useState(false);
-
-  useEffect(() => {
-    // Show a pulsing notification badge after 4 seconds to prompt the user
-    const timer = setTimeout(() => {
-      setShowNotification(true);
-    }, 4000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  const handleOpenChat = () => {
-    setIsOpen(!isOpen);
-    setShowNotification(false);
-  };
 
   const handleSendMessage = (e) => {
     e.preventDefault();
     const cleanMessage = message.trim();
-    const defaultText = "Hi Biocare Health Systems, I have a question about your medical equipment.";
-    const textToSend = cleanMessage ? cleanMessage : defaultText;
+    const defaultText = "Hello Biocare Health Systems, I would like to inquire about medical equipment pricing and availability.";
+    const textToSend = cleanMessage || defaultText;
     const whatsappUrl = `https://wa.me/254723835776?text=${encodeURIComponent(textToSend)}`;
     
     window.open(whatsappUrl, '_blank');
@@ -35,113 +20,64 @@ export default function WhatsAppFloating() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50 font-sans flex flex-col items-end">
-      {/* WhatsApp Chat Box Window */}
+      {/* WhatsApp Quick Message Panel */}
       {isOpen && (
-        <div className="w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden flex flex-col mb-4 animate-fade-in-up origin-bottom-right">
+        <div className="w-80 bg-white rounded-lg shadow-xl border border-slate-200 overflow-hidden flex flex-col mb-3">
           {/* Header */}
-          <div className="bg-gradient-to-r from-[#128C7E] to-[#075E54] text-white p-4 flex items-center justify-between">
-            <div className="flex items-center space-x-3">
-              {/* Online avatar badge */}
-              <div className="relative">
-                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center p-1 overflow-hidden shadow-inner">
-                  <Image 
-                    src="/images/biocare-logo-wide.png" 
-                    alt="Biocare Logo" 
-                    width={40}
-                    height={40}
-                    className="w-full h-auto object-contain"
-                    unoptimized
-                  />
-                </div>
-                <span className="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-white rounded-full"></span>
-              </div>
-              
-              <div>
-                <h4 className="text-sm font-bold leading-tight">Biocare Support</h4>
-                <p className="text-[10px] text-emerald-200 flex items-center font-normal">
-                  <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full inline-block mr-1.5 animate-pulse"></span>
-                  Replies in minutes
-                </p>
-              </div>
+          <div className="bg-slate-900 text-white p-4 flex items-center justify-between">
+            <div>
+              <h4 className="text-sm font-semibold">Biocare Sales & Support</h4>
+              <p className="text-xs text-slate-400 mt-0.5">Direct WhatsApp Desk (Nairobi)</p>
             </div>
-            
             <button 
               onClick={() => setIsOpen(false)}
-              className="text-white/80 hover:text-white hover:bg-white/10 p-1.5 rounded-full transition-colors focus:outline-none"
-              aria-label="Close chat"
+              className="text-slate-400 hover:text-white p-1 rounded transition-colors"
+              aria-label="Close"
             >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
+              <CloseIcon className="w-4 h-4" />
             </button>
           </div>
 
-          {/* Chat Body (Classic WhatsApp Styled Background) */}
-          <div 
-            className="p-4 bg-[#e5ddd5] flex-grow overflow-y-auto max-h-64 space-y-4"
-            style={{
-              backgroundImage: 'url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png")',
-              backgroundRepeat: 'repeat',
-              backgroundSize: 'auto',
-              backgroundBlendMode: 'overlay',
-              backgroundColor: 'rgba(229, 221, 213, 0.95)'
-            }}
-          >
-            {/* Agent Bubble */}
-            <div className="bg-white text-slate-800 text-xs p-3.5 rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-md max-w-[85%] border-l-4 border-emerald-500 animate-fade-in-up">
-              <p className="font-semibold text-emerald-800 mb-1 text-[10px] uppercase">Biocare Health Systems</p>
-              <p className="leading-relaxed font-normal">
-                Hi there! 👋 Welcome to Biocare. 
-                <br /><br />
-                How can we assist you with our medical, diagnostics, or lab equipment today? Ask us anything!
-              </p>
-              <span className="text-[9px] text-gray-400 text-right block mt-1">
-                {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
-              </span>
+          {/* Body */}
+          <div className="p-4 bg-slate-50 space-y-3 text-xs text-slate-700">
+            <p className="leading-relaxed">
+              Have a question about equipment specs, delivery schedules, or formal price quotations? Send us a direct message on WhatsApp.
+            </p>
+            <div className="bg-white p-2.5 rounded border border-slate-200 text-[11px] text-slate-600 space-y-1">
+              <div><strong>Direct Sales:</strong> 0723 835776</div>
+              <div><strong>Office Line:</strong> 0110039450</div>
+              <div><strong>Hours:</strong> Mon - Fri 8am - 5pm | Sat 9am - 1pm</div>
             </div>
           </div>
 
-          {/* Footer Input Area */}
-          <form onSubmit={handleSendMessage} className="bg-white p-3 border-t border-gray-100 flex items-center space-x-2">
+          {/* Form */}
+          <form onSubmit={handleSendMessage} className="bg-white p-3 border-t border-slate-200 flex flex-col space-y-2">
             <input
               type="text"
-              placeholder="Type a message..."
+              placeholder="Type your inquiry (e.g. DH36 price)..."
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="flex-grow bg-slate-50 border border-slate-200 focus:border-[#128C7E] rounded-full px-4 py-2.5 text-xs text-slate-800 focus:outline-none transition-all placeholder-slate-400 font-normal"
+              className="bg-slate-50 border border-slate-300 rounded px-3 py-2 text-xs text-slate-800 focus:outline-none focus:border-slate-500"
             />
             <button
               type="submit"
-              className="bg-[#128C7E] hover:bg-[#075E54] text-white p-2.5 rounded-full shadow-lg shadow-[#128C7E]/20 transition-all flex items-center justify-center focus:outline-none shrink-0"
-              aria-label="Send WhatsApp message"
+              className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2 rounded text-xs transition-colors flex items-center justify-center space-x-1.5"
             >
-              <svg className="w-4 h-4 fill-current transform rotate-45 translate-x-px -translate-y-px" viewBox="0 0 24 24">
-                <path d="M2 21l21-9L2 3v7l15 2-15 2z"/>
-              </svg>
+              <WhatsAppIcon className="w-3.5 h-3.5 text-white" />
+              <span>Start WhatsApp Conversation</span>
             </button>
           </form>
         </div>
       )}
 
-      {/* Floating Circle Button */}
+      {/* Floating Action Button */}
       <button
-        onClick={handleOpenChat}
-        className="w-14 h-14 rounded-full flex items-center justify-center bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white shadow-2xl hover:shadow-[#25D366]/40 hover:scale-110 active:scale-95 transition-all duration-300 cursor-pointer focus:outline-none relative group"
-        aria-label="Open WhatsApp Chat Widget"
+        onClick={() => setIsOpen(!isOpen)}
+        className="inline-flex items-center space-x-2 bg-emerald-700 hover:bg-emerald-800 text-white px-3.5 py-2.5 rounded-md shadow-md transition-colors text-xs font-medium cursor-pointer"
+        aria-label="Contact Biocare on WhatsApp"
       >
-        {/* Pulsing visual glow */}
-        <span className="absolute -inset-1 rounded-full bg-emerald-500/20 group-hover:bg-emerald-500/30 animate-ping opacity-75"></span>
-        
-        {/* Actual icon */}
-        <WhatsAppIcon className="w-7 h-7 relative z-10" />
-
-        {/* Pulsing Notification Badge */}
-        {showNotification && (
-          <span className="absolute -top-1 -right-1 flex h-4 w-4">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-4 w-4 bg-red-500 text-[9px] text-white font-bold items-center justify-center">1</span>
-          </span>
-        )}
+        <WhatsAppIcon className="w-5 h-5 text-white" />
+        <span className="hidden sm:inline">WhatsApp Sales Desk</span>
       </button>
     </div>
   );

@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import productsData from '../data/products.json';
-import { ChevronLeftIcon, ChevronRightIcon, CheckIcon, WhatsAppIcon } from './Icons';
+import { ChevronLeftIcon, ChevronRightIcon, CheckIcon } from './Icons';
 
 export default function FeaturedProductsCarousel() {
   const featuredProducts = productsData.filter((p) => p.featured === true);
@@ -18,97 +18,88 @@ export default function FeaturedProductsCarousel() {
 
   if (!featuredProducts || featuredProducts.length === 0) return null;
 
+  const currentProduct = featuredProducts[activeIndex];
+
   return (
-    <section className="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100 overflow-hidden font-sans">
+    <section className="bg-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-200 font-sans">
       <div className="max-w-7xl mx-auto">
         
-        {/* Section Title */}
-        <div className="text-center mb-10">
-          <span className="text-xs font-semibold text-secondary-600 uppercase tracking-widest block font-sans">
-            PREMIUM DIAGNOSTIC ANALYZERS
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-display font-extrabold text-primary-700 tracking-tight mt-1">
-            Featured Hospital & Laboratory Equipment
-          </h2>
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-4 border-b border-slate-200">
+          <div>
+            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">
+              Diagnostic & Clinical Machinery
+            </span>
+            <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mt-1">
+              Featured Medical Equipment
+            </h2>
+          </div>
+          <div className="flex items-center space-x-2 mt-3 md:mt-0">
+            <span className="text-xs text-slate-500 mr-2">
+              {activeIndex + 1} of {featuredProducts.length}
+            </span>
+            <button
+              onClick={prevSlide}
+              className="p-1.5 rounded border border-slate-300 text-slate-700 hover:bg-slate-50 transition-colors"
+              aria-label="Previous equipment"
+            >
+              <ChevronLeftIcon className="w-4 h-4" />
+            </button>
+            <button
+              onClick={nextSlide}
+              className="p-1.5 rounded border border-slate-300 text-slate-700 hover:bg-slate-50 transition-colors"
+              aria-label="Next equipment"
+            >
+              <ChevronRightIcon className="w-4 h-4" />
+            </button>
+          </div>
         </div>
 
-        {/* Carousel Showcase Container */}
-        <div className="bg-white border border-gray-200/80 rounded-3xl p-6 sm:p-10 shadow-sm relative">
-          
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        {/* Equipment Showcase Container */}
+        <div className="bg-slate-50 border border-slate-200 rounded-lg p-6 lg:p-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             {/* Image display */}
-            <div className="lg:col-span-5 flex justify-center items-center relative h-64 sm:h-80 md:h-96 w-full bg-white rounded-2xl p-6 overflow-hidden border border-gray-100">
-              <div className="relative w-full h-full transform hover:scale-105 transition-transform duration-500 flex justify-center items-center">
-                {featuredProducts[activeIndex].image ? (
-                  <Image
-                    src={featuredProducts[activeIndex].image}
-                    alt={featuredProducts[activeIndex].name}
-                    width={380}
-                    height={380}
-                    className="w-full h-full object-contain filter drop-shadow-md"
-                    unoptimized
-                  />
-                ) : (
-                  <>
-                    {/* Fallback svg representation if the image file hasn't loaded */}
-                    <svg className="absolute w-24 h-24 text-primary-100 opacity-60 z-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeWidth="1" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3M2.27 12c.014-1.232.046-2.453.138-3.662a4.006 4.006 0 0 1 3.7-3.7 48.656 48.656 0 0 1 7.324 0 4.006 4.006 0 0 1 3.7 3.7c.017.22.032.441.046.662M2.27 12l-3-3m3 3 3-3" />
-                    </svg>
-                    <div className="relative w-full h-full flex items-center justify-center font-display font-bold text-primary-200">
-                      <span className="text-center text-sm absolute bottom-4 text-gray-400 font-sans font-normal">
-                        {featuredProducts[activeIndex].name} Showcase Visual
-                      </span>
-                      
-                      {/* Digital Device Drawing representation */}
-                      <div className="w-48 h-48 bg-primary-600/10 border border-primary-500/20 rounded-2xl flex flex-col justify-between p-4 shadow-inner relative">
-                        <div className="flex justify-between items-center text-[10px] text-primary-600 font-sans">
-                          <span>BIOCARE PRO</span>
-                          <span className="w-1.5 h-1.5 rounded-full bg-secondary-500 animate-pulse"></span>
-                        </div>
-                        <div className="m-auto text-primary-600">
-                          <svg className="w-16 h-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                          </svg>
-                        </div>
-                        <span className="text-[10px] text-gray-500 uppercase tracking-widest text-center">Equipment Model</span>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
-
-              {/* Deal tag overlay if on hot deals */}
-              {featuredProducts[activeIndex].onHotDeal && (
-                <div className="absolute top-4 left-4 bg-secondary-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow">
-                  {featuredProducts[activeIndex].dealDiscount || "Hot Deal"}
+            <div className="lg:col-span-5 flex justify-center items-center h-64 sm:h-80 w-full bg-white rounded border border-slate-200 p-6 overflow-hidden">
+              {currentProduct.image ? (
+                <Image
+                  src={currentProduct.image}
+                  alt={currentProduct.name}
+                  width={360}
+                  height={320}
+                  className="w-full h-full object-contain"
+                  unoptimized
+                />
+              ) : (
+                <div className="text-center text-xs text-slate-400">
+                  <span>Product Visual Available in Showroom</span>
                 </div>
               )}
             </div>
 
-            {/* Specs column */}
-            <div className="lg:col-span-7 flex flex-col justify-between h-full space-y-6">
+            {/* Details & Specs column */}
+            <div className="lg:col-span-7 flex flex-col justify-between space-y-5">
               
-              <div className="space-y-4">
-                <span className="text-xs font-semibold text-secondary-600 uppercase tracking-widest">
-                  {featuredProducts[activeIndex].category.toUpperCase()} EQUIPMENT
+              <div className="space-y-3">
+                <span className="text-xs font-semibold text-primary-700 uppercase tracking-wider">
+                  {currentProduct.category}
                 </span>
                 
-                <h3 className="text-xl sm:text-2xl font-display font-extrabold text-gray-800">
-                  {featuredProducts[activeIndex].name}
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900">
+                  {currentProduct.name}
                 </h3>
                 
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  {featuredProducts[activeIndex].longDescription}
+                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  {currentProduct.longDescription || currentProduct.description}
                 </p>
 
-                {/* Spec Bullets */}
+                {/* Key Technical Specifications */}
                 <div className="pt-2">
-                  <span className="text-xs font-bold text-gray-700 block mb-2 uppercase tracking-wider">Specifications / Features:</span>
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {featuredProducts[activeIndex].specs.map((spec, sIdx) => (
-                      <li key={sIdx} className="flex items-start text-xs text-gray-600 space-x-2">
-                        <CheckIcon className="w-4 h-4 text-secondary-600 shrink-0 mt-0.5" />
+                  <span className="text-xs font-bold text-slate-800 block mb-2">Technical Specifications:</span>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-600">
+                    {currentProduct.specs.map((spec, sIdx) => (
+                      <li key={sIdx} className="flex items-start space-x-2">
+                        <CheckIcon className="w-3.5 h-3.5 text-slate-500 shrink-0 mt-0.5" />
                         <span>{spec}</span>
                       </li>
                     ))}
@@ -116,56 +107,30 @@ export default function FeaturedProductsCarousel() {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4 pt-4 border-t border-gray-100">
+              {/* Actions */}
+              <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-slate-200">
                 <Link
-                  href={`/products?product=${featuredProducts[activeIndex].id}`}
-                  className="w-full sm:w-auto text-center bg-primary-600 hover:bg-primary-700 text-white font-bold py-2.5 px-6 rounded-lg text-xs transition-colors shadow"
-                  aria-label={`Learn more about ${featuredProducts[activeIndex].name}`}
+                  href={`/products?product=${currentProduct.id}`}
+                  className="bg-primary-700 hover:bg-primary-800 text-white font-medium py-2.5 px-5 rounded text-xs transition-colors"
                 >
-                  View Machine Specs
+                  View Machine Specifications
                 </Link>
                 <Link
                   href="/contact"
-                  className="w-full sm:w-auto text-center bg-transparent border border-gray-300 hover:bg-gray-50 text-gray-700 font-bold py-2.5 px-6 rounded-lg text-xs transition-colors"
-                  aria-label={`Get quote for ${featuredProducts[activeIndex].name}`}
+                  className="bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 font-medium py-2.5 px-5 rounded text-xs transition-colors"
                 >
-                  Request Price Quote
+                  Request Formal Price Quote
                 </Link>
+                <span className="text-xs text-slate-500 ml-auto hidden sm:inline">
+                  Warranty & Installation Included
+                </span>
               </div>
 
             </div>
 
           </div>
-
-          {/* Navigation Arrows */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-primary-600 text-gray-600 hover:text-white p-2.5 rounded-full border shadow hover:shadow-lg transition-all focus:outline-none z-10"
-            aria-label="Previous Slide"
-          >
-            <ChevronLeftIcon className="w-5 h-5" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-primary-600 text-gray-600 hover:text-white p-2.5 rounded-full border shadow hover:shadow-lg transition-all focus:outline-none z-10"
-            aria-label="Next Slide"
-          >
-            <ChevronRightIcon className="w-5 h-5" />
-          </button>
-
-          {/* Dots Indicator */}
-          <div className="flex justify-center space-x-2 mt-8 z-10">
-            {featuredProducts.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setActiveIndex(idx)}
-                className={`h-2 rounded-full transition-all duration-300 ${idx === activeIndex ? 'w-6 bg-primary-600' : 'w-2 bg-gray-300'}`}
-                aria-label={`Go to slide ${idx + 1}`}
-              ></button>
-            ))}
-          </div>
-
         </div>
+
       </div>
     </section>
   );

@@ -1,68 +1,66 @@
 import { CheckIcon } from './Icons';
+import siteConfig from '../data/siteConfig';
 
 export default function WhyChooseBiocare() {
-  const values = [
+  const capabilities = [
     {
-      title: "Biomedical Technical Support",
-      description: "Our certified biomedical engineers provide 24/7 technical support, routine calibration, and fast breakdown response to keep your lab running."
+      title: "Certified Biomedical Engineering",
+      description: "Our in-house engineering team provides on-site hardware uncrating, physical installation, electrical grounding checks, and precise sensor calibration."
     },
     {
-      title: "NEMA & PPB Regulatory Compliance",
-      description: "All diagnostic analyzers, radiology equipment, and dental tools meet Pharmacy and Poisons Board and NEMA environmental standards."
+      title: "Clinical Staff Operator Training",
+      description: "Every major equipment installation includes hands-on training for laboratory technologists, nurses, and clinical officers to ensure accurate testing and safe usage."
     },
     {
-      title: "Nationwide Shipping & Delivery",
-      description: "We handle secure transportation, unpacking, local calibration, and installation across all 47 counties in Kenya."
+      title: "Dedicated Reagents & Spare Parts Hub",
+      description: "Our Nairobi warehouse maintains continuous stock of original Dymind reagents, lyse solutions, biochemistry packs, replacement valves, and optical bulbs."
     },
     {
-      title: "Manufacturer Warranties & SLAs",
-      description: "Enjoy complete peace of mind with 12 to 24-month warranties on all machinery, plus tailored preventive maintenance agreements."
+      title: "PPB & KeBS Regulatory Compliance",
+      description: "All diagnostic analyzers, dental chairs, and ward equipment comply with Pharmacy and Poisons Board regulatory standards and KeBS safety specifications."
     }
   ];
 
   return (
-    <section className="bg-gradient-to-br from-primary-800 to-primary-900 text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-      {/* Background visual accents */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-secondary-600/10 rounded-full blur-3xl"></div>
-
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <section className="bg-slate-900 text-slate-200 py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-800">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
-          {/* Text Summary */}
-          <div className="lg:col-span-5 space-y-6 text-center lg:text-left">
-            <span className="text-xs font-semibold text-secondary-500 uppercase tracking-widest block font-sans">
-              TRUSTED HEALTHCARE PARTNER
+          {/* Overview text */}
+          <div className="lg:col-span-5 space-y-4">
+            <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">
+              Biomedical Engineering & Support
             </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-display font-extrabold tracking-tight leading-tight">
-              Why Healthcare Facilities Trust Biocare
+            <h2 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+              Operational Standards and Technical After-Sales Care
             </h2>
-            <p className="text-gray-300 text-sm leading-relaxed max-w-lg mx-auto lg:mx-0">
-              We don&apos;t just sell boxes. We establish long-term partnerships with clinics, diagnostic laboratories, and tier-1 hospitals across Kenya by providing continuous technical support and quality medical equipment.
+            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              Medical equipment requires dependable installation, verified calibration, and reliable consumable replenishment. Biocare Health Systems Limited maintains an active biomedical engineering workshop in Nairobi to guarantee that your clinical operations continue without avoidable diagnostic downtime.
             </p>
-            <div className="pt-4 border-t border-primary-700/60 hidden lg:block">
-              <span className="text-sm font-bold text-white block mb-1">Office Showroom Location:</span>
-              <span className="text-xs text-gray-400">Ground Floor, Githinji Investments Building, Chambers Road, Nairobi</span>
+
+            <div className="pt-4 border-t border-slate-800 text-xs text-slate-400 space-y-1">
+              <span className="font-semibold text-white block">Nairobi Service Center & Showroom:</span>
+              <p>{siteConfig.officeAddress.building}, {siteConfig.officeAddress.street}, {siteConfig.officeAddress.landmark}, Nairobi</p>
+              <p>Direct Support Lines: {siteConfig.phones[0].value} / {siteConfig.phones[1].value}</p>
             </div>
           </div>
 
-          {/* Core Values grid */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {values.map((val, idx) => (
+          {/* 4 Pillars in a clean 2x2 grid */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {capabilities.map((item, idx) => (
               <div 
                 key={idx} 
-                className="bg-primary-800/40 border border-primary-700/60 p-6 rounded-2xl flex items-start space-x-4 hover:bg-primary-800/60 transition-colors"
+                className="bg-slate-800/80 border border-slate-700/80 p-5 rounded"
               >
-                <div className="bg-secondary-600/20 p-2 rounded-lg text-secondary-500 shrink-0">
-                  <CheckIcon className="w-4 h-4" />
-                </div>
-                <div>
-                  <h3 className="font-display font-extrabold text-white text-base mb-2">
-                    {val.title}
+                <div className="flex items-center space-x-2 text-primary-400 mb-2">
+                  <CheckIcon className="w-4 h-4 text-emerald-400" />
+                  <h3 className="font-bold text-white text-sm">
+                    {item.title}
                   </h3>
-                  <p className="text-gray-300 text-xs leading-relaxed font-normal">
-                    {val.description}
-                  </p>
                 </div>
+                <p className="text-slate-300 text-xs leading-relaxed">
+                  {item.description}
+                </p>
               </div>
             ))}
           </div>

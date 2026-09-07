@@ -18,47 +18,47 @@ export default function Contact() {
   return (
     <Layout breadcrumbs={breadcrumbs}>
       <SEO 
-        title="Contact Biocare Health Systems | Medical Equipment Kenya"
-        description="Contact Biocare Health Systems Limited. Call 0723 835776 or visit our showroom on Chambers Road, Ngara, Nairobi for diagnostics, hospital furniture & lab equipment."
+        title="Contact Biocare Health Systems Limited | Nairobi, Kenya"
+        description="Contact Biocare Health Systems Limited. Call 0723 835776 or visit our showroom on Chambers Road, Ngara, Nairobi for medical equipment, diagnostics & formal quotations."
         schemas={[getBreadcrumbSchema(breadcrumbs)]}
       />
 
       {/* Hero Header */}
-      <section className="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
-        <div className="max-w-4xl mx-auto text-center space-y-4">
-          <span className="text-xs font-semibold text-secondary-600 uppercase tracking-widest block font-sans">
-            GET IN TOUCH
+      <section className="bg-slate-50 py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
+        <div className="max-w-4xl mx-auto text-center space-y-3">
+          <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">
+            Direct Procurement & Support
           </span>
-          <h1 className="text-3xl sm:text-4xl font-display font-extrabold text-primary-700 tracking-tight">
-            We are Ready to Support Your Medical Needs
+          <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
+            Contact Our Nairobi Sales & Engineering Desk
           </h1>
-          <p className="text-gray-500 text-sm leading-relaxed max-w-xl mx-auto font-normal">
-            Visit our showroom, chat with our engineers, or drop us an inquiry to request formal pricing brochures.
+          <p className="text-slate-600 text-sm max-w-xl mx-auto leading-relaxed">
+            Request official equipment proforma quotations, schedule a showroom inspection, or speak directly with our biomedical engineering staff.
           </p>
         </div>
       </section>
 
       {/* Main Grid */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      <section className="py-12 lg:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
         
         {/* Info Area */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="bg-primary-900 text-white p-6 md:p-8 rounded-3xl space-y-6 border-b-4 border-secondary-600">
+          <div className="bg-slate-900 text-white p-6 sm:p-7 rounded space-y-5">
             <div>
-              <span className="text-xs font-semibold text-secondary-500 uppercase tracking-widest block font-sans">
-                CONTACT CHANNELS
+              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider block">
+                Official Head Office
               </span>
-              <h2 className="text-xl font-display font-extrabold mt-1">
-                Biocare Headquarters
+              <h2 className="text-lg sm:text-xl font-bold text-white mt-1">
+                Biocare Health Systems Limited
               </h2>
             </div>
 
             <div className="space-y-4 text-xs">
               <div className="flex items-start space-x-3">
-                <MapIcon className="w-5 h-5 text-secondary-500 shrink-0 mt-0.5" />
+                <MapIcon className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="font-bold block text-white">Physical Showroom:</span>
-                  <span className="text-gray-300 leading-relaxed block mt-0.5">
+                  <span className="font-semibold block text-slate-200">Showroom & Workshop Address:</span>
+                  <span className="text-slate-400 leading-relaxed block mt-0.5">
                     {siteConfig.officeAddress.building},<br />
                     {siteConfig.officeAddress.street}, {siteConfig.officeAddress.landmark},<br />
                     Ngara, Nairobi, Kenya
@@ -67,37 +67,41 @@ export default function Contact() {
               </div>
 
               <div className="flex items-start space-x-3">
-                <PhoneIcon className="w-5 h-5 text-secondary-500 shrink-0 mt-0.5" />
+                <PhoneIcon className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="font-bold block text-white">Call Sales & Enquiries:</span>
-                  <a href={`tel:${siteConfig.phones[0].link}`} className="text-secondary-400 hover:underline block mt-0.5 font-sans font-semibold">
-                    {siteConfig.phones[0].value} (Sales Lead)
+                  <span className="font-semibold block text-slate-200">Telephone Lines:</span>
+                  <a href={`tel:${siteConfig.phones[0].link}`} className="text-white hover:underline block mt-0.5 font-medium">
+                    {siteConfig.phones[0].value} (Sales & Quotations)
                   </a>
-                  <a href={`tel:${siteConfig.phones[1].link}`} className="text-secondary-400 hover:underline block font-sans font-semibold">
-                    {siteConfig.phones[1].value} (Admin & Support)
+                  <a href={`tel:${siteConfig.phones[1].link}`} className="text-white hover:underline block font-medium">
+                    {siteConfig.phones[1].value} (Admin & Technical Support)
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
-                <EmailIcon className="w-5 h-5 text-secondary-500 shrink-0 mt-0.5" />
+                <EmailIcon className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="font-bold block text-white">Email Address:</span>
-                  <a href={`mailto:${siteConfig.email}`} className="text-secondary-400 hover:underline block mt-0.5">
+                  <span className="font-semibold block text-slate-200">Email Correspondence:</span>
+                  <a href={`mailto:${siteConfig.email}`} className="text-white hover:underline block mt-0.5">
                     {siteConfig.email}
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-primary-800 flex flex-col space-y-3">
+            <div className="pt-4 border-t border-slate-800 space-y-3">
+              <span className="text-xs text-slate-400 block">
+                Operating Hours: Mon - Fri: 8:00 AM - 5:00 PM | Sat: 9:00 AM - 1:00 PM
+              </span>
               <a
                 href={siteConfig.whatsapp}
                 target="_blank"
-                className="bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#20ba56] hover:to-[#0e6b60] text-white font-bold py-3 px-4 rounded-xl text-xs transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/35 hover:-translate-y-0.5"
+                rel="noreferrer"
+                className="bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-2.5 px-4 rounded text-xs transition-colors flex items-center justify-center space-x-2"
               >
-                <WhatsAppIcon className="w-4 h-4" />
-                <span>Chat with Sales on WhatsApp</span>
+                <WhatsAppIcon className="w-4 h-4 text-white" />
+                <span>Chat Directly on WhatsApp</span>
               </a>
             </div>
           </div>
@@ -110,7 +114,7 @@ export default function Contact() {
 
       </section>
 
-      {/* Embedded Location Map */}
+      {/* Location Map */}
       <LocationMap />
     </Layout>
   );

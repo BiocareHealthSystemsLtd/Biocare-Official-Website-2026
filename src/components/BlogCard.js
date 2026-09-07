@@ -3,60 +3,51 @@ import Image from 'next/image';
 
 export default function BlogCard({ post }) {
   return (
-    <article className="bg-white border border-gray-200/80 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-full">
+    <article className="bg-white border border-slate-200 rounded overflow-hidden flex flex-col justify-between h-full">
       <div>
-        {/* Blog Image Visual with hover scaling */}
-        <div className="relative h-48 w-full overflow-hidden bg-slate-100 flex items-center justify-center">
+        {/* Blog Image Visual */}
+        <div className="relative h-44 w-full bg-slate-100 border-b border-slate-200">
           {post.image ? (
             <Image 
               src={post.image} 
               alt={post.title} 
               width={400}
-              height={200}
-              className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              height={220}
+              className="w-full h-full object-cover"
               unoptimized
             />
           ) : (
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary-800 to-primary-600/80 z-0 flex items-center justify-center text-white p-6">
-              <span className="text-sm text-center font-semibold leading-snug">{post.title}</span>
+            <div className="w-full h-full bg-slate-200 flex items-center justify-center p-4">
+              <span className="text-xs text-slate-500 font-medium text-center">{post.title}</span>
             </div>
           )}
-          {/* Subtle Overlay Badge */}
-          <div className="absolute top-4 right-4 bg-primary-600/90 backdrop-blur-xs text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider z-10">
-            {post.category}
-          </div>
-
-          <div className="absolute bottom-4 left-4 bg-secondary-600/90 backdrop-blur-xs text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase tracking-wider z-10">
-            {post.readTime}
-          </div>
         </div>
 
-        <div className="p-5 space-y-3">
-          <div className="text-[10px] text-gray-400 font-semibold uppercase font-sans flex space-x-2">
-            <span>{post.date}</span>
+        <div className="p-4 space-y-2.5">
+          <div className="flex items-center space-x-2 text-[11px] text-slate-500">
+            <span className="font-semibold text-primary-700 uppercase tracking-wider">{post.category}</span>
             <span>•</span>
-            <span>By {post.author.split(' ')[0]}</span>
+            <span>{post.date}</span>
           </div>
 
-          <h3 className="font-display font-bold text-gray-800 text-sm sm:text-base line-clamp-2 hover:text-primary-600 transition-colors">
-            <Link href={`/blog/${post.slug}`} aria-label={`Read ${post.title}`}>
+          <h3 className="font-bold text-slate-900 text-sm leading-snug hover:text-primary-700 transition-colors">
+            <Link href={`/blog/${post.slug}`}>
               {post.title}
             </Link>
           </h3>
 
-          <p className="text-gray-500 text-xs leading-relaxed line-clamp-3 font-normal">
+          <p className="text-slate-600 text-xs leading-relaxed line-clamp-3">
             {post.excerpt}
           </p>
         </div>
       </div>
 
-      <div className="p-5 pt-0 mt-auto">
+      <div className="p-4 pt-0 mt-auto">
         <Link
           href={`/blog/${post.slug}`}
-          className="text-primary-600 hover:text-primary-700 font-semibold text-xs inline-flex items-center space-x-1.5 hover:translate-x-1 transition-transform"
-          aria-label={`Read full post: ${post.title}`}
+          className="text-primary-700 hover:text-primary-800 font-medium text-xs inline-flex items-center space-x-1"
         >
-          <span>Read Full Article</span>
+          <span>Read Technical Guide</span>
           <span>→</span>
         </Link>
       </div>

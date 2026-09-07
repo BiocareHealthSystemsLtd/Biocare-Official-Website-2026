@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import faqsData from '../data/faqs.json';
 import { getBreadcrumbSchema, getFAQSchema } from '../lib/seo';
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
   const [searchQuery, setSearchQuery] = useState('');
 
   const toggleAccordion = (idx) => {
@@ -30,82 +31,89 @@ export default function FAQ() {
   return (
     <Layout breadcrumbs={breadcrumbs}>
       <SEO 
-        title="Frequently Asked Questions (FAQ) | Biocare Kenya"
-        description="Find answers to common questions about Biocare Health Systems. Warranty guidelines, Nairobi delivery timelines, technical support SLAs, and quotations."
+        title="Frequently Asked Questions (FAQ) | Biocare Health Systems Kenya"
+        description="Find answers to common questions about Biocare Health Systems Limited. Warranty guidelines, delivery across Kenya, biomedical technical support, and quotations."
         schemas={schemas}
       />
 
       {/* Header */}
-      <section className="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-100">
-        <div className="max-w-4xl mx-auto text-center space-y-4">
-          <span className="text-xs font-semibold text-secondary-600 uppercase tracking-widest block font-sans">
-            CUSTOMER SUPPORT
+      <section className="bg-slate-50 py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-b border-slate-200">
+        <div className="max-w-4xl mx-auto text-center space-y-3">
+          <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block">
+            Customer Support & Procurement
           </span>
-          <h1 className="text-3xl sm:text-4xl font-display font-extrabold text-primary-700 tracking-tight">
+          <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
             Frequently Asked Questions
           </h1>
-          <p className="text-gray-500 text-sm max-w-xl mx-auto font-normal">
-            Can&apos;t find what you need? Search our FAQs below or contact our showroom directly.
+          <p className="text-slate-600 text-sm max-w-xl mx-auto leading-relaxed">
+            Review common questions regarding ordering, delivery to Kenyan counties, warranty terms, and biomedical technical services.
           </p>
         </div>
       </section>
 
       {/* FAQ Workspace */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto space-y-6">
+      <section className="py-12 lg:py-16 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto space-y-6">
         
-        {/* Local Search Input */}
+        {/* Search Input */}
         <div className="relative">
           <input
             type="text"
-            placeholder="Type keywords to search FAQs (e.g. delivery, warranty)..."
+            placeholder="Search FAQs by keyword (e.g., delivery, warranty, reagents, calibration)..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-slate-50 border border-gray-200 rounded-xl px-4 py-3 text-xs focus:bg-white focus:outline-none focus:ring-1 focus:ring-primary-600"
+            className="w-full bg-slate-50 border border-slate-300 rounded px-4 py-2.5 text-xs text-slate-800 focus:bg-white focus:outline-none focus:border-slate-500"
             aria-label="Filter FAQs"
           />
         </div>
 
         {/* Accordions */}
         {filteredFaqs.length > 0 ? (
-          <div className="space-y-4 border border-gray-200/80 rounded-2xl overflow-hidden shadow-sm">
+          <div className="border border-slate-200 rounded divide-y divide-slate-200 bg-white">
             {filteredFaqs.map((faq, idx) => {
               const isOpen = openIndex === idx;
               return (
-                <div 
-                  key={idx} 
-                  className={`bg-white border-b border-gray-100 last:border-0 transition-colors ${isOpen ? 'bg-slate-50/30' : ''}`}
-                >
+                <div key={idx} className="transition-colors">
                   <button
                     onClick={() => toggleAccordion(idx)}
-                    className="w-full text-left px-5 py-4 flex justify-between items-center focus:outline-none"
+                    className="w-full text-left px-5 py-4 flex justify-between items-center focus:outline-none hover:bg-slate-50"
                     aria-expanded={isOpen}
                   >
-                    <span className="font-display font-extrabold text-gray-800 text-xs md:text-sm">
+                    <span className="font-semibold text-slate-900 text-xs sm:text-sm pr-4">
                       {faq.question}
                     </span>
-                    <span className={`text-primary-600 font-bold transform transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
-                      ▼
+                    <span className="text-slate-400 font-bold text-xs shrink-0">
+                      {isOpen ? '−' : '+'}
                     </span>
                   </button>
 
-                  <div 
-                    className={`px-5 overflow-hidden transition-all duration-300 ${
-                      isOpen ? 'max-h-[300px] pb-4' : 'max-h-0'
-                    }`}
-                  >
-                    <p className="text-gray-600 text-xs leading-relaxed font-normal">
-                      {faq.answer}
-                    </p>
-                  </div>
+                  {isOpen && (
+                    <div className="px-5 pb-4 pt-1 text-slate-600 text-xs leading-relaxed bg-slate-50/50">
+                      <p>{faq.answer}</p>
+                    </div>
+                  )}
                 </div>
               );
             })}
           </div>
         ) : (
-          <div className="bg-white border border-gray-200 rounded-3xl p-12 text-center text-gray-500 font-normal">
-            No matching questions found. Drop us a message on the contact page.
+          <div className="bg-white border border-slate-200 rounded p-8 text-center text-slate-500 text-xs">
+            No matching questions found. Please contact our team directly through our quotation form or WhatsApp.
           </div>
         )}
+
+        {/* Support Prompt */}
+        <div className="p-5 bg-slate-50 border border-slate-200 rounded flex flex-col sm:flex-row justify-between items-center text-xs gap-3">
+          <div>
+            <span className="font-bold text-slate-800 block">Have a specific question about an equipment tender or model?</span>
+            <span className="text-slate-500">Our engineering and sales team in Nairobi is available to assist you.</span>
+          </div>
+          <Link 
+            href="/contact" 
+            className="bg-primary-700 hover:bg-primary-800 text-white font-medium px-4 py-2 rounded shrink-0 transition-colors"
+          >
+            Contact Sales Desk
+          </Link>
+        </div>
 
       </section>
     </Layout>

@@ -1,121 +1,86 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #faf3f7;
-  --color-primary-100: #f3e4ee;
-  --color-primary-200: #e7cbdf;
-  --color-primary-500: #bd5599;
-  --color-primary-600: #A54482; /* Biocare Plum Purple (BIOCARE) */
-  --color-primary-700: #8a386c;
-  --color-primary-800: #6f2c56;
-  --color-primary-900: #542141;
+  --color-primary-50: #faf4f8;
+  --color-primary-100: #f4e6f0;
+  --color-primary-200: #e8cddf;
+  --color-primary-500: #a93c7d;
+  --color-primary-600: #8b2964; /* Refined Biocare Deep Plum */
+  --color-primary-700: #731e51;
+  --color-primary-800: #5c1840;
+  --color-primary-900: #461230;
 
-  --color-secondary-50: #f3f4fa;
-  --color-secondary-100: #e2e4f3;
-  --color-secondary-500: #4a53ae;
-  --color-secondary-600: #2E3192; /* Biocare Royal Blue (HEALTH SYSTEMS) */
-  --color-secondary-700: #232570;
-  --color-secondary-800: #1a1b52;
+  --color-secondary-50: #f1f5f9;
+  --color-secondary-100: #e2e8f0;
+  --color-secondary-500: #334155;
+  --color-secondary-600: #1e293b; /* Deep Slate / Navy */
+  --color-secondary-700: #0f172a;
+  --color-secondary-800: #020617;
 
-  --color-accent-500: #f2555c;
-  --color-accent-600: #ED1F27; /* Biocare Logo Accent Red (ECG / Tagline) */
-  --color-accent-700: #cd161d;
+  --color-brand-blue: #1d3557;
+  --color-brand-plum: #8b2964;
+  --color-brand-green: #15803d;
 
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-  --font-display: "Outfit", system-ui, -apple-system, sans-serif;
-
-  --animate-fade-in-up: fade-in-up 0.5s ease-out forwards;
-  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  --animate-marquee: marquee 25s linear infinite;
-}
-
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #1e293b;
-  --card-background: #ffffff;
   --border-color: #e2e8f0;
+  --surface-subtle: #f8fafc;
 }
 
-/* Custom global styles & scroll behavior */
+/* Base styles & typography */
 html {
   scroll-behavior: smooth;
   font-family: var(--font-sans);
+  color: var(--foreground);
+  background-color: var(--background);
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
   overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Custom Scrollbar */
+/* Subtle scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f8fafc;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
 
-/* Focus styles for keyboard navigation (WCAG AA compliance) */
+/* Focus styles for keyboard accessibility */
 *:focus-visible {
   outline: 2px solid var(--color-primary-600);
   outline-offset: 2px;
 }
 
-/* Glassmorphism utility */
-.glass-nav {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+/* Clean, standard navigation */
+.site-nav-scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.07), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
 }
 
-/* Section styling with custom gradients matching the brand */
-.gradient-bg {
-  background: linear-gradient(135deg, #A54482 0%, #6f2c56 100%);
-}
-
-.gradient-blue-bg {
-  background: linear-gradient(135deg, #2E3192 0%, #1a1b52 100%);
-}
-
-/* Fade in class helpers */
-.animate-delay-100 {
-  animation-delay: 100ms;
-}
-.animate-delay-200 {
-  animation-delay: 200ms;
-}
-.animate-delay-300 {
-  animation-delay: 300ms;
+/* Clean typography widths */
+.content-prose {
+  max-width: 68ch;
+  line-height: 1.7;
 }

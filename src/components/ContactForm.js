@@ -16,7 +16,7 @@ const validateForm = (values) => {
   const errors = {};
   
   if (!values.name.trim()) {
-    errors.name = 'FullName is required';
+    errors.name = 'Full name is required';
   }
   
   if (!values.email.trim()) {
@@ -28,7 +28,6 @@ const validateForm = (values) => {
   if (!values.phone.trim()) {
     errors.phone = 'Phone number is required';
   } else {
-    // Basic Kenyan phone validation (07... or 01... or +254...)
     const cleanPhone = values.phone.replace(/\s+/g, '');
     if (!/^(?:\+254|0)[17]\d{8}$/.test(cleanPhone)) {
       errors.phone = 'Please enter a valid Kenyan phone number (e.g. 0723835776)';
@@ -36,17 +35,17 @@ const validateForm = (values) => {
   }
 
   if (!values.category) {
-    errors.category = 'Please select a product category of interest';
+    errors.category = 'Please select a product category';
   }
 
   if (!values.message.trim()) {
-    errors.message = 'Inquiry message is required';
-  } else if (values.message.trim().length < 10) {
-    errors.message = 'Message must be at least 10 characters long';
+    errors.message = 'Inquiry details are required';
+  } else if (values.message.trim().length < 8) {
+    errors.message = 'Please provide more details regarding your equipment request';
   }
 
   if (!values.consent) {
-    errors.consent = 'You must agree to the privacy policy to submit';
+    errors.consent = 'Consent is required to process your quotation';
   }
 
   return errors;
@@ -80,19 +79,19 @@ export default function ContactForm({ interestCategory = '', initialMessage = ''
   }, [interestCategory, initialMessage, setValues]);
 
   return (
-    <div className="bg-white border border-gray-200/80 p-6 md:p-8 rounded-3xl shadow-sm">
-      <h3 className="font-display font-extrabold text-xl text-primary-700 tracking-tight mb-2">
-        Request a Quote or Demo
+    <div className="bg-white border border-slate-200 p-6 sm:p-8 rounded-lg">
+      <h3 className="text-lg sm:text-xl font-bold text-slate-900 mb-1">
+        Request an Equipment Quotation
       </h3>
-      <p className="text-gray-500 text-xs mb-6 leading-relaxed font-normal">
-        Fill out the form below. Our team of product specialists and biomedical engineers will get in touch with you shortly.
+      <p className="text-slate-500 text-xs mb-6 leading-relaxed">
+        Submit your requirements below. Our Nairobi sales engineers will prepare an official proforma quotation with full technical specifications and delivery terms.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Row 1: Name & Email */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="name" className="block text-xs font-semibold text-gray-700 mb-1">
+            <label htmlFor="name" className="block text-xs font-semibold text-slate-700 mb-1">
               Full Name *
             </label>
             <input
@@ -101,17 +100,16 @@ export default function ContactForm({ interestCategory = '', initialMessage = ''
               name="name"
               value={values.name}
               onChange={handleChange}
-              placeholder="e.g. Dr. John Doe"
-              className={`w-full bg-slate-50 border rounded-lg px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-1 ${
-                errors.name ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-primary-600'
+              placeholder="e.g. Dr. Jane Mwangi"
+              className={`w-full bg-slate-50 border rounded px-3 py-2 text-xs focus:bg-white focus:outline-none ${
+                errors.name ? 'border-rose-500' : 'border-slate-300 focus:border-slate-500'
               }`}
-              aria-required="true"
             />
-            {errors.name && <span className="text-[10px] text-red-500 mt-1 block">{errors.name}</span>}
+            {errors.name && <span className="text-[11px] text-rose-600 mt-1 block">{errors.name}</span>}
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-xs font-semibold text-gray-700 mb-1">
+            <label htmlFor="email" className="block text-xs font-semibold text-slate-700 mb-1">
               Email Address *
             </label>
             <input
@@ -120,20 +118,19 @@ export default function ContactForm({ interestCategory = '', initialMessage = ''
               name="email"
               value={values.email}
               onChange={handleChange}
-              placeholder="name@facility.co.ke"
-              className={`w-full bg-slate-50 border rounded-lg px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-1 ${
-                errors.email ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-primary-600'
+              placeholder="name@hospital.co.ke"
+              className={`w-full bg-slate-50 border rounded px-3 py-2 text-xs focus:bg-white focus:outline-none ${
+                errors.email ? 'border-rose-500' : 'border-slate-300 focus:border-slate-500'
               }`}
-              aria-required="true"
             />
-            {errors.email && <span className="text-[10px] text-red-500 mt-1 block">{errors.email}</span>}
+            {errors.email && <span className="text-[11px] text-rose-600 mt-1 block">{errors.email}</span>}
           </div>
         </div>
 
-        {/* Row 2: Phone & Company */}
+        {/* Row 2: Phone & Facility */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="phone" className="block text-xs font-semibold text-gray-700 mb-1">
+            <label htmlFor="phone" className="block text-xs font-semibold text-slate-700 mb-1">
               Phone Number (WhatsApp) *
             </label>
             <input
@@ -143,17 +140,16 @@ export default function ContactForm({ interestCategory = '', initialMessage = ''
               value={values.phone}
               onChange={handleChange}
               placeholder="e.g. 0723835776"
-              className={`w-full bg-slate-50 border rounded-lg px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-1 ${
-                errors.phone ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-primary-600'
+              className={`w-full bg-slate-50 border rounded px-3 py-2 text-xs focus:bg-white focus:outline-none ${
+                errors.phone ? 'border-rose-500' : 'border-slate-300 focus:border-slate-500'
               }`}
-              aria-required="true"
             />
-            {errors.phone && <span className="text-[10px] text-red-500 mt-1 block">{errors.phone}</span>}
+            {errors.phone && <span className="text-[11px] text-rose-600 mt-1 block">{errors.phone}</span>}
           </div>
 
           <div>
-            <label htmlFor="company" className="block text-xs font-semibold text-gray-700 mb-1">
-              Hospital / Lab Facility Name (Optional)
+            <label htmlFor="company" className="block text-xs font-semibold text-slate-700 mb-1">
+              Healthcare Facility / Practice Name
             </label>
             <input
               type="text"
@@ -161,26 +157,25 @@ export default function ContactForm({ interestCategory = '', initialMessage = ''
               name="company"
               value={values.company}
               onChange={handleChange}
-              placeholder="e.g. Githinji Clinic"
-              className="w-full bg-slate-50 border border-gray-200 rounded-lg px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-1 focus:ring-primary-600"
+              placeholder="e.g. Eldoret Diagnostic Clinic"
+              className="w-full bg-slate-50 border border-slate-300 rounded px-3 py-2 text-xs focus:bg-white focus:outline-none focus:border-slate-500"
             />
           </div>
         </div>
 
-        {/* Interest Select */}
+        {/* Product Category */}
         <div>
-          <label htmlFor="category" className="block text-xs font-semibold text-gray-700 mb-1">
-            Product Interest *
+          <label htmlFor="category" className="block text-xs font-semibold text-slate-700 mb-1">
+            Equipment Category of Interest *
           </label>
           <select
             id="category"
             name="category"
             value={values.category}
             onChange={handleChange}
-            className={`w-full bg-slate-50 border rounded-lg px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-1 ${
-              errors.category ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-primary-600'
+            className={`w-full bg-slate-50 border rounded px-3 py-2 text-xs focus:bg-white focus:outline-none ${
+              errors.category ? 'border-rose-500' : 'border-slate-300 focus:border-slate-500'
             }`}
-            aria-required="true"
           >
             <option value="">-- Select Product Category --</option>
             {categories.map((cat) => (
@@ -189,13 +184,13 @@ export default function ContactForm({ interestCategory = '', initialMessage = ''
               </option>
             ))}
           </select>
-          {errors.category && <span className="text-[10px] text-red-500 mt-1 block">{errors.category}</span>}
+          {errors.category && <span className="text-[11px] text-rose-600 mt-1 block">{errors.category}</span>}
         </div>
 
-        {/* Message area */}
+        {/* Requirements details */}
         <div>
-          <label htmlFor="message" className="block text-xs font-semibold text-gray-700 mb-1">
-            Specify Your Requirements *
+          <label htmlFor="message" className="block text-xs font-semibold text-slate-700 mb-1">
+            Inquiry Scope or Equipment Requirements *
           </label>
           <textarea
             id="message"
@@ -203,62 +198,50 @@ export default function ContactForm({ interestCategory = '', initialMessage = ''
             rows="4"
             value={values.message}
             onChange={handleChange}
-            placeholder="Please detail your machine requirements, model preferences, or delivery scheduling..."
-            className={`w-full bg-slate-50 border rounded-lg px-3 py-2 text-xs focus:bg-white focus:outline-none focus:ring-1 ${
-              errors.message ? 'border-red-500 focus:ring-red-500' : 'border-gray-200 focus:ring-primary-600'
+            placeholder="Please detail machinery model names, delivery destination county, or specific consumable requests..."
+            className={`w-full bg-slate-50 border rounded px-3 py-2 text-xs focus:bg-white focus:outline-none ${
+              errors.message ? 'border-rose-500' : 'border-slate-300 focus:border-slate-500'
             }`}
-            aria-required="true"
           ></textarea>
-          {errors.message && <span className="text-[10px] text-red-500 mt-1 block">{errors.message}</span>}
+          {errors.message && <span className="text-[11px] text-rose-600 mt-1 block">{errors.message}</span>}
         </div>
 
-        {/* GDPR Consent */}
-        <div className="flex items-start space-x-2">
+        {/* Consent */}
+        <div className="flex items-start space-x-2 pt-1">
           <input
             type="checkbox"
             id="consent"
             name="consent"
             checked={values.consent}
             onChange={handleChange}
-            className="w-4 h-4 rounded text-primary-600 border-gray-300 focus:ring-primary-600 shrink-0 mt-0.5"
-            aria-required="true"
+            className="w-4 h-4 rounded text-primary-700 border-slate-300 shrink-0 mt-0.5"
           />
-          <label htmlFor="consent" className="text-[11px] text-gray-500 leading-normal select-none">
-            I consent to Biocare Health Systems Limited storing my details to contact me regarding this inquiry.
+          <label htmlFor="consent" className="text-xs text-slate-500 leading-normal select-none">
+            I agree to receive a formal quotation and equipment specifications from Biocare Health Systems Limited.
           </label>
         </div>
-        {errors.consent && <span className="text-[10px] text-red-500 mt-0.5 block">{errors.consent}</span>}
+        {errors.consent && <span className="text-[11px] text-rose-600 block">{errors.consent}</span>}
 
-        {/* Status display */}
+        {/* Feedback Alert */}
         {submitStatus === 'success' && (
-          <div className="bg-emerald-50 border border-emerald-100 rounded-lg p-3 text-emerald-800 text-xs font-semibold">
-            🎉 Inquiry sent successfully! We will email/call you within 24 hours.
+          <div className="bg-emerald-50 border border-emerald-200 rounded p-3 text-emerald-900 text-xs font-medium">
+            Inquiry submitted successfully. A sales representative will contact you with formal quotation details within 24 hours.
           </div>
         )}
         {submitStatus === 'error' && (
-          <div className="bg-red-50 border border-red-100 rounded-lg p-3 text-red-800 text-xs font-semibold">
-            ❌ Failed to submit inquiry. Please call us directly at 0723 835776.
+          <div className="bg-rose-50 border border-rose-200 rounded p-3 text-rose-900 text-xs font-medium">
+            Unable to submit your request at this moment. Please call our sales desk directly at 0723 835776 or message us on WhatsApp.
           </div>
         )}
 
-        {/* Submit button */}
-        <div>
+        {/* Submit */}
+        <div className="pt-2">
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-secondary-600 hover:bg-secondary-700 disabled:bg-slate-400 text-white font-bold py-3 rounded-lg text-xs transition-colors shadow-md flex items-center justify-center space-x-2"
+            className="w-full bg-primary-700 hover:bg-primary-800 disabled:bg-slate-400 text-white font-medium py-3 rounded text-xs transition-colors"
           >
-            {isSubmitting ? (
-              <>
-                <svg className="animate-spin -ml-1 mr-3 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
-                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                <span>Sending Request...</span>
-              </>
-            ) : (
-              <span>Submit Inquiry / Request Quote</span>
-            )}
+            {isSubmitting ? 'Submitting Quotation Request...' : 'Submit Formal Quotation Request'}
           </button>
         </div>
 
