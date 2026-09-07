@@ -148,7 +148,7 @@ export default function Products() {
               {/* Categories Navigation */}
               <div className="bg-white border border-slate-200 rounded p-4 space-y-2">
                 <span className="text-xs font-bold text-slate-800 block mb-1">Categories</span>
-                <nav className="flex flex-col space-y-1 text-xs" aria-label="Product categories navigation">
+                <nav className="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:flex-col gap-1 text-xs" aria-label="Product categories navigation">
                   <button
                     onClick={() => handleCategoryClick('all')}
                     className={`text-left px-2.5 py-1.5 rounded transition-colors flex justify-between items-center cursor-pointer ${
@@ -174,7 +174,7 @@ export default function Products() {
                             : 'text-slate-600 hover:bg-slate-50'
                         }`}
                       >
-                        <span className="truncate pr-2">{cat.name}</span>
+                        <span className="truncate pr-1.5">{cat.name}</span>
                         <span className="text-[11px] text-slate-400 shrink-0">
                           {count}
                         </span>

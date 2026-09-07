@@ -139,26 +139,26 @@ export default function DiagnosticWizard() {
         <div className="bg-white border border-slate-200 rounded-lg p-6 md:p-8">
           
           {/* Step Indicators */}
-          <div className="flex items-center justify-between border-b border-slate-200 pb-4 mb-6 text-xs font-medium">
-            <div className={`flex items-center space-x-2 ${step >= 1 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
-              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step >= 1 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
+          <div className="flex items-center justify-between border-b border-slate-200 pb-3 mb-6 text-xs font-medium">
+            <div className={`flex items-center space-x-1.5 ${step >= 1 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0 ${step >= 1 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
                 1
               </span>
-              <span>Facility Type</span>
+              <span><span className="hidden sm:inline">Facility </span>Type</span>
             </div>
             <span className="text-slate-300">→</span>
-            <div className={`flex items-center space-x-2 ${step >= 2 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
-              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step >= 2 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
+            <div className={`flex items-center space-x-1.5 ${step >= 2 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0 ${step >= 2 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
                 2
               </span>
               <span>Departments</span>
             </div>
             <span className="text-slate-300">→</span>
-            <div className={`flex items-center space-x-2 ${step >= 3 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
-              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${step >= 3 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
+            <div className={`flex items-center space-x-1.5 ${step >= 3 ? 'text-primary-700 font-bold' : 'text-slate-400'}`}>
+              <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs shrink-0 ${step >= 3 ? 'bg-primary-100 text-primary-800' : 'bg-slate-100 text-slate-400'}`}>
                 3
               </span>
-              <span>Equipment Checklist</span>
+              <span><span className="hidden sm:inline">Equipment </span>Checklist</span>
             </div>
           </div>
 

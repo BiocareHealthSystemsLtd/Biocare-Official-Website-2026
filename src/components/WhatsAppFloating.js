@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import siteConfig from '../data/siteConfig';
-import { WhatsAppIcon, CloseIcon, PhoneIcon } from './Icons';
+import { WhatsAppIcon, CloseIcon } from './Icons';
 
 export default function WhatsAppFloating() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,12 +19,12 @@ export default function WhatsAppFloating() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 font-sans flex flex-col items-end">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 font-sans flex flex-col items-end">
       {/* WhatsApp Quick Message Panel */}
       {isOpen && (
-        <div className="w-80 bg-white rounded-lg shadow-xl border border-slate-200 overflow-hidden flex flex-col mb-3">
+        <div className="w-[calc(100vw-2rem)] sm:w-80 max-w-sm bg-white rounded-lg shadow-xl border border-slate-200 overflow-hidden flex flex-col mb-3">
           {/* Header */}
-          <div className="bg-slate-900 text-white p-4 flex items-center justify-between">
+          <div className="bg-slate-900 text-white p-3.5 sm:p-4 flex items-center justify-between">
             <div>
               <h4 className="text-sm font-semibold">Biocare Sales & Support</h4>
               <p className="text-xs text-slate-400 mt-0.5">Direct WhatsApp Desk (Nairobi)</p>
@@ -39,7 +39,7 @@ export default function WhatsAppFloating() {
           </div>
 
           {/* Body */}
-          <div className="p-4 bg-slate-50 space-y-3 text-xs text-slate-700">
+          <div className="p-3.5 sm:p-4 bg-slate-50 space-y-3 text-xs text-slate-700">
             <p className="leading-relaxed">
               Have a question about equipment specs, delivery schedules, or formal price quotations? Send us a direct message on WhatsApp.
             </p>
@@ -73,7 +73,7 @@ export default function WhatsAppFloating() {
       {/* Floating Action Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center space-x-2 bg-emerald-700 hover:bg-emerald-800 text-white px-3.5 py-2.5 rounded-md shadow-md transition-colors text-xs font-medium cursor-pointer"
+        className="inline-flex items-center space-x-2 bg-emerald-700 hover:bg-emerald-800 text-white px-3 sm:px-3.5 py-2.5 rounded-md shadow-md transition-colors text-xs font-medium cursor-pointer"
         aria-label="Contact Biocare on WhatsApp"
       >
         <WhatsAppIcon className="w-5 h-5 text-white" />
