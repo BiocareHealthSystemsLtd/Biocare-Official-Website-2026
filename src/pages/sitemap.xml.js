@@ -5,6 +5,14 @@ import siteConfig from '../data/siteConfig';
 
 const EXTERNAL_URL = siteConfig.url;
 
+function normalizeDate(dateStr, fallback) {
+  if (!dateStr) return fallback;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) return dateStr;
+  const parsed = new Date(dateStr);
+  if (isNaN(parsed.getTime())) return fallback;
+  return parsed.toISOString().split('T')[0];
+}
+
 function generateSiteMap(products, posts, categories) {
   const currentDate = new Date().toISOString().split('T')[0];
 
@@ -74,16 +82,17 @@ function generateSiteMap(products, posts, categories) {
     })
     .join('')}
 
-  <!-- Blog Posts -->
+  <!-- Blog Posts & Guides -->
   ${posts
     .filter((post) => post.status === 'published')
     .map((post) => {
+      const isCornerstone = post.slug === 'dymind-hematology-analyzers-kenya';
       return `
   <url>
     <loc>${EXTERNAL_URL}/blog/${post.slug}</loc>
-    <lastmod>${post.date || currentDate}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>${normalizeDate(post.date, currentDate)}</lastmod>
+    <changefreq>${isCornerstone ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${isCornerstone ? '0.9' : '0.7'}</priority>
   </url>`;
     })
     .join('')}

@@ -28,7 +28,7 @@ export default function BlogPost({ post }) {
         schemas={schemas}
       />
 
-      <article className="max-w-3xl mx-auto py-12 px-4 sm:px-6 lg:px-8 font-sans">
+      <article className="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8 font-sans">
         
         {/* Article Header */}
         <div className="space-y-3 border-b border-slate-200 pb-6 mb-8">
